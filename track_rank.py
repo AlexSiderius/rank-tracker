@@ -1,8 +1,8 @@
 import requests, csv, os, time, datetime
 from requests.auth import HTTPBasicAuth
 
-LOGIN = os.environ["alex@webawarecontact.nl"]
-PASSWORD = os.environ["@VyOtb@1zzo5G4Sq"]
+LOGIN = os.environ["DATAFORSEO_LOGIN"]
+PASSWORD = os.environ["DATAFORSEO_PASSWORD"]
 TARGET_DOMAIN = "webaware.nl"
 KEYWORDS_FILE = "keywords.txt"
 OUTPUT_FILE = "rankings.csv"
