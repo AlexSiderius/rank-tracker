@@ -1,0 +1,32 @@
+name: Daily rank check (DataForSEO)
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # elke dag 06:00 UTC = 08:00 NL-tijd
+  workflow_dispatch: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Run rank check
+        env:
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+        run: python track_rank.py
+
+      - name: Commit results
+        run: |
+          git config user.name "rank-bot"
+          git config user.email "bot@example.com"
+          git add rankings.csv
+          git commit -m "Rank check $(date -I)" || echo "no changes"
+          git push
