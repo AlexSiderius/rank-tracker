@@ -147,8 +147,9 @@ async function load() {
     if (!text) throw new Error('leeg bestand');
 
     const rows = text.split('\n').slice(1).filter(Boolean).map(line => {
-      const [date, keyword, rankRaw] = line.split(',');
-      return { date, keyword, rank: rankRaw === 'not_found' ? null : parseInt(rankRaw) };
+      const [date, keyword, rankRaw] = line.replace(/\r$/, '').split(',');
+      const clean = (rankRaw || '').trim();
+      return { date, keyword, rank: clean === 'not_found' ? null : parseInt(clean, 10) };
     });
 
     if (rows.length === 0) {
