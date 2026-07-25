@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rankwacht — webaware.nl</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F7F8FA;
+    --surface: #FFFFFF;
+    --ink: #12151C;
+    --muted: #6B7280;
+    --line: #E5E7EB;
+    --accent: #3454D1;
+    --accent-soft: #3454D114;
+    --up: #1C8A5D;
+    --down: #B91C1C;
+    --up-soft: #1C8A5D14;
+    --down-soft: #B91C1C14;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 48px 24px 96px; }
+
+  header { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 8px; }
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  h1 span { color: var(--accent); }
+  #status { color: var(--muted); font-size: 0.85rem; font-family: 'IBM Plex Mono', monospace; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 28px 0 36px; }
+  .stat {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .stat .label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .stat .value { font-family: 'Space Grotesk', sans-serif; font-size: 1.6rem; font-weight: 600; margin-top: 4px; }
+
+  table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  thead th {
+    text-align: left;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    font-weight: 500;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  tbody tr { cursor: pointer; border-bottom: 1px solid var(--line); transition: background 0.12s ease; }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: var(--accent-soft); }
+  tbody tr.active { background: var(--accent-soft); }
+  tbody tr:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  td { padding: 12px 16px; vertical-align: middle; }
+  .kw { font-weight: 500; }
+  .rank-cell { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 1.05rem; white-space: nowrap; }
+  .rank-na { color: var(--muted); font-weight: 400; font-size: 0.9rem; }
+  .delta { font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; padding: 2px 7px; border-radius: 5px; }
+  .delta.up { color: var(--up); background: var(--up-soft); }
+  .delta.down { color: var(--down); background: var(--down-soft); }
+  .delta.flat { color: var(--muted); background: #6B728014; }
+  .spark { width: 96px; height: 30px; display: block; }
+
+  #detail {
+    margin-top: 40px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 24px;
+    display: none;
+  }
+  #detail.visible { display: block; }
+  #detailHead { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
+  #detailTitle { font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 600; }
+  #detailSub { color: var(--muted); font-size: 0.85rem; }
+  .detail-stats { display: flex; gap: 24px; margin: 18px 0 20px; flex-wrap: wrap; }
+  .detail-stats div { font-size: 0.8rem; color: var(--muted); }
+  .detail-stats strong { display: block; font-family: 'IBM Plex Mono', monospace; font-size: 1.1rem; color: var(--ink); font-weight: 600; }
+  canvas#detailChart { max-height: 320px; }
+
+  #empty { color: var(--muted); text-align: center; padding: 60px 20px; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Rank<span>wacht</span></h1>
+    <div id="status">laden...</div>
+  </header>
+
+  <div class="stats" id="statStrip"></div>
+
+  <table id="table" style="display:none;">
+    <thead>
+      <tr>
+        <th>Zoekwoord</th>
+        <th>Positie</th>
+        <th>t.o.v. 7 dagen</th>
+        <th>Verloop (14d)</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <div id="empty" style="display:none;">Nog geen rankingdata gevonden. Zodra de eerste dagelijkse check gedraaid heeft, verschijnt hier het overzicht.</div>
+
+  <section id="detail">
+    <div id="detailHead">
+      <div id="detailTitle"></div>
+      <div id="detailSub"></div>
+    </div>
+    <div class="detail-stats" id="detailStats"></div>
+    <canvas id="detailChart"></canvas>
+  </section>
+
+</div>
+
+<script>
+const TREND_COLOR = { up: '#1C8A5D', down: '#B91C1C', flat: '#6B7280' };
+let sparkCharts = [];
+let detailChart = null;
+
+async function load() {
+  const status = document.getElementById('status');
+  try {
+    const resp = await fetch('rankings.csv?t=' + Date.now());
+    if (!resp.ok) throw new Error('rankings.csv niet gevonden');
+    const text = (await resp.text()).trim();
+    if (!text) throw new Error('leeg bestand');
+
+    const rows = text.split('\n').slice(1).filter(Boolean).map(line => {
+      const [date, keyword, rankRaw] = line.split(',');
+      return { date, keyword, rank: rankRaw === 'not_found' ? null : parseInt(rankRaw) };
+    });
+
+    if (rows.length === 0) {
+      document.getElementById('empty').style.display = 'block';
+      status.textContent = '';
+      return;
+    }
+
+    const byKeyword = {};
+    rows.forEach(r => {
+      (byKeyword[r.keyword] ||= []).push(r);
+    });
+    Object.values(byKeyword).forEach(arr => arr.sort((a, b) => a.date.localeCompare(b.date)));
+
+    const keywords = Object.keys(byKeyword);
+    const allDates = [...new Set(rows.map(r => r.date))].sort();
+    const lastDate = allDates[allDates.length - 1];
+
+    renderStats(byKeyword, keywords, lastDate);
+    renderTable(byKeyword, keywords);
+
+    status.textContent = `laatst bijgewerkt: ${lastDate}`;
+
+    // open eerste keyword automatisch
+    if (keywords.length) selectKeyword(keywords[0], byKeyword[keywords[0]]);
+
+  } catch (e) {
+    status.textContent = '';
+    document.getElementById('empty').style.display = 'block';
+    document.getElementById('empty').textContent = 'Kon rankingdata niet laden: ' + e.message;
+  }
+}
+
+function currentAndDelta(series) {
+  const withRank = series.filter(r => r.rank !== null);
+  const current = withRank.length ? withRank[withRank.length - 1].rank : null;
+  // vergelijk met de meting van ~7 dagen geleden (of de oudste beschikbare als korter)
+  let compareIdx = withRank.length - 8;
+  if (compareIdx < 0) compareIdx = 0;
+  const compare = withRank.length > 1 ? withRank[compareIdx].rank : null;
+  const delta = (current !== null && compare !== null && withRank.length > 1) ? compare - current : null; // positief = gestegen (rank omlaag = beter)
+  return { current, delta };
+}
+
+function renderStats(byKeyword, keywords, lastDate) {
+  const strip = document.getElementById('statStrip');
+  const currents = keywords.map(kw => currentAndDelta(byKeyword[kw]).current).filter(v => v !== null);
+  const top10 = currents.filter(v => v <= 10).length;
+  const avg = currents.length ? (currents.reduce((a, b) => a + b, 0) / currents.length).toFixed(1) : '–';
+
+  const stats = [
+    { label: 'Zoekwoorden', value: keywords.length },
+    { label: 'Gem. positie', value: avg },
+    { label: 'In top 10', value: top10 },
+    { label: 'Niet gevonden', value: keywords.length - currents.length },
+  ];
+
+  strip.innerHTML = stats.map(s => `
+    <div class="stat">
+      <div class="label">${s.label}</div>
+      <div class="value">${s.value}</div>
+    </div>
+  `).join('');
+}
+
+function renderTable(byKeyword, keywords) {
+  document.getElementById('table').style.display = 'table';
+  const tbody = document.getElementById('tableBody');
+  sparkCharts.forEach(c => c.destroy());
+  sparkCharts = [];
+
+  tbody.innerHTML = keywords.map((kw, i) => {
+    const series = byKeyword[kw];
+    const { current, delta } = currentAndDelta(series);
+    const rankHtml = current !== null
+      ? `${current}`
+      : `<span class="rank-na">niet gevonden</span>`;
+
+    let deltaHtml = '<span class="delta flat">–</span>';
+    if (delta !== null && delta !== 0) {
+      const dir = delta > 0 ? 'up' : 'down';
+      const arrow = delta > 0 ? '▲' : '▼';
+      deltaHtml = `<span class="delta ${dir}">${arrow} ${Math.abs(delta)}</span>`;
+    } else if (delta === 0) {
+      deltaHtml = '<span class="delta flat">– 0</span>';
+    }
+
+    return `
+      <tr tabindex="0" data-kw="${i}">
+        <td class="kw">${kw}</td>
+        <td class="rank-cell">${rankHtml}</td>
+        <td>${deltaHtml}</td>
+        <td><canvas class="spark" id="spark-${i}"></canvas></td>
+      </tr>
+    `;
+  }).join('');
+
+  keywords.forEach((kw, i) => {
+    const series = byKeyword[kw].slice(-14);
+    const ctx = document.getElementById(`spark-${i}`);
+    const withRank = series.filter(r => r.rank !== null);
+    const lastVal = withRank.length ? withRank[withRank.length - 1].rank : null;
+    const firstVal = withRank.length ? withRank[0].rank : null;
+    const color = (lastVal !== null && firstVal !== null && lastVal < firstVal) ? TREND_COLOR.up
+                : (lastVal !== null && firstVal !== null && lastVal > firstVal) ? TREND_COLOR.down
+                : TREND_COLOR.flat;
+
+    const chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: series.map(r => r.date),
+        datasets: [{
+          data: series.map(r => r.rank),
+          borderColor: color,
+          borderWidth: 1.75,
+          pointRadius: 0,
+          spanGaps: true,
+          tension: 0.3,
+        }]
+      },
+      options: {
+        responsive: false,
+        animation: false,
+        scales: { x: { display: false }, y: { display: false, reverse: true } },
+        plugins: { legend: { display: false }, tooltip: { enabled: false } },
+      }
+    });
+    sparkCharts.push(chart);
+  });
+
+  tbody.querySelectorAll('tr').forEach((tr, i) => {
+    const kw = keywords[i];
+    const handler = () => {
+      tbody.querySelectorAll('tr').forEach(t => t.classList.remove('active'));
+      tr.classList.add('active');
+      selectKeyword(kw, byKeyword[kw]);
+    };
+    tr.addEventListener('click', handler);
+    tr.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handler(); } });
+  });
+
+  if (tbody.firstElementChild) tbody.firstElementChild.classList.add('active');
+}
+
+function selectKeyword(keyword, series) {
+  const detail = document.getElementById('detail');
+  detail.classList.add('visible');
+  document.getElementById('detailTitle').textContent = keyword;
+
+  const withRank = series.filter(r => r.rank !== null).map(r => r.rank);
+  const current = withRank.length ? withRank[withRank.length - 1] : null;
+  const best = withRank.length ? Math.min(...withRank) : null;
+  const worst = withRank.length ? Math.max(...withRank) : null;
+  const avg = withRank.length ? (withRank.reduce((a, b) => a + b, 0) / withRank.length).toFixed(1) : '–';
+
+  document.getElementById('detailSub').textContent = `${series.length} metingen · ${series[0].date} t/m ${series[series.length - 1].date}`;
+
+  document.getElementById('detailStats').innerHTML = `
+    <div><strong>${current ?? '–'}</strong>huidig</div>
+    <div><strong>${best ?? '–'}</strong>beste</div>
+    <div><strong>${worst ?? '–'}</strong>laagste</div>
+    <div><strong>${avg}</strong>gemiddeld</div>
+  `;
+
+  if (detailChart) detailChart.destroy();
+  detailChart = new Chart(document.getElementById('detailChart'), {
+    type: 'line',
+    data: {
+      labels: series.map(r => r.date),
+      datasets: [{
+        data: series.map(r => r.rank),
+        borderColor: '#3454D1',
+        backgroundColor: '#3454D114',
+        fill: true,
+        spanGaps: true,
+        tension: 0.25,
+        pointRadius: 2.5,
+        pointBackgroundColor: '#3454D1',
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          reverse: true,
+          title: { display: true, text: 'Positie in Google', color: '#6B7280' },
+          ticks: { stepSize: 1, precision: 0 },
+          grid: { color: '#E5E7EB' },
+        },
+        x: { grid: { display: false } }
+      },
+      plugins: { legend: { display: false } }
+    }
+  });
+}
+
+load();
+</script>
+</body>
+</html>
