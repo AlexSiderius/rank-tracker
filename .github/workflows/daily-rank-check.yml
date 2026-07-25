@@ -1,5 +1,8 @@
 name: Daily rank check (DataForSEO)
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 6 * * *"   # elke dag 06:00 UTC = 08:00 NL-tijd
