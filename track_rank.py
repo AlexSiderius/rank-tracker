@@ -1,4 +1,4 @@
-import requests, csv, os, time, datetime
+import requests, csv, json, os, time, datetime
 from requests.auth import HTTPBasicAuth
 
 LOGIN = os.environ["DATAFORSEO_LOGIN"]
@@ -6,6 +6,7 @@ PASSWORD = os.environ["DATAFORSEO_PASSWORD"]
 TARGET_DOMAIN = "webaware.nl"
 KEYWORDS_FILE = "keywords.txt"
 OUTPUT_FILE = "rankings.csv"
+TOP10_FILE = "top10.json"   # actuele top 10 per keyword (wordt elke dag overschreven)
 
 LOCATION_CODE = 2528   # Netherlands (heel land)
 LANGUAGE_CODE = "nl"
@@ -87,6 +88,24 @@ def find_rank(result_json):
     return None
 
 
+def get_top10(result_json):
+    try:
+        items = result_json["tasks"][0]["result"][0]["items"]
+    except (KeyError, IndexError, TypeError):
+        return []
+    organic = [i for i in items if i.get("type") == "organic"]
+    top10 = []
+    for item in organic[:10]:
+        top10.append({
+            "position": item.get("rank_absolute"),
+            "title": item.get("title", ""),
+            "domain": item.get("domain", ""),
+            "url": item.get("url", ""),
+            "is_target": TARGET_DOMAIN in item.get("domain", ""),
+        })
+    return top10
+
+
 def main():
     with open(KEYWORDS_FILE) as f:
         keywords = [line.strip() for line in f if line.strip()]
@@ -99,6 +118,7 @@ def main():
 
     today = datetime.date.today().isoformat()
     file_exists = os.path.exists(OUTPUT_FILE)
+    top10_data = {}
 
     with open(OUTPUT_FILE, "a", newline="") as f:
         writer = csv.writer(f)
@@ -109,6 +129,10 @@ def main():
             rank = find_rank(result_json) if result_json else None
             writer.writerow([today, kw, rank or "not_found"])
             print(f"{kw}: {rank or 'niet gevonden'}")
+            top10_data[kw] = get_top10(result_json) if result_json else []
+
+    with open(TOP10_FILE, "w", encoding="utf-8") as f:
+        json.dump({"date": today, "results": top10_data}, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":
