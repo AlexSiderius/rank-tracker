@@ -95,6 +95,28 @@
   .detail-stats strong { display: block; font-family: 'IBM Plex Mono', monospace; font-size: 1.1rem; color: var(--ink); font-weight: 600; }
   canvas#detailChart { max-height: 320px; }
 
+  .toolbar { margin-bottom: 14px; }
+  #search {
+    width: 100%;
+    max-width: 320px;
+    padding: 9px 14px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.9rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--ink);
+  }
+  #search:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  #search::placeholder { color: var(--muted); }
+
+  thead th.sortable { cursor: pointer; user-select: none; }
+  thead th.sortable:hover { color: var(--ink); }
+  thead th .sort-arrow { display: inline-block; margin-left: 4px; opacity: 0.4; font-size: 0.7em; }
+  thead th.sort-active .sort-arrow { opacity: 1; color: var(--accent); }
+
+  #noResults { display: none; text-align: center; padding: 40px 20px; color: var(--muted); font-size: 0.9rem; }
+
   #empty { color: var(--muted); text-align: center; padding: 60px 20px; font-size: 0.95rem; }
 </style>
 </head>
@@ -108,17 +130,23 @@
 
   <div class="stats" id="statStrip"></div>
 
+  <div class="toolbar">
+    <input type="text" id="search" placeholder="Zoek een zoekwoord...">
+  </div>
+
   <table id="table" style="display:none;">
     <thead>
       <tr>
-        <th>Zoekwoord</th>
-        <th>Positie</th>
-        <th>t.o.v. 7 dagen</th>
+        <th class="sortable" data-sort="kw">Zoekwoord<span class="sort-arrow">↕</span></th>
+        <th class="sortable" data-sort="rank">Positie<span class="sort-arrow">↕</span></th>
+        <th class="sortable" data-sort="delta">t.o.v. 7 dagen<span class="sort-arrow">↕</span></th>
         <th>Verloop (14d)</th>
       </tr>
     </thead>
     <tbody id="tableBody"></tbody>
   </table>
+
+  <div id="noResults">Geen zoekwoorden gevonden.</div>
 
   <div id="empty" style="display:none;">Nog geen rankingdata gevonden. Zodra de eerste dagelijkse check gedraaid heeft, verschijnt hier het overzicht.</div>
 
@@ -137,6 +165,12 @@
 const TREND_COLOR = { up: '#1C8A5D', down: '#B91C1C', flat: '#6B7280' };
 let sparkCharts = [];
 let detailChart = null;
+
+// globale state voor filteren/sorteren zonder opnieuw te hoeven laden
+let allByKeyword = {};
+let allKeywords = [];
+let searchQuery = '';
+let sortState = { col: null, dir: 1 };
 
 async function load() {
   const status = document.getElementById('status');
@@ -164,22 +198,66 @@ async function load() {
     });
     Object.values(byKeyword).forEach(arr => arr.sort((a, b) => a.date.localeCompare(b.date)));
 
-    const keywords = Object.keys(byKeyword);
+    allByKeyword = byKeyword;
+    allKeywords = Object.keys(byKeyword);
     const allDates = [...new Set(rows.map(r => r.date))].sort();
     const lastDate = allDates[allDates.length - 1];
 
-    renderStats(byKeyword, keywords, lastDate);
-    renderTable(byKeyword, keywords);
+    renderStats(allByKeyword, allKeywords, lastDate);
+    applyFiltersAndRender();
 
     status.textContent = `laatst bijgewerkt: ${lastDate}`;
 
-    // open eerste keyword automatisch
-    if (keywords.length) selectKeyword(keywords[0], byKeyword[keywords[0]]);
+    document.getElementById('search').addEventListener('input', e => {
+      searchQuery = e.target.value;
+      applyFiltersAndRender();
+    });
+
+    document.querySelectorAll('th.sortable').forEach(th => {
+      th.addEventListener('click', () => {
+        const col = th.dataset.sort;
+        sortState.dir = (sortState.col === col) ? -sortState.dir : 1;
+        sortState.col = col;
+        document.querySelectorAll('th.sortable').forEach(t => t.classList.remove('sort-active'));
+        th.classList.add('sort-active');
+        th.querySelector('.sort-arrow').textContent = sortState.dir === 1 ? '↑' : '↓';
+        applyFiltersAndRender();
+      });
+    });
 
   } catch (e) {
     status.textContent = '';
     document.getElementById('empty').style.display = 'block';
     document.getElementById('empty').textContent = 'Kon rankingdata niet laden: ' + e.message;
+  }
+}
+
+function applyFiltersAndRender() {
+  let list = allKeywords.filter(kw => kw.toLowerCase().includes(searchQuery.toLowerCase()));
+
+  if (sortState.col) {
+    list = list.slice().sort((a, b) => {
+      const da = currentAndDelta(allByKeyword[a]);
+      const db = currentAndDelta(allByKeyword[b]);
+      let va, vb;
+      if (sortState.col === 'kw') { va = a.toLowerCase(); vb = b.toLowerCase(); }
+      if (sortState.col === 'rank') { va = da.current ?? 9999; vb = db.current ?? 9999; }
+      if (sortState.col === 'delta') { va = da.delta ?? -9999; vb = db.delta ?? -9999; }
+      if (va < vb) return -1 * sortState.dir;
+      if (va > vb) return 1 * sortState.dir;
+      return 0;
+    });
+  }
+
+  const table = document.getElementById('table');
+  const noResults = document.getElementById('noResults');
+  if (list.length === 0) {
+    table.style.display = 'none';
+    noResults.style.display = 'block';
+  } else {
+    noResults.style.display = 'none';
+    renderTable(allByKeyword, list);
+    if (list.length) selectKeyword(list[0], allByKeyword[list[0]]);
   }
 }
 
