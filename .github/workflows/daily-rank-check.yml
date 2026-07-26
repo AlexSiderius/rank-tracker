@@ -30,6 +30,7 @@ jobs:
         run: |
           git config user.name "rank-bot"
           git config user.email "bot@example.com"
-          git add rankings.csv
+          git add rankings.csv top10.json
           git commit -m "Rank check $(date -I)" || echo "no changes"
+          git pull --rebase origin main
           git push
