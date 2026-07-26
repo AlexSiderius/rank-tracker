@@ -52,49 +52,6 @@
   .stat .label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
   .stat .value { font-family: 'Space Grotesk', sans-serif; font-size: 1.6rem; font-weight: 600; margin-top: 4px; }
 
-  table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
-  thead th {
-    text-align: left;
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--muted);
-    font-weight: 500;
-    padding: 12px 16px;
-    border-bottom: 1px solid var(--line);
-  }
-  tbody tr { cursor: pointer; border-bottom: 1px solid var(--line); transition: background 0.12s ease; }
-  tbody tr:last-child { border-bottom: none; }
-  tbody tr:hover { background: var(--accent-soft); }
-  tbody tr.active { background: var(--accent-soft); }
-  tbody tr:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
-  td { padding: 12px 16px; vertical-align: middle; }
-  .kw { font-weight: 500; }
-  .rank-cell { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 1.05rem; white-space: nowrap; }
-  .rank-na { color: var(--muted); font-weight: 400; font-size: 0.9rem; }
-  .delta { font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; padding: 2px 7px; border-radius: 5px; }
-  .delta.up { color: var(--up); background: var(--up-soft); }
-  .delta.down { color: var(--down); background: var(--down-soft); }
-  .delta.flat { color: var(--muted); background: #6B728014; }
-  .spark { width: 96px; height: 30px; display: block; }
-
-  #detail {
-    margin-top: 40px;
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 24px;
-    display: none;
-  }
-  #detail.visible { display: block; }
-  #detailHead { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
-  #detailTitle { font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 600; }
-  #detailSub { color: var(--muted); font-size: 0.85rem; }
-  .detail-stats { display: flex; gap: 24px; margin: 18px 0 20px; flex-wrap: wrap; }
-  .detail-stats div { font-size: 0.8rem; color: var(--muted); }
-  .detail-stats strong { display: block; font-family: 'IBM Plex Mono', monospace; font-size: 1.1rem; color: var(--ink); font-weight: 600; }
-  canvas#detailChart { max-height: 320px; }
-
   .toolbar { margin-bottom: 14px; }
   #search {
     width: 100%;
@@ -110,13 +67,62 @@
   #search:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
   #search::placeholder { color: var(--muted); }
 
+  table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  thead th {
+    text-align: left;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    font-weight: 500;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+  }
   thead th.sortable { cursor: pointer; user-select: none; }
   thead th.sortable:hover { color: var(--ink); }
   thead th .sort-arrow { display: inline-block; margin-left: 4px; opacity: 0.4; font-size: 0.7em; }
   thead th.sort-active .sort-arrow { opacity: 1; color: var(--accent); }
 
-  #noResults { display: none; text-align: center; padding: 40px 20px; color: var(--muted); font-size: 0.9rem; }
+  tbody tr.kw-row { cursor: pointer; border-bottom: 1px solid var(--line); transition: background 0.12s ease; }
+  tbody tr.kw-row:hover { background: var(--accent-soft); }
+  tbody tr.kw-row.open { background: var(--accent-soft); }
+  tbody tr.kw-row:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  td { padding: 12px 16px; vertical-align: middle; }
+  .kw { font-weight: 500; }
+  .kw-arrow { display: inline-block; margin-right: 8px; color: var(--muted); transition: transform 0.15s ease; font-size: 0.75em; }
+  tr.kw-row.open .kw-arrow { transform: rotate(90deg); color: var(--accent); }
+  .rank-cell { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 1.05rem; white-space: nowrap; }
+  .rank-na { color: var(--muted); font-weight: 400; font-size: 0.9rem; }
+  .delta { font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; padding: 2px 7px; border-radius: 5px; }
+  .delta.up { color: var(--up); background: var(--up-soft); }
+  .delta.down { color: var(--down); background: var(--down-soft); }
+  .delta.flat { color: var(--muted); background: #6B728014; }
+  .spark { width: 96px; height: 30px; display: block; }
 
+  tr.expand-row { display: none; }
+  tr.expand-row.open { display: table-row; }
+  tr.expand-row td { padding: 0; border-bottom: 1px solid var(--line); background: #FBFBFC; }
+  .expand-inner { padding: 24px 28px 28px; }
+
+  .expand-section-title { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); font-weight: 600; margin-bottom: 10px; }
+
+  .serp-list { list-style: none; margin: 0 0 28px; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+  .serp-item { display: flex; align-items: baseline; gap: 12px; padding: 8px 12px; border-radius: 7px; background: var(--surface); border: 1px solid var(--line); }
+  .serp-item.is-target { border-color: var(--accent); background: var(--accent-soft); }
+  .serp-pos { font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: var(--muted); min-width: 20px; }
+  .serp-item.is-target .serp-pos { color: var(--accent); }
+  .serp-body { flex: 1; min-width: 0; }
+  .serp-title { font-size: 0.88rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .serp-domain { font-size: 0.78rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .serp-you { font-size: 0.7rem; font-weight: 600; color: var(--accent); background: #3454D122; padding: 2px 7px; border-radius: 4px; white-space: nowrap; }
+  .serp-empty { color: var(--muted); font-size: 0.85rem; margin: 0 0 28px; }
+
+  .detail-stats { display: flex; gap: 24px; margin: 0 0 16px; flex-wrap: wrap; }
+  .detail-stats div { font-size: 0.8rem; color: var(--muted); }
+  .detail-stats strong { display: block; font-family: 'IBM Plex Mono', monospace; font-size: 1.1rem; color: var(--ink); font-weight: 600; }
+  .chart-wrap { max-height: 280px; }
+
+  #noResults { display: none; text-align: center; padding: 40px 20px; color: var(--muted); font-size: 0.9rem; }
   #empty { color: var(--muted); text-align: center; padding: 60px 20px; font-size: 0.95rem; }
 </style>
 </head>
@@ -150,27 +156,19 @@
 
   <div id="empty" style="display:none;">Nog geen rankingdata gevonden. Zodra de eerste dagelijkse check gedraaid heeft, verschijnt hier het overzicht.</div>
 
-  <section id="detail">
-    <div id="detailHead">
-      <div id="detailTitle"></div>
-      <div id="detailSub"></div>
-    </div>
-    <div class="detail-stats" id="detailStats"></div>
-    <canvas id="detailChart"></canvas>
-  </section>
-
 </div>
 
 <script>
 const TREND_COLOR = { up: '#1C8A5D', down: '#B91C1C', flat: '#6B7280' };
 let sparkCharts = [];
-let detailChart = null;
+let expandCharts = {};
 
-// globale state voor filteren/sorteren zonder opnieuw te hoeven laden
 let allByKeyword = {};
 let allKeywords = [];
+let top10Data = {};
 let searchQuery = '';
 let sortState = { col: null, dir: 1 };
+let openKeyword = null;
 
 async function load() {
   const status = document.getElementById('status');
@@ -193,15 +191,22 @@ async function load() {
     }
 
     const byKeyword = {};
-    rows.forEach(r => {
-      (byKeyword[r.keyword] ||= []).push(r);
-    });
+    rows.forEach(r => { (byKeyword[r.keyword] ||= []).push(r); });
     Object.values(byKeyword).forEach(arr => arr.sort((a, b) => a.date.localeCompare(b.date)));
 
     allByKeyword = byKeyword;
     allKeywords = Object.keys(byKeyword);
     const allDates = [...new Set(rows.map(r => r.date))].sort();
     const lastDate = allDates[allDates.length - 1];
+
+    // top10.json is optioneel — als het (nog) niet bestaat, werkt de rest gewoon door
+    try {
+      const t10resp = await fetch('top10.json?t=' + Date.now());
+      if (t10resp.ok) {
+        const t10json = await t10resp.json();
+        top10Data = t10json.results || {};
+      }
+    } catch (e) { /* geen top10 data beschikbaar, geen probleem */ }
 
     renderStats(allByKeyword, allKeywords, lastDate);
     applyFiltersAndRender();
@@ -257,18 +262,16 @@ function applyFiltersAndRender() {
   } else {
     noResults.style.display = 'none';
     renderTable(allByKeyword, list);
-    if (list.length) selectKeyword(list[0], allByKeyword[list[0]]);
   }
 }
 
 function currentAndDelta(series) {
   const withRank = series.filter(r => r.rank !== null);
   const current = withRank.length ? withRank[withRank.length - 1].rank : null;
-  // vergelijk met de meting van ~7 dagen geleden (of de oudste beschikbare als korter)
   let compareIdx = withRank.length - 8;
   if (compareIdx < 0) compareIdx = 0;
   const compare = withRank.length > 1 ? withRank[compareIdx].rank : null;
-  const delta = (current !== null && compare !== null && withRank.length > 1) ? compare - current : null; // positief = gestegen (rank omlaag = beter)
+  const delta = (current !== null && compare !== null && withRank.length > 1) ? compare - current : null;
   return { current, delta };
 }
 
@@ -298,13 +301,12 @@ function renderTable(byKeyword, keywords) {
   const tbody = document.getElementById('tableBody');
   sparkCharts.forEach(c => c.destroy());
   sparkCharts = [];
+  expandCharts = {};
 
   tbody.innerHTML = keywords.map((kw, i) => {
     const series = byKeyword[kw];
     const { current, delta } = currentAndDelta(series);
-    const rankHtml = current !== null
-      ? `${current}`
-      : `<span class="rank-na">niet gevonden</span>`;
+    const rankHtml = current !== null ? `${current}` : `<span class="rank-na">niet gevonden</span>`;
 
     let deltaHtml = '<span class="delta flat">–</span>';
     if (delta !== null && delta !== 0) {
@@ -316,11 +318,16 @@ function renderTable(byKeyword, keywords) {
     }
 
     return `
-      <tr tabindex="0" data-kw="${i}">
-        <td class="kw">${kw}</td>
+      <tr class="kw-row" tabindex="0" data-kw="${i}">
+        <td class="kw"><span class="kw-arrow">▶</span>${kw}</td>
         <td class="rank-cell">${rankHtml}</td>
         <td>${deltaHtml}</td>
         <td><canvas class="spark" id="spark-${i}"></canvas></td>
+      </tr>
+      <tr class="expand-row" data-kw="${i}">
+        <td colspan="4">
+          <div class="expand-inner" id="expand-${i}"></div>
+        </td>
       </tr>
     `;
   }).join('');
@@ -358,24 +365,46 @@ function renderTable(byKeyword, keywords) {
     sparkCharts.push(chart);
   });
 
-  tbody.querySelectorAll('tr').forEach((tr, i) => {
+  tbody.querySelectorAll('tr.kw-row').forEach((tr, i) => {
     const kw = keywords[i];
-    const handler = () => {
-      tbody.querySelectorAll('tr').forEach(t => t.classList.remove('active'));
-      tr.classList.add('active');
-      selectKeyword(kw, byKeyword[kw]);
-    };
+    const handler = () => toggleKeyword(kw, i, byKeyword[kw]);
     tr.addEventListener('click', handler);
     tr.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handler(); } });
   });
 
-  if (tbody.firstElementChild) tbody.firstElementChild.classList.add('active');
+  // heropen hetzelfde keyword als het nog in de lijst zit (bv. na sorteren)
+  if (openKeyword && keywords.includes(openKeyword)) {
+    const idx = keywords.indexOf(openKeyword);
+    openRow(openKeyword, idx, byKeyword[openKeyword]);
+  }
 }
 
-function selectKeyword(keyword, series) {
-  const detail = document.getElementById('detail');
-  detail.classList.add('visible');
-  document.getElementById('detailTitle').textContent = keyword;
+function toggleKeyword(kw, index, series) {
+  const rowEl = document.querySelector(`tr.kw-row[data-kw="${index}"]`);
+  const isOpen = rowEl.classList.contains('open');
+  // sluit alle andere open rijen (accordion: 1 tegelijk open)
+  document.querySelectorAll('tr.kw-row.open').forEach(r => r.classList.remove('open'));
+  document.querySelectorAll('tr.expand-row.open').forEach(r => r.classList.remove('open'));
+
+  if (isOpen) {
+    openKeyword = null;
+    return;
+  }
+  openRow(kw, index, series);
+}
+
+function openRow(kw, index, series) {
+  openKeyword = kw;
+  const rowEl = document.querySelector(`tr.kw-row[data-kw="${index}"]`);
+  const expandEl = document.querySelector(`tr.expand-row[data-kw="${index}"]`);
+  if (!rowEl || !expandEl) return;
+  rowEl.classList.add('open');
+  expandEl.classList.add('open');
+  renderExpandContent(kw, index, series);
+}
+
+function renderExpandContent(kw, index, series) {
+  const container = document.getElementById(`expand-${index}`);
 
   const withRank = series.filter(r => r.rank !== null).map(r => r.rank);
   const current = withRank.length ? withRank[withRank.length - 1] : null;
@@ -383,17 +412,45 @@ function selectKeyword(keyword, series) {
   const worst = withRank.length ? Math.max(...withRank) : null;
   const avg = withRank.length ? (withRank.reduce((a, b) => a + b, 0) / withRank.length).toFixed(1) : '–';
 
-  document.getElementById('detailSub').textContent = `${series.length} metingen · ${series[0].date} t/m ${series[series.length - 1].date}`;
+  const top10 = top10Data[kw];
+  let top10Html;
+  if (top10 && top10.length) {
+    top10Html = `
+      <div class="expand-section-title">Huidige top 10 Google-resultaten</div>
+      <ul class="serp-list">
+        ${top10.map(item => `
+          <li class="serp-item ${item.is_target ? 'is-target' : ''}">
+            <span class="serp-pos">${item.position}</span>
+            <div class="serp-body">
+              <div class="serp-title">${escapeHtml(item.title || item.domain)}</div>
+              <div class="serp-domain">${escapeHtml(item.domain)}</div>
+            </div>
+            ${item.is_target ? '<span class="serp-you">JOUW SITE</span>' : ''}
+          </li>
+        `).join('')}
+      </ul>
+    `;
+  } else {
+    top10Html = `
+      <div class="expand-section-title">Huidige top 10 Google-resultaten</div>
+      <p class="serp-empty">Nog geen top-10-snapshot beschikbaar voor dit zoekwoord — verschijnt na de eerstvolgende dagelijkse check.</p>
+    `;
+  }
 
-  document.getElementById('detailStats').innerHTML = `
-    <div><strong>${current ?? '–'}</strong>huidig</div>
-    <div><strong>${best ?? '–'}</strong>beste</div>
-    <div><strong>${worst ?? '–'}</strong>laagste</div>
-    <div><strong>${avg}</strong>gemiddeld</div>
+  container.innerHTML = `
+    ${top10Html}
+    <div class="expand-section-title">Positieverloop</div>
+    <div class="detail-stats">
+      <div><strong>${current ?? '–'}</strong>huidig</div>
+      <div><strong>${best ?? '–'}</strong>beste</div>
+      <div><strong>${worst ?? '–'}</strong>laagste</div>
+      <div><strong>${avg}</strong>gemiddeld</div>
+    </div>
+    <div class="chart-wrap"><canvas id="detailChart-${index}"></canvas></div>
   `;
 
-  if (detailChart) detailChart.destroy();
-  detailChart = new Chart(document.getElementById('detailChart'), {
+  if (expandCharts[index]) expandCharts[index].destroy();
+  expandCharts[index] = new Chart(document.getElementById(`detailChart-${index}`), {
     type: 'line',
     data: {
       labels: series.map(r => r.date),
@@ -421,6 +478,12 @@ function selectKeyword(keyword, series) {
       plugins: { legend: { display: false } }
     }
   });
+}
+
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str || '';
+  return div.innerHTML;
 }
 
 load();
