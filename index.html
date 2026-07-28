@@ -181,7 +181,7 @@ async function load() {
     const rows = text.split('\n').slice(1).filter(Boolean).map(line => {
       const [date, keyword, rankRaw] = line.replace(/\r$/, '').split(',');
       const clean = (rankRaw || '').trim();
-      return { date, keyword, rank: clean === 'not_found' ? null : parseInt(clean, 10) };
+      return { date, keyword, rank: (clean === 'not_found' || clean.startsWith('error')) ? null : parseInt(clean, 10) };
     });
 
     if (rows.length === 0) {
