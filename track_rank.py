@@ -33,16 +33,23 @@ def submit_tasks(keywords):
     )
     resp.raise_for_status()
     data = resp.json()
-    # koppel elke task_id terug aan het bijbehorende keyword
+
+    if data.get("status_code") != 20000:
+        print(f"WAARSCHUWING - task_post gaf globale fout: {data.get('status_message')}")
+
     task_map = {}
     for task in data["tasks"]:
-        kw = task["data"]["keyword"]
+        kw = task["data"]["keyword"] if task.get("data") else "?"
+        if task.get("status_code") != 20000:
+            print(f"FOUT bij indienen van '{kw}': {task.get('status_message')}")
+            continue
         task_map[task["id"]] = kw
     return task_map
 
 
-def wait_for_results(task_map, max_wait=600, poll_interval=20):
-    """Poll totdat alle taken klaar zijn (Standard queue ~5 min)."""
+def wait_for_results(task_map, max_wait=900, poll_interval=20):
+    """Poll totdat alle taken klaar zijn (Standard queue, kan bij grotere batches
+    (60+ keywords) langer duren dan de oude 10 minuten)."""
     remaining = set(task_map.keys())
     results = {}
     waited = 0
@@ -113,26 +120,68 @@ def main():
     print(f"{len(keywords)} keywords indienen...")
     task_map = submit_tasks(keywords)
 
+    if len(task_map) < len(keywords):
+        print(f"LET OP: {len(keywords) - len(task_map)} van de {len(keywords)} taken konden niet worden ingediend (zie fouten hierboven).")
+
     print("Wachten op resultaten (Standard queue, kan enkele minuten duren)...")
     results = wait_for_results(task_map)
 
     today = datetime.date.today().isoformat()
     file_exists = os.path.exists(OUTPUT_FILE)
     top10_data = {}
+    error_count = 0
+    total = len(keywords)
 
     with open(OUTPUT_FILE, "a", newline="") as f:
         writer = csv.writer(f)
         if not file_exists:
             writer.writerow(["date", "keyword", "rank"])
-        for task_id, kw in task_map.items():
+
+        for kw in keywords:
+            task_id = next((tid for tid, k in task_map.items() if k == kw), None)
+
+            if task_id is None:
+                # kon niet eens worden ingediend (bv. saldo op)
+                writer.writerow([today, kw, "error_submit"])
+                top10_data[kw] = []
+                error_count += 1
+                continue
+
             result_json = results.get(task_id)
-            rank = find_rank(result_json) if result_json else None
+            if result_json is None:
+                # kwam niet op tijd terug -> GEEN "not_found" schrijven, dat zou een valse
+                # ranking-daling suggereren. Apart gemarkeerd zodat je het herkent.
+                print(f"TIMEOUT: '{kw}' kreeg geen resultaat binnen de wachttijd.")
+                writer.writerow([today, kw, "error_timeout"])
+                top10_data[kw] = []
+                error_count += 1
+                continue
+
+            task_result = (result_json.get("tasks") or [{}])[0]
+            if task_result.get("status_code") != 20000:
+                print(f"FOUT bij ophalen van '{kw}': {task_result.get('status_message')}")
+                writer.writerow([today, kw, "error"])
+                top10_data[kw] = []
+                error_count += 1
+                continue
+
+            rank = find_rank(result_json)
             writer.writerow([today, kw, rank or "not_found"])
             print(f"{kw}: {rank or 'niet gevonden'}")
-            top10_data[kw] = get_top10(result_json) if result_json else []
+            top10_data[kw] = get_top10(result_json)
 
     with open(TOP10_FILE, "w", encoding="utf-8") as f:
         json.dump({"date": today, "results": top10_data}, f, ensure_ascii=False, indent=2)
+
+    print(f"\nKlaar: {total - error_count}/{total} keywords succesvol verwerkt, {error_count} fouten/timeouts.")
+
+    # als bijna alles faalt, laat de GitHub Actions run ook echt als 'mislukt' zien
+    # i.p.v. stilletjes een CSV vol foutmeldingen weg te schrijven
+    if total > 0 and error_count / total > 0.5:
+        raise SystemExit(
+            f"Meer dan de helft van de keywords ({error_count}/{total}) gaf een fout of timeout. "
+            f"Check je DataForSEO-saldo en de foutmeldingen hierboven."
+        )
 
 
 if __name__ == "__main__":
