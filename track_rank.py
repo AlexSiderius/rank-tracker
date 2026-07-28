@@ -40,7 +40,9 @@ def submit_tasks(keywords):
     task_map = {}
     for task in data["tasks"]:
         kw = task["data"]["keyword"] if task.get("data") else "?"
-        if task.get("status_code") != 20000:
+        # bij task_post betekent status_code 20100 ("Task Created.") succes -
+        # 20000 hoort bij voltooide resultaten (task_get), niet bij het aanmaken zelf
+        if task.get("status_code") != 20100:
             print(f"FOUT bij indienen van '{kw}': {task.get('status_message')}")
             continue
         task_map[task["id"]] = kw
