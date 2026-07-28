@@ -1,70 +1,4614 @@
 {
   "date": "2026-07-28",
   "results": {
-    "webaware": [],
-    "website laten maken zzp": [],
-    "zzp website laten maken": [],
-    "webdesigner amsterdam": [],
-    "webdesign amsterdam": [],
-    "website laten maken badhoevedorp": [],
-    "website laten maken weesp": [],
-    "webdesigner weesp": [],
-    "webdesigner badhoevedorp": [],
-    "website laten maken amsterdam": [],
-    "website laten maken almere": [],
-    "webdesign almere": [],
-    "webdesigner almere": [],
-    "webdesign badhoevedorp": [],
-    "webdesign weesp": [],
-    "website laten maken haarlem": [],
-    "webdesigner haarlem": [],
-    "webdesign haarlem": [],
-    "zakelijke website laten maken": [],
-    "webdesign bureau amsterdam": [],
-    "500 internal server error wordpress oorzaak": [],
-    "Heeft een premium SEO plugin voor WordPress zin": [],
-    "ACF Velden Worden Niet Getoond op de Voorkant": [],
-    "website laten maken amstelveen": [],
-    "website laten maken haarlemmermeer": [],
-    "Website laten maken Noord-Holland": [],
-    "Kritieke fout opgetreden wordpress oplossen": [],
-    "Afbeeldingen alt tags automatisch toevoegen wordpress": [],
-    "Activiteitenlogboek bijhouden wordpress gebruikers": [],
-    "Activecampaign koppelen aan wordpress voor automatisering": [],
-    "Webdesign Amersfoort": [],
-    "Webdesign Utrecht": [],
-    "Webdesign Zuid-Holland": [],
-    "Webdesign Den Haag": [],
-    "Webdesign Enschede": [],
-    "Webdesign Arnhem": [],
-    "Webdesign Apeldoorn": [],
-    "Webdesign Nijmegen": [],
-    "Webdesign Breda": [],
-    "Webdesign Tilburg": [],
-    "Webdesign Groningen": [],
-    "Webdesign Eindhoven": [],
-    "Webdesign Rotterdam": [],
-    "Webdesign Zwolle": [],
-    "Website laten maken Leiden": [],
-    "Website laten maken Purmerend": [],
-    "WordPress dashboard leeg of wit": [],
-    "WordPress foutmelding rode balk": [],
-    "Foutmelding 500 wordpress na update": [],
-    "Link is verlopen wordpress uploaden": [],
-    "Map kan niet worden aangemaakt wordpress": [],
-    "Maximum execution time exceeded wordpress": [],
-    "Geheugenlimiet bereikt wordpress verhogen": [],
-    "Json fout wordpress oplossen": [],
-    "Geblokkeerd op eigen wordpress website": [],
-    "Malware verwijderen wordpress": [],
-    "WordPress site gehackt wat nu": [],
-    "Wachtwoord vergeten wordpress geen mail": [],
-    "Inloggen wordpress lukt niet": [],
-    "WordPress admin pagina laadt niet": [],
-    "WordPress onderhoudsmodus blijft hangen": [],
-    "Database verbinding mislukt wordpress fix": [],
-    "White screen of death wordpress herstellen": [],
-    "Heeft een premium SEO plugin voor WordPress zin?": [],
+    "webaware": [
+      {
+        "position": 1,
+        "title": "Webaware Websites & Online Marketing: Webdesign ...",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/",
+        "is_target": true
+      },
+      {
+        "position": 2,
+        "title": "Portal Home - WebAware (Pty) Ltd",
+        "domain": "www.webaware.co.za",
+        "url": "https://www.webaware.co.za/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "Webaware Websites & Online Marketing",
+        "domain": "nl.linkedin.com",
+        "url": "https://nl.linkedin.com/company/webaware-websites",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webaware Websites & Online Marketing - Sortlist",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/agency/webaware-websites-online-marketing",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Webaware Websites & Online Marketing",
+        "domain": "www.linkedin.com",
+        "url": "https://www.linkedin.com/company/webaware-websites",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Webaware Websites & Online Marketing",
+        "domain": "www.facebook.com",
+        "url": "https://www.facebook.com/WebawareWebsites/photos/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Hosting Solutions - Webaware Global",
+        "domain": "webaware.global",
+        "url": "https://webaware.global/hosting-solutions/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Webaware Webdesign Amsterdam",
+        "domain": "www.infobel.com",
+        "url": "https://www.infobel.com/nl/netherlands/webaware_webdesign_amsterdam/amsterdam/NL102979691/businessdetails.aspx",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "WebAware - Website and software development",
+        "domain": "webaware.com.au",
+        "url": "https://webaware.com.au/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "https://webaware.cloud/s/eJR33ZoLNeeAnPQ",
+        "domain": "webaware.cloud",
+        "url": "https://webaware.cloud/s/eJR33ZoLNeeAnPQ",
+        "is_target": false
+      }
+    ],
+    "website laten maken zzp": [
+      {
+        "position": 2,
+        "title": "Gratis professionele website laten maken voor zzp'ers",
+        "domain": "www.zzp-nederland.nl",
+        "url": "https://www.zzp-nederland.nl/waarom-zzp-nederland/ledenvoordelen/ict-en-kantoor/gratis-professionele-website-laten-maken-voor",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "Website laten maken ZZP - € 495 en binnen 4 weken klaar!",
+        "domain": "www.webexperts.nl",
+        "url": "https://www.webexperts.nl/website-laten-maken/zzp/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "ZZP website laten maken",
+        "domain": "plazaxl.nl",
+        "url": "https://plazaxl.nl/zzp-website-laten-maken",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Een website laten maken als zzp'er: zo verdien je je ...",
+        "domain": "www.ikwordzzper.nl",
+        "url": "https://www.ikwordzzper.nl/blogs/een-website-laten-maken-als-zzp-er-zo-verdien-je-je-investering-terug/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Website laten maken ZZP | Maatwerk met SEO",
+        "domain": "vivortis.nl",
+        "url": "https://vivortis.nl/website-laten-maken-zzp",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Je eerste zzp website laten maken | Tips van MoneyMonk",
+        "domain": "www.moneymonk.nl",
+        "url": "https://www.moneymonk.nl/kennisbank/zzp-website-laten-maken",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Wat kost een website voor een zzp'er?",
+        "domain": "www.simoneravier.nl",
+        "url": "https://www.simoneravier.nl/wat-kost-een-website-voor-een-zzper/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Website voor zzp-er laten maken? Wij regelen het voor jou!",
+        "domain": "www.frankbrinks.nl",
+        "url": "https://www.frankbrinks.nl/website-laten-maken-zzp",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Wat kost een website voor een ZZP'er?",
+        "domain": "pixelwebsites.nl",
+        "url": "https://pixelwebsites.nl/website-kosten-zzper/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Website voor zzp-er laten maken? Wij regelen het voor jou!",
+        "domain": "www.frankbrinks.nl",
+        "url": "https://www.frankbrinks.nl/website-laten-maken-zzp",
+        "is_target": false
+      }
+    ],
+    "zzp website laten maken": [
+      {
+        "position": 2,
+        "title": "Gratis professionele website laten maken voor zzp'ers",
+        "domain": "www.zzp-nederland.nl",
+        "url": "https://www.zzp-nederland.nl/waarom-zzp-nederland/ledenvoordelen/ict-en-kantoor/gratis-professionele-website-laten-maken-voor",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "Website laten maken ZZP - € 495 en binnen 4 weken klaar!",
+        "domain": "www.webexperts.nl",
+        "url": "https://www.webexperts.nl/website-laten-maken/zzp/",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "ZZP website laten maken",
+        "domain": "plazaxl.nl",
+        "url": "https://plazaxl.nl/zzp-website-laten-maken",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Website laten maken ZZP | Maatwerk met SEO",
+        "domain": "vivortis.nl",
+        "url": "https://vivortis.nl/website-laten-maken-zzp",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Je eerste zzp website laten maken | Tips van MoneyMonk",
+        "domain": "www.moneymonk.nl",
+        "url": "https://www.moneymonk.nl/kennisbank/zzp-website-laten-maken",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Een website laten maken als zzp'er: zo verdien je je ...",
+        "domain": "www.ikwordzzper.nl",
+        "url": "https://www.ikwordzzper.nl/blogs/een-website-laten-maken-als-zzp-er-zo-verdien-je-je-investering-terug/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Wat kost een website voor een ZZP'er?",
+        "domain": "pixelwebsites.nl",
+        "url": "https://pixelwebsites.nl/website-kosten-zzper/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Website laten maken voor zzp'ers of starters - JAMILO",
+        "domain": "www.jamilo.nl",
+        "url": "https://www.jamilo.nl/jamilo-cms/website-voor-zzp-ers/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Wat kost een website voor een zzp'er?",
+        "domain": "www.simoneravier.nl",
+        "url": "https://www.simoneravier.nl/wat-kost-een-website-voor-een-zzper/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Website voor zzp-er laten maken? Wij regelen het voor jou!",
+        "domain": "www.frankbrinks.nl",
+        "url": "https://www.frankbrinks.nl/website-laten-maken-zzp",
+        "is_target": false
+      }
+    ],
+    "webdesigner amsterdam": [
+      {
+        "position": 4,
+        "title": "Webdesign Amsterdam | Website Laten Maken?",
+        "domain": "www.webreturn.nl",
+        "url": "https://www.webreturn.nl/webdesign-amsterdam/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "De 10 beste Webdesign Bureaus in Amsterdam - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/amsterdam-nl",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Webdesign Bureau Amsterdam | Website Laten Maken",
+        "domain": "webfluencer.nl",
+        "url": "https://webfluencer.nl/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Webdesign amsterdam - Website Laten Maken",
+        "domain": "webzley.com",
+        "url": "https://webzley.com/nl/amsterdam",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "website laten maken amsterdam",
+        "domain": "vrijdagonline.nl",
+        "url": "https://vrijdagonline.nl/website-laten-maken-amsterdam",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Webdesigner Amsterdam | Website of webshop laten ...",
+        "domain": "securedesign.nl",
+        "url": "https://securedesign.nl/website/webdesign-amsterdam/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "De Web Developer: Webdesigner & Webontwikkelaar ...",
+        "domain": "www.dewebdeveloper.nl",
+        "url": "https://www.dewebdeveloper.nl/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Webdesign Amsterdam - B2B website laten maken? - Emogy",
+        "domain": "www.emogy.nl",
+        "url": "https://www.emogy.nl/webdesign-amsterdam/",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Webdesign Amsterdam",
+        "domain": "jakdesign.nl",
+        "url": "https://jakdesign.nl/webdesign-amsterdam/",
+        "is_target": false
+      },
+      {
+        "position": 17,
+        "title": "Webdesigners Amsterdam | WordPress Websites & SEO",
+        "domain": "www.webdesignersamsterdam.nl",
+        "url": "https://www.webdesignersamsterdam.nl/",
+        "is_target": false
+      }
+    ],
+    "webdesign amsterdam": [
+      {
+        "position": 4,
+        "title": "Webdesign Amsterdam | Website Laten Maken?",
+        "domain": "www.webreturn.nl",
+        "url": "https://www.webreturn.nl/webdesign-amsterdam/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesign bureau in Amsterdam | Jouw merk is uniek",
+        "domain": "whello.nl",
+        "url": "https://whello.nl/webdesign-bureau",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "De 10 beste Webdesign Bureaus in Amsterdam - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/amsterdam-nl",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "website laten maken amsterdam",
+        "domain": "vrijdagonline.nl",
+        "url": "https://vrijdagonline.nl/website-laten-maken-amsterdam",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Webdesign Bureau Amsterdam | Website Laten Maken",
+        "domain": "webfluencer.nl",
+        "url": "https://webfluencer.nl/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Webdesign Amsterdam",
+        "domain": "jakdesign.nl",
+        "url": "https://jakdesign.nl/webdesign-amsterdam/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Webdesign Amsterdam | premium website voor meer klanten",
+        "domain": "ploko.nl",
+        "url": "https://ploko.nl/webdesign-bureau/amsterdam/",
+        "is_target": false
+      },
+      {
+        "position": 15,
+        "title": "Webdesign Amsterdam - B2B website laten maken? - Emogy",
+        "domain": "www.emogy.nl",
+        "url": "https://www.emogy.nl/webdesign-amsterdam/",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Webdesign Amsterdam, (bijna) alle webdesigners en ...",
+        "domain": "www.webdesign-amsterdam.nl",
+        "url": "https://www.webdesign-amsterdam.nl/",
+        "is_target": false
+      },
+      {
+        "position": 17,
+        "title": "Webdesign amsterdam - Website Laten Maken",
+        "domain": "webzley.com",
+        "url": "https://webzley.com/nl/amsterdam",
+        "is_target": false
+      }
+    ],
+    "website laten maken badhoevedorp": [
+      {
+        "position": 2,
+        "title": "Webdesign Hoofddorp",
+        "domain": "www.bohnennwebdesign.nl",
+        "url": "https://www.bohnennwebdesign.nl/webdesign-hoofddorp/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "Website Laten Maken In Badhoevedorp? 020 Webdesign!",
+        "domain": "020webdesign.nl",
+        "url": "https://020webdesign.nl/?loc=Badhoevedorp",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "Website laten maken Badhoevedorp? Webaware Websites",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/website-laten-maken-badhoevedorp/",
+        "is_target": true
+      },
+      {
+        "position": 5,
+        "title": "Website laten maken in Badhoevedorp - CreativeStudio",
+        "domain": "creativestudio.nl",
+        "url": "https://creativestudio.nl/nl/website-laten-maken-in-badhoevedorp/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Top 10 Webdesigners in Badhoevedorp | Prijzen & Reviews",
+        "domain": "trustoo.nl",
+        "url": "https://trustoo.nl/noord-holland/badhoevedorp/webdesign/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Website laten maken Hoofddorp",
+        "domain": "blitskikker.nl",
+        "url": "https://blitskikker.nl/website-laten-maken-hoofddorp/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Betaalbaar Webdesign Hoofddorp",
+        "domain": "www.tijdvooreensite.nl",
+        "url": "https://www.tijdvooreensite.nl/webdesign-hoofddorp/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Webdesign, branding en SEO in Badhoevedorp. - Netcorp",
+        "domain": "www.netcorp.nl",
+        "url": "https://www.netcorp.nl/regio/badhoevedorp",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Website laten maken Hoofddorp - Maatwerk & Conversie!",
+        "domain": "www.ccorner.nl",
+        "url": "https://www.ccorner.nl/website-laten-maken-hoofddorp/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Website laten maken in Badhoevedorp",
+        "domain": "webscoped.nl",
+        "url": "https://webscoped.nl/website/badhoevedorp",
+        "is_target": false
+      }
+    ],
+    "website laten maken weesp": [
+      {
+        "position": 4,
+        "title": "Website laten maken Weesp - Snel online vanaf €199",
+        "domain": "projectie.com",
+        "url": "https://projectie.com/website-laten-maken-weesp",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Website laten maken in Weesp - Madoo",
+        "domain": "www.madoo.nl",
+        "url": "https://www.madoo.nl/website-laten-maken-in-weesp/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Webdesign bureau Weesp",
+        "domain": "rickidwebdesign.nl",
+        "url": "https://rickidwebdesign.nl/webdesign-bureau-weesp/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Website Laten Maken Weesp | Online Marketing Bureau",
+        "domain": "dijkmandesign.nl",
+        "url": "https://dijkmandesign.nl/website-laten-maken-in-weesp/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Website laten maken Weesp | Die geld oplevert | Gratis training",
+        "domain": "evereone.nl",
+        "url": "https://evereone.nl/website-laten-maken-weesp/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Website laten maken Weesp - Inyourfacemedia.nl",
+        "domain": "inyourfacemedia.nl",
+        "url": "https://inyourfacemedia.nl/website-laten-maken/weesp/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Website of webshop laten maken in Weesp? - ProdaCom",
+        "domain": "www.prodacom.nl",
+        "url": "https://www.prodacom.nl/tag/webdesign-weesp/",
+        "is_target": false
+      },
+      {
+        "position": 15,
+        "title": "Website Laten Maken in Weesp!?",
+        "domain": "wwwebsite.nl",
+        "url": "https://wwwebsite.nl/website-laten-maken/weesp/",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Een website laten ontwerpen en/of bouwen",
+        "domain": "pwreclamegroep.nl",
+        "url": "https://pwreclamegroep.nl/works/website/",
+        "is_target": false
+      },
+      {
+        "position": 17,
+        "title": "Websites & webshops voor het MKB: SEO, Conversie, Hosting ...",
+        "domain": "www.madoo.nl",
+        "url": "https://www.madoo.nl/",
+        "is_target": false
+      }
+    ],
+    "webdesigner weesp": [
+      {
+        "position": 4,
+        "title": "Website laten maken in Weesp - Madoo",
+        "domain": "www.madoo.nl",
+        "url": "https://www.madoo.nl/website-laten-maken-in-weesp/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesign Weesp | Professioneel, Betaalbaar & Snel!",
+        "domain": "www.skyline-webdesign.nl",
+        "url": "https://www.skyline-webdesign.nl/webdesign/weesp",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Website Laten Maken Weesp | Online Marketing Bureau",
+        "domain": "dijkmandesign.nl",
+        "url": "https://dijkmandesign.nl/website-laten-maken-in-weesp/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Website of webshop laten maken in Weesp? - ProdaCom",
+        "domain": "www.prodacom.nl",
+        "url": "https://www.prodacom.nl/tag/webdesign-weesp/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Websites & webshops voor het MKB: SEO, Conversie, Hosting ...",
+        "domain": "www.madoo.nl",
+        "url": "https://www.madoo.nl/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Website laten maken Weesp | Die geld oplevert | Gratis training",
+        "domain": "evereone.nl",
+        "url": "https://evereone.nl/website-laten-maken-weesp/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Website laten maken Weesp - Inyourfacemedia.nl",
+        "domain": "inyourfacemedia.nl",
+        "url": "https://inyourfacemedia.nl/website-laten-maken/weesp/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Website laten maken Weesp - Snel online vanaf €199",
+        "domain": "projectie.com",
+        "url": "https://projectie.com/website-laten-maken-weesp",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Een website laten ontwerpen en/of bouwen",
+        "domain": "pwreclamegroep.nl",
+        "url": "https://pwreclamegroep.nl/works/website/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Webdesign bureau Weesp",
+        "domain": "rickidwebdesign.nl",
+        "url": "https://rickidwebdesign.nl/webdesign-bureau-weesp/",
+        "is_target": false
+      }
+    ],
+    "webdesigner badhoevedorp": [
+      {
+        "position": 2,
+        "title": "Top 10 Webdesigners in Badhoevedorp | Prijzen & Reviews",
+        "domain": "trustoo.nl",
+        "url": "https://trustoo.nl/noord-holland/badhoevedorp/webdesign/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "Website laten maken Badhoevedorp? Webaware Websites",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/website-laten-maken-badhoevedorp/",
+        "is_target": true
+      },
+      {
+        "position": 4,
+        "title": "Website Laten Maken In Badhoevedorp? 020 Webdesign!",
+        "domain": "020webdesign.nl",
+        "url": "https://020webdesign.nl/?loc=Badhoevedorp",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Webdesign, branding en SEO in Badhoevedorp. - Netcorp",
+        "domain": "www.netcorp.nl",
+        "url": "https://www.netcorp.nl/regio/badhoevedorp",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Webdesign Bureau Badhoevedorp | SEO & Webdevelopment",
+        "domain": "media4now.nl",
+        "url": "https://media4now.nl/webdesign-badhoevedorp",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Website laten maken in Badhoevedorp",
+        "domain": "webscoped.nl",
+        "url": "https://webscoped.nl/website/badhoevedorp",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Webdesign Badhoevedorp - Telefoonboek.nl",
+        "domain": "www.telefoonboek.nl",
+        "url": "https://www.telefoonboek.nl/zoeken/webdesign/badhoevedorp/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "SEO Marketingbureau Badhoevedorp",
+        "domain": "www.httpmarketing.nl",
+        "url": "https://www.httpmarketing.nl/seo/Badhoevedorp/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Webdesign Hoofddorp",
+        "domain": "www.bohnennwebdesign.nl",
+        "url": "https://www.bohnennwebdesign.nl/webdesign-hoofddorp/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Webdesigner Hoofddorp | Blitskikker | websites, webshops, ...",
+        "domain": "blitskikker.nl",
+        "url": "https://blitskikker.nl/webdesigner-hoofddorp/",
+        "is_target": false
+      }
+    ],
+    "website laten maken amsterdam": [
+      {
+        "position": 4,
+        "title": "Website Laten Maken Amsterdam | Professioneel Maatwerk",
+        "domain": "websitelatenmakenamsterdam.net",
+        "url": "https://websitelatenmakenamsterdam.net/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "website laten maken amsterdam",
+        "domain": "vrijdagonline.nl",
+        "url": "https://vrijdagonline.nl/website-laten-maken-amsterdam",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Website laten maken Amsterdam? Kies aslanwebtech.nl",
+        "domain": "aslanwebtech.nl",
+        "url": "https://aslanwebtech.nl/nieuwe-website-laten-maken/amsterdam/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Website laten maken Amsterdam? Voor € 499,- binnen één ...",
+        "domain": "website-laten-maken-amsterdam.com",
+        "url": "https://website-laten-maken-amsterdam.com/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Professionele Website Laten Maken? » Clarify | Amsterdam",
+        "domain": "clarify.nl",
+        "url": "https://clarify.nl/middelen/professionele-website-laten-maken",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Webdesign Bureau Amsterdam | Website Laten Maken",
+        "domain": "webfluencer.nl",
+        "url": "https://webfluencer.nl/",
+        "is_target": false
+      },
+      {
+        "position": 14,
+        "title": "Webdesign Amsterdam | Website Laten Maken?",
+        "domain": "www.webreturn.nl",
+        "url": "https://www.webreturn.nl/webdesign-amsterdam/",
+        "is_target": false
+      },
+      {
+        "position": 15,
+        "title": "Website laten maken in Amsterdam | Vanaf € 4.000",
+        "domain": "www.cmspecialist.nl",
+        "url": "https://www.cmspecialist.nl/website-laten-maken-amsterdam",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Webdesign Amsterdam - B2B website laten maken? - Emogy",
+        "domain": "www.emogy.nl",
+        "url": "https://www.emogy.nl/webdesign-amsterdam/",
+        "is_target": false
+      },
+      {
+        "position": 17,
+        "title": "Website Laten Maken Amsterdam? - SAM Design",
+        "domain": "www.samdesign.nl",
+        "url": "https://www.samdesign.nl/website-laten-maken-amsterdam/",
+        "is_target": false
+      }
+    ],
+    "website laten maken almere": [
+      {
+        "position": 1,
+        "title": "Website laten maken in Almere? | Reservato Webdesign.",
+        "domain": "www.reservato.online",
+        "url": "https://www.reservato.online/website-laten-maken/almere/",
+        "is_target": false
+      },
+      {
+        "position": 2,
+        "title": "WordPress website laten maken in Almere",
+        "domain": "www.rankingpartner.nl",
+        "url": "https://www.rankingpartner.nl/website-laten-maken-almere/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "Website laten maken Almere",
+        "domain": "www.vwebdesign.nl",
+        "url": "https://www.vwebdesign.nl/Almere-579",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "Website laten maken in Almere | Vanaf € 4.000",
+        "domain": "www.cmspecialist.nl",
+        "url": "https://www.cmspecialist.nl/website-laten-maken-almere",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesign Almere",
+        "domain": "jakdesign.nl",
+        "url": "https://jakdesign.nl/webdesign-almere/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Website laten maken Almere | Nu vanaf € 2999,- met CMS!",
+        "domain": "www.jvhwebbouw.nl",
+        "url": "https://www.jvhwebbouw.nl/website-laten-maken-almere/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Website laten maken Almere? Betaalbaar & Professioneel ...",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/website-laten-maken-almere/",
+        "is_target": true
+      },
+      {
+        "position": 8,
+        "title": "Website Laten Maken Almere | Webdesign Bureau ...",
+        "domain": "webfluencer.nl",
+        "url": "https://webfluencer.nl/webdesign-almere",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Top 10 Webdesigners in Almere | Prijzen & Reviews",
+        "domain": "trustoo.nl",
+        "url": "https://trustoo.nl/flevoland/almere/webdesign/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Professionele website laten maken Almere",
+        "domain": "www.digiswift.nl",
+        "url": "https://www.digiswift.nl/website-laten-maken/almere",
+        "is_target": false
+      }
+    ],
+    "webdesign almere": [
+      {
+        "position": 1,
+        "title": "Webdesign Almere: Website Uitbesteden Aan TMW Design",
+        "domain": "tmwdesign.nl",
+        "url": "https://tmwdesign.nl/webdesign-almere",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Top 10 Webdesigners in Almere | Prijzen & Reviews",
+        "domain": "trustoo.nl",
+        "url": "https://trustoo.nl/flevoland/almere/webdesign/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Webdesign Almere",
+        "domain": "jakdesign.nl",
+        "url": "https://jakdesign.nl/webdesign-almere/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Webdesign Almere",
+        "domain": "wijzijnmerlin.nl",
+        "url": "https://wijzijnmerlin.nl/webdesign-almere/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Website Laten Maken Almere | Webdesign Bureau ...",
+        "domain": "webfluencer.nl",
+        "url": "https://webfluencer.nl/webdesign-almere",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "WordPress Webdesign in Almere",
+        "domain": "lamper-design.nl",
+        "url": "https://lamper-design.nl/webdesign-almere/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Website laten maken Almere",
+        "domain": "www.vwebdesign.nl",
+        "url": "https://www.vwebdesign.nl/Almere-579",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "De 10 beste Webdesign Bureaus in Almere - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/almere-nl",
+        "is_target": false
+      },
+      {
+        "position": 15,
+        "title": "Website laten maken in Almere? | Reservato Webdesign.",
+        "domain": "www.reservato.online",
+        "url": "https://www.reservato.online/website-laten-maken/almere/",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Webdesign almere - Website Laten Maken",
+        "domain": "webzley.com",
+        "url": "https://webzley.com/nl/almere",
+        "is_target": false
+      }
+    ],
+    "webdesigner almere": [
+      {
+        "position": 4,
+        "title": "Webdesign Almere",
+        "domain": "webbouwenaandekeukentafel.nl",
+        "url": "https://webbouwenaandekeukentafel.nl/webdesign-almere/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesign Almere | Webwinkel of Website laten maken?",
+        "domain": "www.webdesignforyou.nl",
+        "url": "https://www.webdesignforyou.nl/webdesign-almere/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Top 10 Webdesigners in Almere | Prijzen & Reviews",
+        "domain": "trustoo.nl",
+        "url": "https://trustoo.nl/flevoland/almere/webdesign/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Website laten maken in Almere? | Reservato Webdesign.",
+        "domain": "www.reservato.online",
+        "url": "https://www.reservato.online/website-laten-maken/almere/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Webdesign Almere: Website Uitbesteden Aan TMW Design",
+        "domain": "tmwdesign.nl",
+        "url": "https://tmwdesign.nl/webdesign-almere",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Webdesign Almere dat werkt voor je bedrijf",
+        "domain": "scoreagency.nl",
+        "url": "https://scoreagency.nl/webdesign/almere",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Webdesign Almere",
+        "domain": "wijzijnmerlin.nl",
+        "url": "https://wijzijnmerlin.nl/webdesign-almere/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Webdesign Almere",
+        "domain": "jakdesign.nl",
+        "url": "https://jakdesign.nl/webdesign-almere/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "De 10 beste Webdesign Bureaus in Almere - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/almere-nl",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Webdesign almere - Website Laten Maken",
+        "domain": "webzley.com",
+        "url": "https://webzley.com/nl/almere",
+        "is_target": false
+      }
+    ],
+    "webdesign badhoevedorp": [
+      {
+        "position": 5,
+        "title": "Website Laten Maken In Badhoevedorp? 020 Webdesign!",
+        "domain": "020webdesign.nl",
+        "url": "https://020webdesign.nl/?loc=Badhoevedorp",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Website laten maken Badhoevedorp? Webaware Websites",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/website-laten-maken-badhoevedorp/",
+        "is_target": true
+      },
+      {
+        "position": 7,
+        "title": "Top 10 Webdesigners in Badhoevedorp | Prijzen & Reviews",
+        "domain": "trustoo.nl",
+        "url": "https://trustoo.nl/noord-holland/badhoevedorp/webdesign/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Webdesign, branding en SEO in Badhoevedorp. - Netcorp",
+        "domain": "www.netcorp.nl",
+        "url": "https://www.netcorp.nl/regio/badhoevedorp",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Webdesign Bureau Badhoevedorp | SEO & Webdevelopment",
+        "domain": "media4now.nl",
+        "url": "https://media4now.nl/webdesign-badhoevedorp",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Webdesign Badhoevedorp - Telefoonboek.nl",
+        "domain": "www.telefoonboek.nl",
+        "url": "https://www.telefoonboek.nl/zoeken/webdesign/badhoevedorp/",
+        "is_target": false
+      },
+      {
+        "position": 14,
+        "title": "Website laten maken in Badhoevedorp",
+        "domain": "webscoped.nl",
+        "url": "https://webscoped.nl/website/badhoevedorp",
+        "is_target": false
+      },
+      {
+        "position": 15,
+        "title": "Webdesign Hoofddorp",
+        "domain": "www.bohnennwebdesign.nl",
+        "url": "https://www.bohnennwebdesign.nl/webdesign-hoofddorp/",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "aim | reclamebureau",
+        "domain": "www.aim.nu",
+        "url": "https://www.aim.nu/",
+        "is_target": false
+      },
+      {
+        "position": 17,
+        "title": "SCPB'22 Badhoevedorp",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/portfolio/scpb22-badhoevedorp/",
+        "is_target": true
+      }
+    ],
+    "webdesign weesp": [
+      {
+        "position": 5,
+        "title": "Websites & webshops voor het MKB: SEO, Conversie, Hosting ...",
+        "domain": "www.madoo.nl",
+        "url": "https://www.madoo.nl/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Webdesign Weesp | Professioneel, Betaalbaar & Snel!",
+        "domain": "www.skyline-webdesign.nl",
+        "url": "https://www.skyline-webdesign.nl/webdesign/weesp",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Website Laten Maken Weesp | Online Marketing Bureau",
+        "domain": "dijkmandesign.nl",
+        "url": "https://dijkmandesign.nl/website-laten-maken-in-weesp/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Website of webshop laten maken in Weesp? - ProdaCom",
+        "domain": "www.prodacom.nl",
+        "url": "https://www.prodacom.nl/tag/webdesign-weesp/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Website laten maken in Weesp - Madoo",
+        "domain": "www.madoo.nl",
+        "url": "https://www.madoo.nl/website-laten-maken-in-weesp/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Webdesign Weesp | Betaalbaar, snel en goed vindbaar",
+        "domain": "www.kroonwebdesign.nl",
+        "url": "https://www.kroonwebdesign.nl/webdesign-weesp/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Website laten maken Weesp - Snel online vanaf €199",
+        "domain": "projectie.com",
+        "url": "https://projectie.com/website-laten-maken-weesp",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Webdesign bureau Weesp",
+        "domain": "rickidwebdesign.nl",
+        "url": "https://rickidwebdesign.nl/webdesign-bureau-weesp/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Website laten maken Weesp - Inyourfacemedia.nl",
+        "domain": "inyourfacemedia.nl",
+        "url": "https://inyourfacemedia.nl/website-laten-maken/weesp/",
+        "is_target": false
+      },
+      {
+        "position": 17,
+        "title": "Een website laten ontwerpen en/of bouwen",
+        "domain": "pwreclamegroep.nl",
+        "url": "https://pwreclamegroep.nl/works/website/",
+        "is_target": false
+      }
+    ],
+    "website laten maken haarlem": [
+      {
+        "position": 3,
+        "title": "WebsitemakenHaarlem.nl: Website laten maken Haarlem",
+        "domain": "websitemakenhaarlem.nl",
+        "url": "https://websitemakenhaarlem.nl/",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "Website Laten Maken Haarlem",
+        "domain": "www.tijdvooreensite.nl",
+        "url": "https://www.tijdvooreensite.nl/website-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Website laten maken in Haarlem",
+        "domain": "mademarketing.nl",
+        "url": "https://mademarketing.nl/website-laten-maken-in-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Webdesign Haarlem | Website Laten Maken?",
+        "domain": "www.webreturn.nl",
+        "url": "https://www.webreturn.nl/webdesign-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Buro Vijfhoek | Webdesign bureau in hartje Haarlem",
+        "domain": "burovijfhoek.nl",
+        "url": "https://burovijfhoek.nl/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Website laten maken Haarlem",
+        "domain": "blitskikker.nl",
+        "url": "https://blitskikker.nl/website-laten-maken-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Website laten maken Haarlem",
+        "domain": "vrijdagonline.nl",
+        "url": "https://vrijdagonline.nl/website-laten-maken-haarlem",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Website laten maken Haarlem | Vanaf € 2999,- met WP CMS!",
+        "domain": "www.jvhwebbouw.nl",
+        "url": "https://www.jvhwebbouw.nl/website-laten-maken-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Wat kost een website laten maken in Haarlem? - Richway.nl",
+        "domain": "richway.nl",
+        "url": "https://richway.nl/kennisbank/websitebegrippen/wat-kost-een-website-laten-maken-in-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Webdesigner Haarlem | Website of webshop laten maken?",
+        "domain": "securedesign.nl",
+        "url": "https://securedesign.nl/website/webdesign-haarlem/",
+        "is_target": false
+      }
+    ],
+    "webdesigner haarlem": [
+      {
+        "position": 4,
+        "title": "Buro Vijfhoek | Webdesign bureau in hartje Haarlem",
+        "domain": "burovijfhoek.nl",
+        "url": "https://burovijfhoek.nl/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Website laten maken Haarlem",
+        "domain": "blitskikker.nl",
+        "url": "https://blitskikker.nl/website-laten-maken-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "De 10 beste Webdesign Bureaus in Haarlem - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/haarlem-nl",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Webdesign Haarlem | Website Laten Maken?",
+        "domain": "www.webreturn.nl",
+        "url": "https://www.webreturn.nl/webdesign-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Website Laten Maken Haarlem",
+        "domain": "www.tijdvooreensite.nl",
+        "url": "https://www.tijdvooreensite.nl/website-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Webdesigner Haarlem | Website of webshop laten maken?",
+        "domain": "securedesign.nl",
+        "url": "https://securedesign.nl/website/webdesign-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Webdesign Haarlem",
+        "domain": "jakdesign.nl",
+        "url": "https://jakdesign.nl/webdesign-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Top 10 Webdesigners in Haarlem | Prijzen & Reviews",
+        "domain": "trustoo.nl",
+        "url": "https://trustoo.nl/noord-holland/haarlem/webdesign/",
+        "is_target": false
+      },
+      {
+        "position": 15,
+        "title": "Website laten maken Haarlem | Vanaf € 2999,- met WP CMS!",
+        "domain": "www.jvhwebbouw.nl",
+        "url": "https://www.jvhwebbouw.nl/website-laten-maken-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Website ontwerp Haarlem: een professionele website laten ...",
+        "domain": "studio-evers.nl",
+        "url": "https://studio-evers.nl/vormgeving-webdesign/website-ontwerp-haarlem-een-professionele-website-laten-maken/",
+        "is_target": false
+      }
+    ],
+    "webdesign haarlem": [
+      {
+        "position": 4,
+        "title": "Webdesign Haarlem - Wij maken van websitebezoekers ...",
+        "domain": "jcmwebdesign.nl",
+        "url": "https://jcmwebdesign.nl/webdesign-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Buro Vijfhoek | Webdesign bureau in hartje Haarlem",
+        "domain": "burovijfhoek.nl",
+        "url": "https://burovijfhoek.nl/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "De 10 beste Webdesign Bureaus in Haarlem - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/haarlem-nl",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Webdesign Haarlem | Website Laten Maken?",
+        "domain": "www.webreturn.nl",
+        "url": "https://www.webreturn.nl/webdesign-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Website laten maken Haarlem",
+        "domain": "blitskikker.nl",
+        "url": "https://blitskikker.nl/website-laten-maken-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Website Laten Maken Haarlem",
+        "domain": "www.tijdvooreensite.nl",
+        "url": "https://www.tijdvooreensite.nl/website-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 14,
+        "title": "Webdesign Haarlem",
+        "domain": "jakdesign.nl",
+        "url": "https://jakdesign.nl/webdesign-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 15,
+        "title": "WordPress Webdesign in Haarlem",
+        "domain": "lamper-design.nl",
+        "url": "https://lamper-design.nl/webdesign-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Website ontwerp Haarlem: een professionele website laten ...",
+        "domain": "studio-evers.nl",
+        "url": "https://studio-evers.nl/vormgeving-webdesign/website-ontwerp-haarlem-een-professionele-website-laten-maken/",
+        "is_target": false
+      },
+      {
+        "position": 17,
+        "title": "Top 10 Webdesigners in Haarlem | Prijzen & Reviews",
+        "domain": "trustoo.nl",
+        "url": "https://trustoo.nl/noord-holland/haarlem/webdesign/",
+        "is_target": false
+      }
+    ],
+    "zakelijke website laten maken": [
+      {
+        "position": 2,
+        "title": "WordPress website laten bouwen op maat",
+        "domain": "www.yourhosting.nl",
+        "url": "https://www.yourhosting.nl/website-maken/website-laten-maken/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "Website Laten Maken? | Professionele website vanaf €999,-",
+        "domain": "www.samdesign.nl",
+        "url": "https://www.samdesign.nl/website-laten-maken/",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "Website laten maken zonder gedoe | Vanaf €695 all-in",
+        "domain": "aslanwebtech.nl",
+        "url": "https://aslanwebtech.nl/nieuwe-website-laten-maken/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "De Zakelijke Website | Zakelijke website (in WordPress ...",
+        "domain": "www.dezakelijkewebsite.nl",
+        "url": "https://www.dezakelijkewebsite.nl/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Gratis bedrijfswebsite maken - Maak een zakelijke website",
+        "domain": "www.canva.com",
+        "url": "https://www.canva.com/nl_nl/maken/bedrijfswebsite/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Website maken voor je bedrijf: opties, kosten & slimme ...",
+        "domain": "www.tasmanic.nl",
+        "url": "https://www.tasmanic.nl/blog/website-maken/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Professionele Website laten maken in Amsterdam • ROXTAR",
+        "domain": "roxtar.nl",
+        "url": "https://roxtar.nl/website-laten-maken/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Zakelijke website maken",
+        "domain": "ondernemersplein.overheid.nl",
+        "url": "https://ondernemersplein.overheid.nl/bedrijf-starten/voorbereiden/zakelijke-website/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "WordPress website laten maken? Kwaaijongens helpt je!",
+        "domain": "www.kwaaijongens.nl",
+        "url": "https://www.kwaaijongens.nl/professionele-website/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Zakelijke website laten maken - Missie Online",
+        "domain": "www.missieonline.nl",
+        "url": "https://www.missieonline.nl/zakelijke-website-laten-maken/",
+        "is_target": false
+      }
+    ],
+    "webdesign bureau amsterdam": [
+      {
+        "position": 1,
+        "title": "Webdesign Amsterdam | premium website voor meer klanten",
+        "domain": "ploko.nl",
+        "url": "https://ploko.nl/webdesign-bureau/amsterdam/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesign bureau in Amsterdam | Jouw merk is uniek",
+        "domain": "whello.nl",
+        "url": "https://whello.nl/webdesign-bureau",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "De 10 beste Webdesign Bureaus in Amsterdam - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/amsterdam-nl",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Webdesign bureau Amsterdam | Webwinkel of Website?",
+        "domain": "www.webdesignforyou.nl",
+        "url": "https://www.webdesignforyou.nl/webdesign-bureau-amsterdam/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Webdesign Bureau Amsterdam | Website Laten Maken",
+        "domain": "webfluencer.nl",
+        "url": "https://webfluencer.nl/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Webdesign bureau Amsterdam: wat kost een website | ROXTAR",
+        "domain": "roxtar.nl",
+        "url": "https://roxtar.nl/webdesign-bureau/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "website laten maken amsterdam",
+        "domain": "vrijdagonline.nl",
+        "url": "https://vrijdagonline.nl/website-laten-maken-amsterdam",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Webdesign Amsterdam - B2B website laten maken? - Emogy",
+        "domain": "www.emogy.nl",
+        "url": "https://www.emogy.nl/webdesign-amsterdam/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Webdesign Amsterdam",
+        "domain": "jakdesign.nl",
+        "url": "https://jakdesign.nl/webdesign-amsterdam/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Website Laten Maken Amsterdam? - SAM Design",
+        "domain": "www.samdesign.nl",
+        "url": "https://www.samdesign.nl/website-laten-maken-amsterdam/",
+        "is_target": false
+      }
+    ],
+    "500 internal server error wordpress oorzaak": [
+      {
+        "position": 3,
+        "title": "500 Internal Server Error oplossen in WordPress",
+        "domain": "wphandleiding.nl",
+        "url": "https://wphandleiding.nl/nieuws/500-internal-server-error-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "HTTP Error 500 Code WordPress Internal Server",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/wordpress-internal-server-error-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "WordPress wit scherm (http 500 error) oplossen",
+        "domain": "wphelpdesk.nl",
+        "url": "https://wphelpdesk.nl/artikel/wordpress-http-500-error-wit-scherm/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Hoe \"500 Internal Server Error\" herstellen in wordpress? ...",
+        "domain": "elementor.com",
+        "url": "https://elementor.com/blog/nl/hoe-500-internal-server-error-herstellen-in-wordpress-year-gids/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "HTTP error 500 oplossen in WordPress",
+        "domain": "webtalis.nl",
+        "url": "https://webtalis.nl/http-error-500-wordpress-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "500 Internal Server Error: Oorzaken en oplossingen",
+        "domain": "support.hoasted.com",
+        "url": "https://support.hoasted.com/article/960-wordpress-500-internal-server-error",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Zo los je de 500 error op in Elementor!",
+        "domain": "www.antagonist.nl",
+        "url": "https://www.antagonist.nl/blog/elementor-500-error/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Hoe los ik Internal server error 500 op?",
+        "domain": "www.vimexx.nl",
+        "url": "https://www.vimexx.nl/help/hoe-los-ik-internal-server-error-500-op",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Ik wil een oplossing voor het probleem van serverfout 500 ...",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/1o1au0a/i_want_a_solution_to_the_problem_of_server_error/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Error 500 WordPress",
+        "domain": "lamper-design.nl",
+        "url": "https://lamper-design.nl/uitleg/error-500-wordpress/",
+        "is_target": false
+      }
+    ],
+    "Heeft een premium SEO plugin voor WordPress zin": [
+      {
+        "position": 4,
+        "title": "SEO Wordpress verbeteren - vele SEO tips",
+        "domain": "connectyourworld.nl",
+        "url": "https://connectyourworld.nl/seo-verbeteren-wordpress/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "De 10 Beste WordPress Plugins voor SEO in 2026 - Searchlab",
+        "domain": "searchlab.nl",
+        "url": "https://searchlab.nl/vergelijken/beste-wordpress-plugins-seo",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Yoast SEO – Advanced SEO with real-time guidance and ...",
+        "domain": "nl.wordpress.org",
+        "url": "https://nl.wordpress.org/plugins/wordpress-seo/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "WordPress SEO plugins: Yoast vs. The SEO Framework vs. ...",
+        "domain": "www.savvii.com",
+        "url": "https://www.savvii.com/blog/wordpress-seo-plugins-yoast-vs-the-seo-framework-vs-all-in-one-seo/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Best SEO WordPress plugins?",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/1fabqjb/best_seo_wordpress_plugins/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Welke SEO plugin is het beste voor jouw WordPress site?",
+        "domain": "jgwebmarketing.nl",
+        "url": "https://jgwebmarketing.nl/welke-seo-plugin-voor-jouw-wordpress-website/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Top 25 gratis SEO tools en plugins voor WordPress in 2024",
+        "domain": "wphandleiding.nl",
+        "url": "https://wphandleiding.nl/nieuws/top-25-gratis-seo-tools-en-plugins-voor-wordpress-in-2024/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "6 voor- en nadelen van Yoast SEO",
+        "domain": "wpbrothers.nl",
+        "url": "https://wpbrothers.nl/blog/6-voor-en-nadelen-van-yoast-seo/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "De beste WordPress SEO plugins van 2026: onze top 5",
+        "domain": "www.onlinelabs.nl",
+        "url": "https://www.onlinelabs.nl/blog/5-beste-wordpress-seo-plugins",
+        "is_target": false
+      },
+      {
+        "position": 14,
+        "title": "Beste WordPress SEO-plugins (2019)",
+        "domain": "www.burggraaf.nl",
+        "url": "https://www.burggraaf.nl/nieuws/beste-wordpress-seo-plugins-2019/",
+        "is_target": false
+      }
+    ],
+    "ACF Velden Worden Niet Getoond op de Voorkant": [
+      {
+        "position": 2,
+        "title": "ACF-velden worden niet weergegeven op pagina's",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/1riaykx/acf_fields_not_showing_up_on_pages/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "Extra velden aanmaken met Advanced Custom Fields",
+        "domain": "www.finalwebsites.nl",
+        "url": "https://www.finalwebsites.nl/handleiding/extra-velden-aanmaken-met-acf/",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "Advanced Custom Fields: jouw ultieme handleiding",
+        "domain": "kinsta.com",
+        "url": "https://kinsta.com/nl/blog/advanced-custom-fields/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Advanced custom fields voor een superflexibel WordPress",
+        "domain": "www.strato.nl",
+        "url": "https://www.strato.nl/blog/advanced-custom-fields-voor-een-superflexibel-wordpress/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Website velden aanpassen ACF Nederlands. Voor webwinkel ...",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=wPO8jkIh-YY",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Advanced Custom Fields (ACF®)",
+        "domain": "nl.wordpress.org",
+        "url": "https://nl.wordpress.org/plugins/advanced-custom-fields/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Wat zijn WordPress Custom Fields",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/wat-zijn-wordpress-custom-fields/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "ACF veld tonen op Single Product pagina WooCommerce",
+        "domain": "lamper-design.nl",
+        "url": "https://lamper-design.nl/uitleg/acf-veld-tonen-op-single-product/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "ACF Pro | Tussendoor.nl | De WordPress Specialist",
+        "domain": "tussendoor.nl",
+        "url": "https://tussendoor.nl/plugins/advanced-custom-fields-pro",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "https://ultherapy.com/app/plugins/advanced-custom-...",
+        "domain": "ultherapy.com",
+        "url": "https://ultherapy.com/app/plugins/advanced-custom-fields/lang/acf-nl_NL.po",
+        "is_target": false
+      }
+    ],
+    "website laten maken amstelveen": [
+      {
+        "position": 4,
+        "title": "website laten maken amstelveen - BuroAmstelveen",
+        "domain": "buroamstelveen.nl",
+        "url": "https://buroamstelveen.nl/ik-wil-een-nieuwe-wordpress-website-amstelveen/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesign Amstelveen - mooie website laten maken in ...",
+        "domain": "www.convident.nl",
+        "url": "https://www.convident.nl/webdesign-amstelveen/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Webdesign Amstelveen | Website laten maken - Creative Team",
+        "domain": "creativeteam.nl",
+        "url": "https://creativeteam.nl/webdesign-amstelveen/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Website laten maken Amstelveen - Maatwerk & Conversie!",
+        "domain": "www.ccorner.nl",
+        "url": "https://www.ccorner.nl/website-laten-maken-amstelveen/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Website laten maken Amstelveen",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/website-laten-maken-amstelveen/",
+        "is_target": true
+      },
+      {
+        "position": 9,
+        "title": "Webdesign Amstelveen - WP Agency",
+        "domain": "wpagency.nl",
+        "url": "https://wpagency.nl/webdesign/webdesign-amstelveen/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Website laten maken Amstelveen - Mijnwebexpert.nl",
+        "domain": "mijnwebexpert.nl",
+        "url": "https://mijnwebexpert.nl/website-laten-maken/amstelveen/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Website Laten Maken In Amstelveen? 020 Webdesign!",
+        "domain": "020webdesign.nl",
+        "url": "https://020webdesign.nl/?loc=Amstelveen",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Website laten maken Amstelveen: Ontdek de Ultieme ...",
+        "domain": "weblyfe.nl",
+        "url": "https://weblyfe.nl/blog/website-laten-maken-amstelveen-ontdek-weblyfe",
+        "is_target": false
+      },
+      {
+        "position": 14,
+        "title": "Website laten maken Amstelveen, een website voor € 499,-",
+        "domain": "yadi.nl",
+        "url": "https://yadi.nl/nieuwe-website/website-laten-maken-amstelveen/",
+        "is_target": false
+      }
+    ],
+    "website laten maken haarlemmermeer": [
+      {
+        "position": 2,
+        "title": "Website laten maken Haarlemmermeer | modern en zakelijk",
+        "domain": "aslanwebtech.nl",
+        "url": "https://aslanwebtech.nl/nieuwe-website-laten-maken/haarlemmermeer/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "Webdesign Haarlemmermeer? - Al vanaf €399",
+        "domain": "www.onbranders.com",
+        "url": "https://www.onbranders.com/webdesign-haarlemmermeer/",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "Webdesign Haarlemmermeer voor MKB & MKB+ bedrijven",
+        "domain": "projectie.com",
+        "url": "https://projectie.com/webdesign-haarlemmermeer",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesigner Haarlemmermeer | Lokaal & resultaatgericht",
+        "domain": "lynx-media.nl",
+        "url": "https://lynx-media.nl/webdesigner-haarlemmermeer",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Webshop laten maken Haarlemmermeer | Webshop of ...",
+        "domain": "www.webshoplatenmakenhaarlemmermeer.nl",
+        "url": "https://www.webshoplatenmakenhaarlemmermeer.nl/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Websites voor Ondernemers in Haarlemmermeer - Studio Ten",
+        "domain": "www.studioten.nl",
+        "url": "https://www.studioten.nl/web",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Website laten maken Haarlem",
+        "domain": "blitskikker.nl",
+        "url": "https://blitskikker.nl/website-laten-maken-haarlem/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Wordpress Webshop Laten Maken Haarlemmermeer",
+        "domain": "www.webdesignforyou.nl",
+        "url": "https://www.webdesignforyou.nl/webshop-laten-bouwen/wordpress/noord-holland/haarlemmermeer/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Website laten maken Haarlem | Conversiegericht",
+        "domain": "lynx-media.nl",
+        "url": "https://lynx-media.nl/website-laten-maken-haarlem",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Website laten maken - Jcmwebdesign",
+        "domain": "boedelruiming-haarlemmermeer.nl",
+        "url": "https://boedelruiming-haarlemmermeer.nl/webdesigner-jcmwebdesign/",
+        "is_target": false
+      }
+    ],
+    "Website laten maken Noord-Holland": [
+      {
+        "position": 1,
+        "title": "Webdesign Noord-Holland - I-match webdesign Kwaliteit op ...",
+        "domain": "i-match.nl",
+        "url": "https://i-match.nl/webdesign-noord-holland/",
+        "is_target": false
+      },
+      {
+        "position": 2,
+        "title": "Website laten maken Noord Holland",
+        "domain": "agency8.nl",
+        "url": "https://agency8.nl/website-laten-maken-noord-holland/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "De 10 beste Webdesign Bureaus in Noord-Holland - Sortlist",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/noord-holland-nh-nl",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Website laten maken in Noord-Holland - Webtrics",
+        "domain": "webtrics.nl",
+        "url": "https://webtrics.nl/website-laten-maken-noord-holland/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Website laten maken | Vaste prijs in 6 weken",
+        "domain": "072design.nl",
+        "url": "https://072design.nl/website-laten-maken",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Website laten maken noord-holland - Mijnwebexpert.nl",
+        "domain": "mijnwebexpert.nl",
+        "url": "https://mijnwebexpert.nl/website-laten-maken/noord-holland/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Webdesign Noord-Holland - B&S Media Internetmarketing",
+        "domain": "www.bsmedia.nl",
+        "url": "https://www.bsmedia.nl/webdesign/noord-holland/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Website Laten Maken Noord-Holland // The Green Surfer",
+        "domain": "thegreensurfer.com",
+        "url": "https://thegreensurfer.com/website-laten-maken-noord-holland/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Web Developer Noord-Holland - Ons werkgebied",
+        "domain": "www.dewebdeveloper.nl",
+        "url": "https://www.dewebdeveloper.nl/web-developer-noord-holland/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Website laten maken Noord-Holland - EVAS Digital Marketing",
+        "domain": "evasdigitalmarketing.nl",
+        "url": "https://evasdigitalmarketing.nl/website-laten-maken-noord-holland/",
+        "is_target": false
+      }
+    ],
+    "Kritieke fout opgetreden wordpress oplossen": [
+      {
+        "position": 2,
+        "title": "De \"er heeft zich een kritieke fout voorgedaan op deze site\"",
+        "domain": "www.wponderhoud.nl",
+        "url": "https://www.wponderhoud.nl/white-screen-of-death-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "Wordpress kritieke fout oplossen",
+        "domain": "surver.nl",
+        "url": "https://surver.nl/kennisbank/er-heeft-zich-een-kritieke-fout-voorgedaan-op-deze-site-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Kritieke fout op site? : r/Wordpress",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/1qwq7de/critical_error_on_site/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "WordPress herstelmodus na kritieke fout: Hoe werkt het?",
+        "domain": "webtalis.nl",
+        "url": "https://webtalis.nl/wordpress-herstelmodus-kritieke-fout/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Wat is een WordPress kritieke fout en hoe los je het op?",
+        "domain": "yellowtemple.com",
+        "url": "https://yellowtemple.com/wordpress-kritieke-fout-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Er is een kritieke fout op deze site opgetreden. Controleer ...",
+        "domain": "nl.wordpress.org",
+        "url": "https://nl.wordpress.org/support/topic/er-is-een-kritieke-fout-op-deze-site-opgetreden-controleer-je-beheer-e-mail-inb/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Kritieke fout op je WordPress-website na het updaten van je",
+        "domain": "www.vimexx.nl",
+        "url": "https://www.vimexx.nl/help/kritieke-fout-op-je-wordpress-website",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Debugging website - WordPress kritieke error oplossen",
+        "domain": "support.hoasted.com",
+        "url": "https://support.hoasted.com/article/1409-website-toont-kritieke-error",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Zo kan je de foutmelding “There Has Been a Critical Error ...",
+        "domain": "kinsta.com",
+        "url": "https://kinsta.com/nl/blog/there-has-been-a-critical-error-on-your-website/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Kritieke fout opgetreden wordpress oplossen",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/kritieke-fout-opgetreden-wordpress-oplossen/",
+        "is_target": true
+      }
+    ],
+    "Afbeeldingen alt tags automatisch toevoegen wordpress": [
+      {
+        "position": 2,
+        "title": "Alt tekst tag bij afbeelding toevoegen - Cursus WordPress",
+        "domain": "www.cursuswp.com",
+        "url": "https://www.cursuswp.com/alt-tekst-tag-afbeelding-toevoegen-automatisch-wordpress-plugin-website/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "WordPress-plugin om automatisch alt-tags aan ...",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/accessibility/comments/1m6g9zx/wordpress_plugin_to_enrich_images_with_alt_tags/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Waarom je afbeeldingen altijd een Alt-tekst moeten hebben",
+        "domain": "www.emerce.nl",
+        "url": "https://www.emerce.nl/achtergrond/waarom-afbeeldingen-altijd-alt-tekst-moeten-hebben",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Wat is een alt tag en is het belangrijk voor seo?",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=gNMSnNr9aJk",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "AI Image Alt Text Generator – Imagerr AI",
+        "domain": "nl.wordpress.org",
+        "url": "https://nl.wordpress.org/plugins/alt-text-imagerr-ai/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Alt-tekst toevoegen aan WordPress-afbeeldingen in 1 min",
+        "domain": "morningscore.io",
+        "url": "https://morningscore.io/nl/alt-tekst-toevoegen-aan-wordpress-afbeeldingen/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Alt tags voor SEO",
+        "domain": "wphandleiding.nl",
+        "url": "https://wphandleiding.nl/nieuws/alt-tags-voor-seo-toegankelijkheid/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "afbeeldingen-optimaliseren-met-de-alt-tag - Website Coach",
+        "domain": "website-coach.nl",
+        "url": "https://website-coach.nl/blog/afbeeldingen-optimaliseren-met-de-alt-tag",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Wat is een alt-tekst?",
+        "domain": "webtalis.nl",
+        "url": "https://webtalis.nl/woordenlijst/alt-tekst/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Afbeeldingen in bulk optimaliseren voor SEO in WordPress",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/afbeeldingen-in-bulk-optimaliseren-seo-wordpress/",
+        "is_target": false
+      }
+    ],
+    "Activiteitenlogboek bijhouden wordpress gebruikers": [
+      {
+        "position": 3,
+        "title": "Monitor je WordPress website met WP Activity Log",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/monitor-je-wordpress-website-met-wp-activity-log/",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "WordPress activiteiten logboek — 7 dingen die je moet ...",
+        "domain": "kinsta.com",
+        "url": "https://kinsta.com/nl/blog/wordpress-activiteitenlogboek/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Gebruikers aanmaken beheren in WordPress | Cursus ...",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=TkiQy5zlLFo",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Activiteit van je WordPress-gebruikers bijhouden met Stream",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/wordpress-activiteit-stream/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Registreert WordPress gebruikers-loginactiviteit?",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/ProWordPress/comments/109y5kd/does_wordpress_record_user_login_activity/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "WordPress-gebruikers beheren en hun rechten | Uitleg - Hostnet",
+        "domain": "www.hostnet.nl",
+        "url": "https://www.hostnet.nl/academy/wordpress-gebruikers-beheren",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Geef altijd de juiste gebruikersrol in WordPress",
+        "domain": "webtalis.nl",
+        "url": "https://webtalis.nl/geef-de-juiste-gebruikersrol-wordpress/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "WordPress gebruikersrollen & rechten | De ultieme gids in ...",
+        "domain": "nolimitwebdesign.nl",
+        "url": "https://nolimitwebdesign.nl/kennisbank/wordpress/wordpress-gebruikersrollen/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Schrijf een WordPress plugin die je vertelt wanneer ... - Turpoint",
+        "domain": "turpoint.com",
+        "url": "https://turpoint.com/blog/schrijf-een-wordpress-plugin-die-je-vertelt-wanneer-een-gebruiker-laatst-ingelogd-was/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Extra gebruikers aanmaken in WordPress",
+        "domain": "www.yourhosting.nl",
+        "url": "https://www.yourhosting.nl/kennisbank/hosting-website/extra-gebruikers-aanmaken-in-wordpress/",
+        "is_target": false
+      }
+    ],
+    "Activecampaign koppelen aan wordpress voor automatisering": [
+      {
+        "position": 2,
+        "title": "Use the ActiveCampaign WordPress plugin",
+        "domain": "help.activecampaign.com",
+        "url": "https://help.activecampaign.com/hc/en-us/articles/222475388-Use-the-ActiveCampaign-WordPress-plugin",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "ActiveCampaign: Automatiseer jouw (E-mail) Marketing!",
+        "domain": "martijnsietsma.com",
+        "url": "https://martijnsietsma.com/software/activecampaign/",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "ActiveCampaign: De motor achter je WordPress-site",
+        "domain": "webbedrijf.nl",
+        "url": "https://webbedrijf.nl/kennisbank/activecampaign-wordpress-koppeling/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "WordPress & ActiveCampaign API koppeling voor slimme ...",
+        "domain": "studiobrabo.nl",
+        "url": "https://studiobrabo.nl/wordpress-api-koppelingen/activecampaign/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "ActiveCampaign for WooCommerce",
+        "domain": "nl.wordpress.org",
+        "url": "https://nl.wordpress.org/plugins/activecampaign-for-woocommerce/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Integrate WordPress with ActiveCampaign",
+        "domain": "www.activecampaign.com",
+        "url": "https://www.activecampaign.com/apps/wordpress-integration",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "How to Connect ActiveCampaign to WordPress (Tutorial 2026)",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=UMFe_TuQyQs",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "ActiveCampaign koppelen aan WooCommerce",
+        "domain": "lamper-design.nl",
+        "url": "https://lamper-design.nl/uitleg/activecampaign-koppelen-aan-woocommerce/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "WooCommerce koppelen met ActiveCampaign voor meer ...",
+        "domain": "www.web2action.nl",
+        "url": "https://www.web2action.nl/blog/woocommerce-koppelen-met-activecampaign/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "WooCommerce koppelen met ActiveCampaign voor meer ...",
+        "domain": "www.web2action.nl",
+        "url": "https://www.web2action.nl/blog/woocommerce-koppelen-met-activecampaign/",
+        "is_target": false
+      }
+    ],
+    "Webdesign Amersfoort": [
+      {
+        "position": 4,
+        "title": "Webdesign in Amersfoort | BEEK Ontwerper",
+        "domain": "www.beekontwerpers.nl",
+        "url": "https://www.beekontwerpers.nl/webdesign-amersfoort/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "De 10 beste Webdesign Bureaus in Amersfoort - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/amersfoort-nl",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Website laten maken Amersfoort",
+        "domain": "inyourfacemedia.nl",
+        "url": "https://inyourfacemedia.nl/website-laten-maken/amersfoort/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Webdesign Amersfoort",
+        "domain": "jakdesign.nl",
+        "url": "https://jakdesign.nl/webdesign-amersfoort/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Webstijn: Home",
+        "domain": "webstijn.nl",
+        "url": "https://webstijn.nl/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Website laten maken Amersfoort",
+        "domain": "wijzijnmerlin.nl",
+        "url": "https://wijzijnmerlin.nl/website-laten-maken-amersfoort/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Website laten maken Amersfoort? - Bel nu: 085 022 02 11",
+        "domain": "www.jvhwebbouw.nl",
+        "url": "https://www.jvhwebbouw.nl/website-laten-maken-amersfoort/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Website laten maken Amersfoort",
+        "domain": "www.vwebdesign.nl",
+        "url": "https://www.vwebdesign.nl/Amersfoort-570",
+        "is_target": false
+      },
+      {
+        "position": 15,
+        "title": "Webdesign Amersfoort - Salon de Nieuwe Stad",
+        "domain": "www.krachtigmedia.nl",
+        "url": "https://www.krachtigmedia.nl/cases/show/webdesign-amersfoort",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Webdesign Amersfoort | EW Webservices Voor WordPress Sites",
+        "domain": "eigenwijsheid.nu",
+        "url": "https://eigenwijsheid.nu/?srsltid=AfmBOopghCdg864drwuvbVg_LggGteR7hz0mTedeMC0t1LVYc-Lfz9-f",
+        "is_target": false
+      }
+    ],
+    "Webdesign Utrecht": [
+      {
+        "position": 4,
+        "title": "Webdesign Utrecht - Website met een blijvende indruk",
+        "domain": "socialelephant.nl",
+        "url": "https://socialelephant.nl/webdesign-utrecht",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesign in Utrecht",
+        "domain": "www.beekontwerpers.nl",
+        "url": "https://www.beekontwerpers.nl/webdesign-utrecht/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "De 10 beste Webdesign Bureaus in Utrecht - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/utrecht-ut",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Webdesigner Utrecht | Website of webshop laten maken?",
+        "domain": "securedesign.nl",
+        "url": "https://securedesign.nl/website/webdesign-utrecht/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "WordPress Webdesign in Utrecht",
+        "domain": "lamper-design.nl",
+        "url": "https://lamper-design.nl/webdesign-utrecht/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Froseo | Webdesign & Marketing in Utrecht",
+        "domain": "froseo.nl",
+        "url": "https://froseo.nl/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Webdesigner in Utrecht - VrijdagOnline: Jouw Partner voor ...",
+        "domain": "vrijdagonline.nl",
+        "url": "https://vrijdagonline.nl/webdesigner-utrecht",
+        "is_target": false
+      },
+      {
+        "position": 14,
+        "title": "5 Beste Webdesign bureaus in Utrecht",
+        "domain": "www.marketingxperts.nl",
+        "url": "https://www.marketingxperts.nl/webdesign/utrecht/",
+        "is_target": false
+      },
+      {
+        "position": 15,
+        "title": "Professionele website laten maken regio Utrecht - INOMA",
+        "domain": "inoma.nl",
+        "url": "https://inoma.nl/webdesign-utrecht/",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Webdesign Utrecht - Rubrix",
+        "domain": "rubrix.nl",
+        "url": "https://rubrix.nl/websites/webdesign-utrecht/",
+        "is_target": false
+      }
+    ],
+    "Webdesign Zuid-Holland": [
+      {
+        "position": 4,
+        "title": "Webdesign Zuid-Holland - Groningen",
+        "domain": "www.convident.nl",
+        "url": "https://www.convident.nl/webdesign-zuid-holland/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Leden in Zuid-Holland",
+        "domain": "www.nlgw.nl",
+        "url": "https://www.nlgw.nl/ledenoverzicht/zuid-holland",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Website laten maken Zuid Holland",
+        "domain": "agency8.nl",
+        "url": "https://agency8.nl/website-laten-maken-zuid-holland/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "De 10 beste Webdesign Bureaus in Zuid-Holland - Sortlist",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/zuid-holland-zh-nl",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Website laten maken in Zuid-Holland",
+        "domain": "www.yournextwebsite.nl",
+        "url": "https://www.yournextwebsite.nl/website-laten-maken/zuid-holland",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Webdesign Zuid-Holland – Professionele Websites voor ...",
+        "domain": "projectie.com",
+        "url": "https://projectie.com/webdesign-zuid-holland",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Webdesign Zuid-Holland | YourCon Webdesign | Wateringen",
+        "domain": "yourcon.nl",
+        "url": "https://yourcon.nl/webdesign-zuid-holland/",
+        "is_target": false
+      },
+      {
+        "position": 14,
+        "title": "WEBDESIGN ZUID HOLLAND - Linkcorner.nl",
+        "domain": "webdesign.linkcorner.nl",
+        "url": "https://webdesign.linkcorner.nl/rubrieken/webdesign-zuid-holland/",
+        "is_target": false
+      },
+      {
+        "position": 15,
+        "title": "WEBDESIGN ZUID HOLLAND",
+        "domain": "webdesign.startpaginaz.be",
+        "url": "https://webdesign.startpaginaz.be/rubrieken/webdesign-zuid-holland/",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Webdesign Zuid-Holland | Alle webdesigners in de provincie ...",
+        "domain": "www.webdesign-zoeken.nl",
+        "url": "https://www.webdesign-zoeken.nl/webdesign/zuid-holland",
+        "is_target": false
+      }
+    ],
+    "Webdesign Den Haag": [
+      {
+        "position": 4,
+        "title": "Webdesign Den Haag - Dutch Blue",
+        "domain": "www.dutchblue.nl",
+        "url": "https://www.dutchblue.nl/webdesign-den-haag/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "WordPress Webdesign in Den Haag",
+        "domain": "lamper-design.nl",
+        "url": "https://lamper-design.nl/webdesign-den-haag/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Webdesign Den Haag | Websites die klanten opleveren - Anux",
+        "domain": "anux.nl",
+        "url": "https://anux.nl/webdesign-den-haag/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Webdesigner Den Haag - Xuntos",
+        "domain": "www.xuntos.nl",
+        "url": "https://www.xuntos.nl/wat-we-maken/websites/webdesigner-den-haag",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "De 10 beste Webdesign Bureaus in Den Haag - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/den-haag-nl",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Webdesign Den Haag",
+        "domain": "jakdesign.nl",
+        "url": "https://jakdesign.nl/webdesign-den-haag/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Website laten maken in Den Haag",
+        "domain": "scoreagency.nl",
+        "url": "https://scoreagency.nl/webdesign/den-haag",
+        "is_target": false
+      },
+      {
+        "position": 14,
+        "title": "Webdesign Den Haag (@webbouwer)",
+        "domain": "www.facebook.com",
+        "url": "https://www.facebook.com/webbouwer/",
+        "is_target": false
+      },
+      {
+        "position": 15,
+        "title": "Website laten maken Den Haag?",
+        "domain": "www.vwebdesign.nl",
+        "url": "https://www.vwebdesign.nl/Den-Haag-643",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Webdesigner Den Haag",
+        "domain": "vrijdagonline.nl",
+        "url": "https://vrijdagonline.nl/webdesigner-den-haag",
+        "is_target": false
+      }
+    ],
+    "Webdesign Enschede": [
+      {
+        "position": 4,
+        "title": "WetNose webdesign bureau Enschede",
+        "domain": "wetnose.design",
+        "url": "https://wetnose.design/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesign Enschede | Mediakanjers - Sterk in Media",
+        "domain": "www.mediakanjers.nl",
+        "url": "https://www.mediakanjers.nl/webdesign-enschede/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Maatwerk webdesign & website laten maken Enschede",
+        "domain": "www.crossmediahouse.nl",
+        "url": "https://www.crossmediahouse.nl/werkgebied/reclamebureau-enschede/webdesign-enschede/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Website laten maken Enschede €949,- | Chuck's",
+        "domain": "www.chuckswebdesign.nl",
+        "url": "https://www.chuckswebdesign.nl/website-laten-maken-enschede/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Webdesign Enschede | Professioneel en op maat",
+        "domain": "stimmt.digital",
+        "url": "https://stimmt.digital/updates/webdesign-enschede",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Webdesign Enschede dat werkt voor je bedrijf",
+        "domain": "scoreagency.nl",
+        "url": "https://scoreagency.nl/webdesign/enschede",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "De 10 beste Webdesign Bureaus in Enschede - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/enschede-nl",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "WordPress Webdesign in Enschede",
+        "domain": "lamper-design.nl",
+        "url": "https://lamper-design.nl/webdesign-enschede/",
+        "is_target": false
+      },
+      {
+        "position": 15,
+        "title": "Brand websites & E-commerce. Powered by AI, perfected by ...",
+        "domain": "stimmt.digital",
+        "url": "https://stimmt.digital/",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Webdesign Enschede | Webob | Dé websitebouwer van Twente",
+        "domain": "webob.nl",
+        "url": "https://webob.nl/webdesign-enschede/",
+        "is_target": false
+      }
+    ],
+    "Webdesign Arnhem": [
+      {
+        "position": 4,
+        "title": "Webdesign in Arnhem | Website & Webshop | Creatief en ...",
+        "domain": "pittigbakkie.nl",
+        "url": "https://pittigbakkie.nl/webdesign-arnhem/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Website laten maken? | Preview binnen 1 werkdag!",
+        "domain": "webdesign23.nl",
+        "url": "https://webdesign23.nl/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "WordPress Webdesign in Arnhem",
+        "domain": "lamper-design.nl",
+        "url": "https://lamper-design.nl/webdesign-arnhem/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Website laten maken Arnhem",
+        "domain": "wijzijnmerlin.nl",
+        "url": "https://wijzijnmerlin.nl/website-laten-maken-arnhem/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Webdesign Arnhem - OMA",
+        "domain": "onlinemarketingagency.nl",
+        "url": "https://onlinemarketingagency.nl/webdesign-arnhem/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Webdesign Arnhem | Wemessage | Website laten maken ...",
+        "domain": "wemessage.nl",
+        "url": "https://wemessage.nl/webdesign-arnhem/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Website laten maken in Arnhem | Snel online met Eazyonline",
+        "domain": "eazyonline.nl",
+        "url": "https://eazyonline.nl/website-laten-maken-arnhem",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Professioneel webdesign in Arnhem",
+        "domain": "www.crossmediahouse.nl",
+        "url": "https://www.crossmediahouse.nl/werkgebied/reclamebureau-arnhem/webdesign-arnhem/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Top 10 Webdesigners in Arnhem | Prijzen & Reviews",
+        "domain": "trustoo.nl",
+        "url": "https://trustoo.nl/gelderland/arnhem/webdesign/",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Website laten maken Arnhem | INOMA",
+        "domain": "inoma.nl",
+        "url": "https://inoma.nl/webdesign-arnhem/",
+        "is_target": false
+      }
+    ],
+    "Webdesign Apeldoorn": [
+      {
+        "position": 4,
+        "title": "Webdesign Apeldoorn",
+        "domain": "wijzijnmerlin.nl",
+        "url": "https://wijzijnmerlin.nl/webdesign-apeldoorn/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesign Apeldoorn",
+        "domain": "www.wijzijnwolf.nl",
+        "url": "https://www.wijzijnwolf.nl/webdesign-apeldoorn/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Key Webdesign, Apeldoorn - Websites met aantrekkingskracht",
+        "domain": "www.keywebdesign.nl",
+        "url": "https://www.keywebdesign.nl/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Webdesign Apeldoorn - Websites die klanten opleveren",
+        "domain": "www.aawebdesign.nl",
+        "url": "https://www.aawebdesign.nl/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Webdesign Apeldoorn - Professionele websites op maat!",
+        "domain": "www.saleswizard.nl",
+        "url": "https://www.saleswizard.nl/webdesign-apeldoorn/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Webdesign Apeldoorn - Professionele website laten maken",
+        "domain": "welldotcom.nl",
+        "url": "https://welldotcom.nl/webdesign-apeldoorn",
+        "is_target": false
+      },
+      {
+        "position": 14,
+        "title": "De 10 beste Webdesign Bureaus in Apeldoorn - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/apeldoorn-nl",
+        "is_target": false
+      },
+      {
+        "position": 15,
+        "title": "Website laten maken Apeldoorn - Maatwerk & Conversie!",
+        "domain": "www.ccorner.nl",
+        "url": "https://www.ccorner.nl/website-laten-maken-apeldoorn/",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Website laten maken in Apeldoorn",
+        "domain": "vyzual.nl",
+        "url": "https://vyzual.nl/website-laten-maken-in-apeldoorn/",
+        "is_target": false
+      },
+      {
+        "position": 17,
+        "title": "WordPress Webdesign in Apeldoorn",
+        "domain": "lamper-design.nl",
+        "url": "https://lamper-design.nl/webdesign-apeldoorn/",
+        "is_target": false
+      }
+    ],
+    "Webdesign Nijmegen": [
+      {
+        "position": 4,
+        "title": "Website laten maken in Nijmegen | Professioneel webdesign",
+        "domain": "pittigbakkie.nl",
+        "url": "https://pittigbakkie.nl/website-laten-maken-nijmegen/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesign Nijmegen",
+        "domain": "coodigital.nl",
+        "url": "https://coodigital.nl/webdesign-nijmegen/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Monkey Vision: merkbouwer uit Nijmegen sinds 2013",
+        "domain": "www.monkeyvision.nl",
+        "url": "https://www.monkeyvision.nl/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "De 10 beste Webdesign Bureaus in Nijmegen - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/nijmegen-nl",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "UX digital agency Nijmegen: Websites, apps & webapplicaties",
+        "domain": "ux.nl",
+        "url": "https://ux.nl/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Professionele website laten maken Nijmegen",
+        "domain": "www.digiswift.nl",
+        "url": "https://www.digiswift.nl/website-laten-maken/nijmegen",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Website Laten Maken Nijmegen | Professioneel ...",
+        "domain": "growguide.ai",
+        "url": "https://growguide.ai/website-laten-maken-nijmegen",
+        "is_target": false
+      },
+      {
+        "position": 14,
+        "title": "Keizer Karel webdesign Nijmegen |",
+        "domain": "keizerkarel.nl",
+        "url": "http://keizerkarel.nl/",
+        "is_target": false
+      },
+      {
+        "position": 15,
+        "title": "Webdesign Nijmegen | Online webbureau ...",
+        "domain": "mediaversa.nl",
+        "url": "https://mediaversa.nl/webdesign-nijmegen/",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Op zoek naar betaalbaar Webdesign in Nijmegen?",
+        "domain": "jpsmedia.nl",
+        "url": "https://jpsmedia.nl/webdesign-nijmegen/",
+        "is_target": false
+      }
+    ],
+    "Webdesign Breda": [
+      {
+        "position": 4,
+        "title": "Webdesign Breda - Professioneel, Snel en Op Maat Ontwikkeld",
+        "domain": "webdesignbreda.com",
+        "url": "https://webdesignbreda.com/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesign Breda | Dé Webdesigner van Brabant ✴️ - DLogic",
+        "domain": "www.dlogic.nl",
+        "url": "https://www.dlogic.nl/webdesign-breda",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Webdesigner Breda | Website of webshop laten maken?",
+        "domain": "securedesign.nl",
+        "url": "https://securedesign.nl/website/webdesign-breda/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Webdesign Breda » Wil jij jouw website verbeteren?",
+        "domain": "www.nvsdesign.nl",
+        "url": "https://www.nvsdesign.nl/webdesign-breda",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Webdesign in Breda: Kies voor online succes! - RB-Media",
+        "domain": "www.rb-media.nl",
+        "url": "https://www.rb-media.nl/webdesign-breda",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Webdesign Breda",
+        "domain": "brandbits.nl",
+        "url": "https://brandbits.nl/webdesign-breda/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Webbedrijf - Wij maken websites & webshops die wél opleveren",
+        "domain": "webbedrijf.nl",
+        "url": "https://webbedrijf.nl/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "De 10 beste Webdesign Bureaus in Breda - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/breda-nl",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Maatwerk website laten maken in Breda door ...",
+        "domain": "www.crossinternet.nl",
+        "url": "https://www.crossinternet.nl/website-laten-maken/breda/",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Webdesign Breda | 100% maatwerk voor jouw online succes",
+        "domain": "a-merkwaardig.nl",
+        "url": "https://a-merkwaardig.nl/webdesign-breda",
+        "is_target": false
+      }
+    ],
+    "Webdesign Tilburg": [
+      {
+        "position": 1,
+        "title": "WebdesignTilburg: Internetbureau Tilburg - Online resultaat",
+        "domain": "www.webdesigntilburg.nl",
+        "url": "https://www.webdesigntilburg.nl/",
+        "is_target": false
+      },
+      {
+        "position": 2,
+        "title": "De 10 beste Webdesign Bureaus in Tilburg - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/tilburg-nl",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "WebdesignTilburg",
+        "domain": "nl.linkedin.com",
+        "url": "https://nl.linkedin.com/company/webdesigntilburg",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "Webdesign Tilburg",
+        "domain": "brandbits.nl",
+        "url": "https://brandbits.nl/webdesign-tilburg/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Wordpress webdesign Tilburg Websitecreaties",
+        "domain": "websitecreaties.nl",
+        "url": "https://websitecreaties.nl/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Webdesign Tilburg | Dé #1 webdesigner in Brabant - DLogic",
+        "domain": "www.dlogic.nl",
+        "url": "https://www.dlogic.nl/webdesign-tilburg",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Een succesvolle website of webshop laten maken in Tilburg?",
+        "domain": "www.rb-media.nl",
+        "url": "https://www.rb-media.nl/website-laten-maken-tilburg",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Webdesign Tilburg: Studio Brabo, jouw partner voor online ...",
+        "domain": "studiobrabo.nl",
+        "url": "https://studiobrabo.nl/webdesign-tilburg/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Website op maat laten maken in Tilburg door ...",
+        "domain": "www.crossinternet.nl",
+        "url": "https://www.crossinternet.nl/website-laten-maken/tilburg/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Webdesign Tilburg — websites op maat",
+        "domain": "allroundweb.nl",
+        "url": "https://allroundweb.nl/webdesign-tilburg/",
+        "is_target": false
+      }
+    ],
+    "Webdesign Groningen": [
+      {
+        "position": 4,
+        "title": "▷ Webdesign Bureau Groningen | Best Beoordeeld!",
+        "domain": "designy.nl",
+        "url": "https://designy.nl/webdesign-bureau-groningen/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Website laten maken Groningen - TriplePro helpt je groeien",
+        "domain": "www.onlinemarketing.triplepro.nl",
+        "url": "https://www.onlinemarketing.triplepro.nl/website",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Webdesign Groningen voor Meetbare Digitale Impact",
+        "domain": "vrijdagonline.nl",
+        "url": "https://vrijdagonline.nl/webdesign-groningen",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Webdesign Groningen – WordPress experts, snelle ...",
+        "domain": "www.convident.nl",
+        "url": "https://www.convident.nl/webdesign-groningen/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Webdesign Groningen",
+        "domain": "jakdesign.nl",
+        "url": "https://jakdesign.nl/webdesign-groningen/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Webdesign Groningen voor succesvolle websites. Wij zijn B2.",
+        "domain": "www.b2design.nl",
+        "url": "https://www.b2design.nl/webdesign-bureau-groningen/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Webdesign Bureau Groningen - ON. Digital IT ON. Digital IT",
+        "domain": "weareon-it.nl",
+        "url": "https://weareon-it.nl/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "De 10 beste Webdesign Bureaus in Groningen - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/groningen-gr",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Webdesign Groningen | Website laten maken | Maeno",
+        "domain": "www.maeno.nl",
+        "url": "https://www.maeno.nl/webdesign/groningen",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Webdesign Groningen: wij verhogen jouw online succes",
+        "domain": "www.bsconnect.nl",
+        "url": "https://www.bsconnect.nl/webdesign/groningen",
+        "is_target": false
+      }
+    ],
+    "Webdesign Eindhoven": [
+      {
+        "position": 4,
+        "title": "Website laten maken in Eindhoven",
+        "domain": "yooker.nl",
+        "url": "https://yooker.nl/webdesign-eindhoven/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesign Eindhoven - Professioneel, Snel en Op Maat ...",
+        "domain": "webdesigneindhoven.org",
+        "url": "https://webdesigneindhoven.org/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Tallest – webdesign Eindhoven, maakt winstgevende websites",
+        "domain": "www.tallest.nl",
+        "url": "https://www.tallest.nl/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Webdesign Eindhoven - WEBtima WEB en IT diensten 040",
+        "domain": "www.webtima.nl",
+        "url": "https://www.webtima.nl/webdesign-eindhoven/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "De 10 beste Webdesign Bureaus in Eindhoven - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/eindhoven-nl",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Design uit hartje Eindhoven door Third Floor, Webdesign ...",
+        "domain": "www.thirdfloordesign.nl",
+        "url": "https://www.thirdfloordesign.nl/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Freelance Webdesigner Eindhoven - Kaspar: Webdesign ...",
+        "domain": "kaspar.nl",
+        "url": "https://kaspar.nl/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Website laten maken Eindhoven op maat",
+        "domain": "boostcreators.nl",
+        "url": "https://boostcreators.nl/webdesign-eindhoven/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Webdesign Eindhoven | Dé #1 webdesigner in ... - DLogic",
+        "domain": "www.dlogic.nl",
+        "url": "https://www.dlogic.nl/webdesign-eindhoven",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Webdesign Eindhoven | Website laten maken",
+        "domain": "mediaversa.nl",
+        "url": "https://mediaversa.nl/webdesign-eindhoven/",
+        "is_target": false
+      }
+    ],
+    "Webdesign Rotterdam": [
+      {
+        "position": 4,
+        "title": "Webdesign Rotterdam | Meer aanvragen met een website die ...",
+        "domain": "anux.nl",
+        "url": "https://anux.nl/webdesign-rotterdam/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "De 10 beste Webdesign Bureaus in Rotterdam - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/rotterdam-nl",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Webdesign Rotterdam",
+        "domain": "www.studioflabbergasted.nl",
+        "url": "https://www.studioflabbergasted.nl/webdesign-rotterdam",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Website Laten Maken Rotterdam | Professioneel & Vindbaar",
+        "domain": "vrijdagonline.nl",
+        "url": "https://vrijdagonline.nl/website-laten-maken-rotterdam",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Top 10 Webdesigners in Rotterdam | Prijzen & Reviews",
+        "domain": "trustoo.nl",
+        "url": "https://trustoo.nl/zuid-holland/rotterdam/webdesign/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Webdesign in Rotterdam - Kies voor online succes - RB-Media",
+        "domain": "www.rb-media.nl",
+        "url": "https://www.rb-media.nl/webdesign-rotterdam",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Webdesign Rotterdam",
+        "domain": "lifino.nl",
+        "url": "https://lifino.nl/diensten/websites/webdesign-rotterdam/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Webdesign Rotterdam dat werkt voor je bedrijf",
+        "domain": "scoreagency.nl",
+        "url": "https://scoreagency.nl/webdesign/rotterdam",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Webdesign Rotterdam",
+        "domain": "site4work.nl",
+        "url": "https://site4work.nl/locaties/webdesign-rotterdam/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Waarom sommige websites in Rotterdam wél klanten opleveren",
+        "domain": "nolimitdesign.nl",
+        "url": "https://nolimitdesign.nl/webdesign-bureau-in-rotterdam/",
+        "is_target": false
+      }
+    ],
+    "Webdesign Zwolle": [
+      {
+        "position": 4,
+        "title": "Webdesign Zwolle | Ontwerpen die jouw verhaal versterken",
+        "domain": "www.bredewold.nl",
+        "url": "https://www.bredewold.nl/webdesign-zwolle/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesign Zwolle | Professionele website laten maken",
+        "domain": "www.bsmedia.nl",
+        "url": "https://www.bsmedia.nl/webdesign/zwolle/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Webdesign Zwolle | Nedfinity Digital Agency uit Zwolle",
+        "domain": "www.nedfinity.com",
+        "url": "https://www.nedfinity.com/webdesign-zwolle",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Webdesign Zwolle | De Websmid in Zwolle | Hoog in Google",
+        "domain": "dewebsmid.nl",
+        "url": "https://dewebsmid.nl/webdesign-zwolle/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "De 10 beste Webdesign Bureaus in Zwolle - 2026 Reviews",
+        "domain": "www.sortlist.nl",
+        "url": "https://www.sortlist.nl/webdesign-bureau/zwolle-nl",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "WordPress Website laten maken Zwolle",
+        "domain": "sandragortemaker.nl",
+        "url": "https://sandragortemaker.nl/over-sandra-gortemaker/webdesigner-zwolle/",
+        "is_target": false
+      },
+      {
+        "position": 14,
+        "title": "Website Laten Maken Zwolle | Professionele Websites (Tip)",
+        "domain": "websitelatenmakenzwolle.nl",
+        "url": "https://websitelatenmakenzwolle.nl/",
+        "is_target": false
+      },
+      {
+        "position": 15,
+        "title": "Webdesign Zwolle",
+        "domain": "jakdesign.nl",
+        "url": "https://jakdesign.nl/webdesign-zwolle/",
+        "is_target": false
+      },
+      {
+        "position": 16,
+        "title": "Website in Zwolle - Wordpress specialisten",
+        "domain": "wiljeonline.nl",
+        "url": "https://wiljeonline.nl/website-in-zwolle/",
+        "is_target": false
+      },
+      {
+        "position": 17,
+        "title": "Website laten maken Zwolle",
+        "domain": "wijzijnmerlin.nl",
+        "url": "https://wijzijnmerlin.nl/website-laten-maken-zwolle/",
+        "is_target": false
+      }
+    ],
+    "Website laten maken Leiden": [
+      {
+        "position": 1,
+        "title": "Professionele Website Laten Maken Leiden. - SAM Design",
+        "domain": "www.samdesign.nl",
+        "url": "https://www.samdesign.nl/website-laten-maken-leiden/",
+        "is_target": false
+      },
+      {
+        "position": 2,
+        "title": "Website laten maken Leiden",
+        "domain": "vrijdagonline.nl",
+        "url": "https://vrijdagonline.nl/website-laten-maken-leiden",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "WordPress website laten maken Leiden",
+        "domain": "maintain.design",
+        "url": "https://maintain.design/wordpress-website-laten-maken-leiden/",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "Website laten maken Leiden - Snel online vanaf €299",
+        "domain": "projectie.com",
+        "url": "https://projectie.com/website-laten-maken-leiden",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesigner Leiden | Website of webshop laten maken?",
+        "domain": "securedesign.nl",
+        "url": "https://securedesign.nl/website/webdesign-leiden/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "WordPress Webdesign in Leiden",
+        "domain": "lamper-design.nl",
+        "url": "https://lamper-design.nl/webdesign-leiden/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Website laten maken Leiden: hoger scoren in Google",
+        "domain": "onlinemeersucces.nl",
+        "url": "https://onlinemeersucces.nl/website-laten-maken/leiden/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Website laten maken in Leiden?",
+        "domain": "nowweb.nl",
+        "url": "https://nowweb.nl/website/website-laten-maken-in-leiden/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Voordelig Webdesign Leiden",
+        "domain": "www.tijdvooreensite.nl",
+        "url": "https://www.tijdvooreensite.nl/webdesign-leiden/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Website laten maken Leiden",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/website-laten-maken-leiden/",
+        "is_target": true
+      }
+    ],
+    "Website laten maken Purmerend": [
+      {
+        "position": 4,
+        "title": "Website laten bouwen in Purmerend – Dé Site builders regelt ...",
+        "domain": "desitebuilders.nl",
+        "url": "https://desitebuilders.nl/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Webdesign Purmerend | Website Laten Maken?",
+        "domain": "www.webreturn.nl",
+        "url": "https://www.webreturn.nl/webdesign-purmerend/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Oventa Webdesign: Webdesign in Purmerend | Klein team ...",
+        "domain": "oventawebdesign.nl",
+        "url": "https://oventawebdesign.nl/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Website Laten Maken in Purmerend | Maatwerk & SEO ...",
+        "domain": "www.stockload.nl",
+        "url": "https://www.stockload.nl/website-laten-maken-purmerend",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Meerman Webdesign: Website of webshop laten maken?",
+        "domain": "www.meerman-webdesign.nl",
+        "url": "https://www.meerman-webdesign.nl/?srsltid=AfmBOopA8Hxq0YEya5yt8C3VM0bi7zDVtW332C7CdCG37dIFJEwwceIo",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Website laten maken Purmerend - Mijnwebexpert.nl",
+        "domain": "mijnwebexpert.nl",
+        "url": "https://mijnwebexpert.nl/website-laten-maken/purmerend/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "WordPress Webdesign in Purmerend",
+        "domain": "lamper-design.nl",
+        "url": "https://lamper-design.nl/webdesign-purmerend/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Website laten maken Purmerend",
+        "domain": "yoursalespoint.nl",
+        "url": "https://yoursalespoint.nl/website-laten-maken-purmerend/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Website laten maken Purmerend",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/website-laten-maken-purmerend/",
+        "is_target": true
+      },
+      {
+        "position": 13,
+        "title": "Website laten maken in Purmerend v.a. €450",
+        "domain": "deonliners.nl",
+        "url": "https://deonliners.nl/website-laten-maken-purmerend",
+        "is_target": false
+      }
+    ],
+    "WordPress dashboard leeg of wit": [
+      {
+        "position": 2,
+        "title": "Wordpress dashboard leeg of wit",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/wordpress-dashboard-leeg-of-wit/",
+        "is_target": true
+      },
+      {
+        "position": 4,
+        "title": "fix voor het WordPress-dashboard niet wordt weergegeven",
+        "domain": "webmazters.nl",
+        "url": "https://webmazters.nl/het-wordpress-dashboard-niet-wordt-weergegeven/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Zo los je een wit scherm in WordPress op",
+        "domain": "mijn.host",
+        "url": "https://mijn.host/blog/wordpress-wit-scherm/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Een wit scherm in WordPress, wat moet ik doen?",
+        "domain": "www.combell.com",
+        "url": "https://www.combell.com/nl/help/kb/wit-scherm-wordpress/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Het WordPress dashboard (ALLES wat je moet weten)",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=3JDlTkKTLFs",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Een wit scherm in WordPress. Hoe los je dit probleem op?",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/white-screen-wordpress-wit-scherm/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Wit scherm in WordPress oplossen (White Screen of Death)",
+        "domain": "webtalis.nl",
+        "url": "https://webtalis.nl/wit-scherm-wordpress/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "WordPress admin werkt niet meer, de oplossing!",
+        "domain": "wpbeveiligen.nl",
+        "url": "https://wpbeveiligen.nl/wordpress-admin-werkt-niet-meer-de-oplossing",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "WordPress error: Ik heb een wit scherm verhelpen",
+        "domain": "www.wpsupporters.nl",
+        "url": "https://www.wpsupporters.nl/wit-scherm/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Kan niet inloggen op mijn WP-pagina vanwege een blanco ...",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/1oixrq1/cannot_sign_in_to_my_wp_page_due_to_a_blank_white/?tl=nl",
+        "is_target": false
+      }
+    ],
+    "WordPress foutmelding rode balk": [
+      {
+        "position": 1,
+        "title": "Wordpress foutmelding rode balk",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/wordpress-foutmelding-rode-balk/",
+        "is_target": true
+      },
+      {
+        "position": 3,
+        "title": "There has been a critical error on your website, en nu?",
+        "domain": "mijn.host",
+        "url": "https://mijn.host/kb/wordpress/wordpress-critical-error-on-website-oplossen",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "WordPress foutmelding foutmelding “Bijwerken mislukt”",
+        "domain": "www.webmasterresources.nl",
+        "url": "https://www.webmasterresources.nl/wordpress/wordpress-foutmelding-foutmelding-bijwerken-mislukt/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Meest voorkomende WordPress problemen en de ...",
+        "domain": "wpbeveiligen.nl",
+        "url": "https://wpbeveiligen.nl/meest-voorkomende-wordpress-problemen-en-de-oplossingen",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Debugging website - WordPress kritieke error oplossen",
+        "domain": "support.hoasted.com",
+        "url": "https://support.hoasted.com/article/1409-website-toont-kritieke-error",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "WordPress update error oplossen",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/wordpress-update-error-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Waarom verschijnt in WordPress de zwarte statusbalk niet?",
+        "domain": "www.atsites.nl",
+        "url": "https://www.atsites.nl/waarom-verschijnt-in-wordpress-de-zwarte-statusbalk-niet/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "WordPress foutmeldingen: de 10 meest voorkomende en ...",
+        "domain": "marketingmaatwerk.nl",
+        "url": "https://marketingmaatwerk.nl/blog/wordpress-foutmeldingen-de-10-meest-voorkomende-en-hoe-je-ze-oplost/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Wat is een WordPress kritieke fout en hoe los je het op?",
+        "domain": "yellowtemple.com",
+        "url": "https://yellowtemple.com/wordpress-kritieke-fout-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "fix voor het WordPress-dashboard niet wordt weergegeven",
+        "domain": "webmazters.nl",
+        "url": "https://webmazters.nl/het-wordpress-dashboard-niet-wordt-weergegeven/",
+        "is_target": false
+      }
+    ],
+    "Foutmelding 500 wordpress na update": [
+      {
+        "position": 2,
+        "title": "HTTP Error 500 Code WordPress Internal Server",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/wordpress-internal-server-error-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "WordPress wit scherm (http 500 error) oplossen",
+        "domain": "wphelpdesk.nl",
+        "url": "https://wphelpdesk.nl/artikel/wordpress-http-500-error-wit-scherm/",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "Foutmelding 500 wordpress na update",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/foutmelding-500-wordpress-na-update/",
+        "is_target": true
+      },
+      {
+        "position": 5,
+        "title": "HTTP error 500 oplossen in WordPress",
+        "domain": "webtalis.nl",
+        "url": "https://webtalis.nl/http-error-500-wordpress-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Zo los je de 500 error op in Elementor!",
+        "domain": "www.antagonist.nl",
+        "url": "https://www.antagonist.nl/blog/elementor-500-error/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "500 Internal Server Error WordPress | 7 ways to fix them!",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=3tQFZYFx518",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "500 Internal Server Error oplossen in WordPress",
+        "domain": "wphandleiding.nl",
+        "url": "https://wphandleiding.nl/nieuws/500-internal-server-error-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "500 internal server error na WordPress update - Het BetaBlog",
+        "domain": "www.niamat.nl",
+        "url": "https://www.niamat.nl/blog/500-internal-server-error-na-wordpress-update/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Fout 500 bij het updaten van plugins : r/Wordpress",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/uwnm68/error_500_when_updating_plugins/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Hoe \"500 Internal Server Error\" herstellen in wordpress? ...",
+        "domain": "elementor.com",
+        "url": "https://elementor.com/blog/nl/hoe-500-internal-server-error-herstellen-in-wordpress-year-gids/",
+        "is_target": false
+      }
+    ],
+    "Link is verlopen wordpress uploaden": [
+      {
+        "position": 2,
+        "title": "Oplossing: “De link die je volgde is verlopen” in WordPress",
+        "domain": "www.websitenazorg.nl",
+        "url": "https://www.websitenazorg.nl/kb/oplossing-de-link-die-je-volgde-is-verlopen-in-wordpress/",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "Hoe fix je de foutmelding De link die je volgde is verlopen?",
+        "domain": "webmazters.nl",
+        "url": "https://webmazters.nl/de-link-die-je-volgde-is-verlopen/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "'De link die je volgde is verlopen' krijgen bij het uploaden ...",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/wz3jx7/getting_the_link_you_followed_has_expired_when/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Zo los je de 'link die je volgde is verlopen' fout op",
+        "domain": "www.hostinger.com",
+        "url": "https://www.hostinger.com/nl/tutorials/de-link-die-je-volgde-is-verlopen/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "De link die je volgde is verlopen - WordPress uptodate",
+        "domain": "wpuptodate.nl",
+        "url": "https://wpuptodate.nl/wordpress-kennisbank/wordpress-foutmeldingen/het-oplossen-van-de-de-link-die-je-volgde-is-verlopen-fout-in-wordpress/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "De link is verlopen // 1 pg // enkel in live editor wel",
+        "domain": "nl.wordpress.org",
+        "url": "https://nl.wordpress.org/support/topic/de-link-is-verlopen-1-pg-enkel-in-live-editor-wel/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Hoe een thema te importeren - foutmelding \"Link verlopen\"",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/168nmlq/how_to_import_theme_error_message_link_expired/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Hoe u linkverlopen instelt in WordPress",
+        "domain": "easydigitaldownloads.com",
+        "url": "https://easydigitaldownloads.com/nl/blog/how-to-set-up-link-expirations-in-wordpress/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Problemen met WordPress oplossen",
+        "domain": "www.godaddy.com",
+        "url": "https://www.godaddy.com/nl/help/problemen-met-wordpress-oplossen-5675",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Oplossen “post_max_size” foutmelding (de link die je volgde ...",
+        "domain": "docs-thema.affiliateheld.nl",
+        "url": "https://docs-thema.affiliateheld.nl/probleemoplossing/oplossen-de-link-die-je-volgde-is-verlopen/",
+        "is_target": false
+      }
+    ],
+    "Map kan niet worden aangemaakt wordpress": [
+      {
+        "position": 2,
+        "title": "Kan Niet Updaten: Map Kan Niet Gemaakt Worden",
+        "domain": "wphelpdesk.nl",
+        "url": "https://wphelpdesk.nl/vraag/kan-niet-updaten-map-kan-niet-aangemaakt-worden-installatie-is-mislukt/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "Map kan niet worden aangemaakt wordpress",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/map-kan-niet-worden-aangemaakt-wordpress/",
+        "is_target": true
+      },
+      {
+        "position": 5,
+        "title": "Foto uploaden lukt niet: kan geen map aanmaken",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/foto-upload-error-kan-geen-upload-map-aanmaken/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Waarom krijg ik de melding \"kan map uploads/... niet ...",
+        "domain": "helpdesk.bhosted.nl",
+        "url": "https://helpdesk.bhosted.nl/hc/nl/articles/211901149-Waarom-krijg-ik-de-melding-kan-map-uploads-niet-aanmaken-bij-het-uploaden",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Hoe \"Installatie mislukt: Kon map niet aanmaken\" op te ...",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/1d3fmyg/how_to_fix_installation_failed_could_not_create/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "WordPress kan wp-content map niet vinden",
+        "domain": "nl.wordpress.org",
+        "url": "https://nl.wordpress.org/support/topic/wordpress-kan-wp-content-map-niet-vinden/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "WordPress fout kan de map uploads/jaar/maand niet maken",
+        "domain": "support.hoasted.com",
+        "url": "https://support.hoasted.com/article/438-wordpress-fout-kan-de-map-uploads-jaar-maand-niet-maken",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Geen WordPress plugin installeren? 10 oplossingen",
+        "domain": "webmazters.nl",
+        "url": "https://webmazters.nl/waarom-kan-ik-geen-wordpress-plugin-installeren/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Zo los je de foutmelding “Installation Failed: Could Not ...",
+        "domain": "kinsta.com",
+        "url": "https://kinsta.com/nl/blog/installation-failed-could-not-create-directory/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "WordPress problemen - mijn website werkt niet meer!",
+        "domain": "bobdewebbouwer.com",
+        "url": "https://bobdewebbouwer.com/wordpress-problemen-website-werkt-niet/",
+        "is_target": false
+      }
+    ],
+    "Maximum execution time exceeded wordpress": [
+      {
+        "position": 2,
+        "title": "Maximum Execution Time Exceeded in WordPress",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/fout-oplossen-maximum-execution-time-exceeded-in-wordpress/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "WP Maximum Execution Time Exceeded Plugin",
+        "domain": "wordpress.com",
+        "url": "https://wordpress.com/plugins/wp-maximum-execution-time-exceeded",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "[WP Maximum Execution Time Exceeded] Support",
+        "domain": "wordpress.org",
+        "url": "https://wordpress.org/support/plugin/wp-maximum-execution-time-exceeded/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Fix WordPress max_execution_time Fatal Error: Increase Limit",
+        "domain": "wpdesk.net",
+        "url": "https://wpdesk.net/blog/max-execution-time-wordpress/?srsltid=AfmBOorCYU9ON80dlFtBUKF0QS-GzYZxp_Ck3hozrXwPAdZY1UUQ8GS4",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "How To Fix WordPress Max Execution Time Errors - Astra",
+        "domain": "wpastra.com",
+        "url": "https://wpastra.com/guides-and-tutorials/wordpress-max-execution-time/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "How to fix maximum execution time exceeded error in ...",
+        "domain": "www.facebook.com",
+        "url": "https://www.facebook.com/groups/wpbeginnershelp/posts/6213841551992775/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Fatal error: Maximum execution time of 30 seconds ...",
+        "domain": "stackoverflow.com",
+        "url": "https://stackoverflow.com/questions/32198287/fatal-error-maximum-execution-time-of-30-seconds-exceeded-in-c-xampp-htdocs-wo",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Preventing and Fixing 'Maximum Execution Time Exceeded' in ...",
+        "domain": "mainwp.com",
+        "url": "https://mainwp.com/preventing-and-fixing-maximum-execution-time-exceeded-in-wordpress/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "How to Fix the WordPress max_execution_time Fatal Error",
+        "domain": "kinsta.com",
+        "url": "https://kinsta.com/blog/wordpress-max-execution-time/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "How to Increase PHP Max Execution Time in Hosting ...",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/1hldeem/how_to_increase_php_max_execution_time_in_hosting/",
+        "is_target": false
+      }
+    ],
+    "Geheugenlimiet bereikt wordpress verhogen": [
+      {
+        "position": 2,
+        "title": "Geheugenlimiet bereikt wordpress verhogen",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/geheugenlimiet-bereikt-wordpress-verhogen/",
+        "is_target": true
+      },
+      {
+        "position": 4,
+        "title": "WordPress “Memory Limit” verhogen",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=CALi4Bz0OOc",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "WordPress “Memory Limit” verhogen",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/wordpress-memory-limit-verhogen/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "WordPress memory limieten verhogen in wp-config.php",
+        "domain": "mijn.host",
+        "url": "https://mijn.host/kb/wordpress/wordpress-limieten-wijzigen",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Zo verhoog je de PHP geheugenlimiet in WordPress",
+        "domain": "kinsta.com",
+        "url": "https://kinsta.com/nl/blog/php-geheugenlimiet/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Hoe verhoog ik mijn WordPress memory limit?",
+        "domain": "www.vimexx.nl",
+        "url": "https://www.vimexx.nl/help/hoe-verhoog-ik-mijn-wordpress-memory-limit",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "De WordPress memory limit verhogen ? | WPonderhoud.nl",
+        "domain": "www.wponderhoud.nl",
+        "url": "https://www.wponderhoud.nl/verhogen-wordpress-memory-limit/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Oplossing: Memory Exhausted Error in WordPress",
+        "domain": "www.websitenazorg.nl",
+        "url": "https://www.websitenazorg.nl/kb/oplossing-memory-exhausted-error-in-wordpress/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Hoe de \"WordPress geheugenlimiet\" fout oplossen (3 ...",
+        "domain": "elementor.com",
+        "url": "https://elementor.com/blog/nl/hoe-de-wordpress-geheugenlimiet-fout-oplossen-3-methodes/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "De PHP-geheugenlimiet verhogen in WordPress ...",
+        "domain": "inspectwp.com",
+        "url": "https://inspectwp.com/nl/kennisbank/php-geheugenlimiet-verhogen-wordpress",
+        "is_target": false
+      }
+    ],
+    "Json fout wordpress oplossen": [
+      {
+        "position": 3,
+        "title": "Problemen oplossen met de JSON-foutmelding : r/Wordpress",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/18m85pa/troubleshooting_the_json_error_message/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "Json fout wordpress oplossen",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/json-fout-wordpress-oplossen/",
+        "is_target": true
+      },
+      {
+        "position": 5,
+        "title": "Hoe de ongeldige JSON-fout op een WordPress-website te ...",
+        "domain": "www.youstable.com",
+        "url": "https://www.youstable.com/nl/blog/hoe-de-ongeldige-json-fout-op-een-WordPress-website-te-verhelpen/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "The response is not a valid JSON response oplossen",
+        "domain": "webmazters.nl",
+        "url": "https://webmazters.nl/the-response-is-not-a-valid-json-response/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Hoe de ongeldige JSON-fout in WordPress oplossen?",
+        "domain": "www.bluehost.com",
+        "url": "https://www.bluehost.com/nl-nl/blog/hoe-de-ongeldige-json-fout-in-wordpress-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Nieuwe pagina toevoegen Fout bericht Updaten mislukt. ...",
+        "domain": "nl.wordpress.org",
+        "url": "https://nl.wordpress.org/support/topic/nieuwe-pagina-toevoegen-fout-bericht-updaten-mislukt-de-reactie-is-geen-geldig/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Onmogelijk om JSON-fout te herstellen: \"De respons is ...",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/19bx84f/impossible_to_fix_json_error_the_response_is_not/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Wordpress kritieke fout oplossen",
+        "domain": "surver.nl",
+        "url": "https://surver.nl/kennisbank/er-heeft-zich-een-kritieke-fout-voorgedaan-op-deze-site-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "WordPress wp-json foutmelding rest_cookie_invalid_nonce ...",
+        "domain": "www.timdehoog.nl",
+        "url": "https://www.timdehoog.nl/2020/01/17/wordpress-wp-json-foutmelding-rest_cookie_invalid_nonce-status403/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Fixing the Invalid JSON Error in WordPress",
+        "domain": "fixed.net",
+        "url": "https://fixed.net/blog/fixing-the-invalid-json-error-in-wordpress",
+        "is_target": false
+      }
+    ],
+    "Geblokkeerd op eigen wordpress website": [
+      {
+        "position": 2,
+        "title": "Geblokkeerd op eigen wordpress website",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/geblokkeerd-op-eigen-wordpress-website/",
+        "is_target": true
+      },
+      {
+        "position": 4,
+        "title": "Wordfence blijft degenen blokkeren die proberen toegang ...",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/vgr2nc/wordfence_keeps_blocking_those_who_try_to_access/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Hoe deblokkeer ik mijn WordPress inlogpagina?",
+        "domain": "help.one.com",
+        "url": "https://help.one.com/hc/nl/articles/115005586049-Hoe-deblokkeer-ik-mijn-WordPress-inlogpagina",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Wat te doen als je niet in je WordPress Admin (wp- ...",
+        "domain": "www.websitenazorg.nl",
+        "url": "https://www.websitenazorg.nl/kb/wat-te-doen-als-je-niet-in-je-wordpress-admin-wp-admin-kunt-komen/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Thema wordpress website wordt geblokkeerd",
+        "domain": "www.netweters.be",
+        "url": "https://www.netweters.be/t5/Instellingen-software-hardware/Thema-wordpress-website-wordt-geblokkeerd/td-p/122975",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "inlog wordpress website geblokkeerd",
+        "domain": "www.helpmij.nl",
+        "url": "https://www.helpmij.nl/forum/threads/inlog-wordpress-website-geblokkeerd.942849/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Help, ik kan niet meer inloggen op mijn WordPress website!",
+        "domain": "www.kwaaijongens.nl",
+        "url": "https://www.kwaaijongens.nl/blog/ik-kan-niet-meer-inloggen-op-mijn-wordpress-webite/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "WP Foutmelding - Deze content is geblokkeerd. Neem ...",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/1hjwz80/wp_error_this_content_is_blocked_contact_the_site/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Inloggen niet mogelijk door blokkade van Wordfence",
+        "domain": "joskleverwebsupport.nl",
+        "url": "https://joskleverwebsupport.nl/inloggen-niet-mogelijk-door-blokkade-van-wordfence/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Hoe bescherm ik mijn WordPress website?",
+        "domain": "hosting.nl",
+        "url": "https://hosting.nl/support/hoe-bescherm-ik-mijn-wordpress-website/",
+        "is_target": false
+      }
+    ],
+    "Malware verwijderen wordpress": [
+      {
+        "position": 2,
+        "title": "Malware verwijderen van je WordPress website",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/malware-verwijderen-wordpress/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "WordPress website gehackt? √ Hack en malware ...",
+        "domain": "www.kwaaijongens.nl",
+        "url": "https://www.kwaaijongens.nl/wordpress/hack-en-malware-verwijderen/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Advies nodig over het schoonmaken van malware",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/10doyru/need_advice_on_cleaning_malware/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Optimaliseren veiligheid - WordPress malware opruimen",
+        "domain": "support.hoasted.com",
+        "url": "https://support.hoasted.com/article/457-stappenplan-malware-verwijderen-wordpress",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "malware verwijder support",
+        "domain": "browsr.nl",
+        "url": "https://browsr.nl/malware-verwijderen/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Hack en Malware Verwijderen voor WordPress Websites",
+        "domain": "webprof.nl",
+        "url": "https://webprof.nl/hack-en-malware-verwijderen-voor-wordpress-websites/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "WordPress website herstellen na hack en malware",
+        "domain": "www.inventix.nl",
+        "url": "https://www.inventix.nl/cybersecurity-wp-websites/websiteherstel-na-hack/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Malware verwijderen - Website Hulp Nederland",
+        "domain": "www.website-hulp-nederland.nl",
+        "url": "https://www.website-hulp-nederland.nl/malware-verwijderen/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Hoe repareer ik een gehackte WordPress site?",
+        "domain": "help.one.com",
+        "url": "https://help.one.com/hc/nl/articles/115005710205-Hoe-repareer-ik-een-gehackte-WordPress-site",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "Zo scan je WordPress op malware in 4 eenvoudige stappen",
+        "domain": "kinsta.com",
+        "url": "https://kinsta.com/nl/blog/scan-je-wordpress-op-malware/",
+        "is_target": false
+      }
+    ],
+    "WordPress site gehackt wat nu": [
+      {
+        "position": 2,
+        "title": "Hoe repareer ik een gehackte WordPress site?",
+        "domain": "help.one.com",
+        "url": "https://help.one.com/hc/nl/articles/115005710205-Hoe-repareer-ik-een-gehackte-WordPress-site",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "WordPress website gehackt: wat moet je doen? Stappenplan",
+        "domain": "wiwi.nl",
+        "url": "https://wiwi.nl/kennisbank/wordpress-website-gehackt",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "WordPress website gehackt? Een WordPress hack oplossen.",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/wordpress-website-gehackt-oplossingen/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "WordPress website gehackt, wat nu? Zo pak je het slim aan",
+        "domain": "techtovenaar.nl",
+        "url": "https://techtovenaar.nl/blog/wordpress-website-gehackt-wat-nu-zo-pak-je-het-slim-aan/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Ik ben er vrij zeker van dat mijn WordPress-site is gehackt ...",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/webhosting/comments/1s73ggf/i_am_pretty_sure_that_my_wordpress_site_is_hacked/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "WordPress-sites doelwit van botnet: bezoekers ook geraakt",
+        "domain": "www.ncsc.nl",
+        "url": "https://www.ncsc.nl/alerts/wordpress-sites-doelwit-van-botnet-bezoekers-ook-geraakt",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "WordPress website gehackt? Opgelost!",
+        "domain": "wjonderhoud.nl",
+        "url": "https://wjonderhoud.nl/wordpress-website-gehackt/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "WordPress website gehackt",
+        "domain": "lindavantol.nl",
+        "url": "https://lindavantol.nl/website-gehackt/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Een gehackte WordPress website herstellen, hoe doe je dat?",
+        "domain": "www.yourhosting.nl",
+        "url": "https://www.yourhosting.nl/blog/een-gehackte-wordpress-website-herstellen-hoe-doe-je-dat/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "WordPress website gehackt?",
+        "domain": "dtchdigitals.com",
+        "url": "https://dtchdigitals.com/nl/blog/wordpress-website-gehackt/",
+        "is_target": false
+      }
+    ],
+    "Wachtwoord vergeten wordpress geen mail": [
+      {
+        "position": 2,
+        "title": "WordPress wachtwoord vergeten werkt niet? Zo kun je weer ...",
+        "domain": "www.youtube.com",
+        "url": "https://www.youtube.com/watch?v=5fc7uAu7EZU",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "Wachtwoord en/of gebruikernaam WordPress vergeten?",
+        "domain": "www.kwaaijongens.nl",
+        "url": "https://www.kwaaijongens.nl/blog/wachtwoord-of-gebruikersnaam-wordpress-vergeten/",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "WordPress wachtwoord vergeten - WPHelpdesk",
+        "domain": "wphelpdesk.nl",
+        "url": "https://wphelpdesk.nl/artikel/wordpress-wachtwoord-vergeten/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "WordPress administrator wachtwoord vergeten",
+        "domain": "www.mijnhostingpartner.nl",
+        "url": "https://www.mijnhostingpartner.nl/client/knowledgebase/webapplicaties/cms/wordpress/wordpress-administrator-wachtwoord-vergeten/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Wijziging van je wachtwoord in WordPress",
+        "domain": "www.strato.nl",
+        "url": "https://www.strato.nl/faq/hosting/wat-doe-ik-als-ik-mijn-wordpress-wachtwoord-vergeten-ben/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Het WordPress-wachtwoord resetten - Handleidingen | Hostnet",
+        "domain": "helpdesk.hostnet.nl",
+        "url": "https://helpdesk.hostnet.nl/hc/nl-nl/articles/360014744138-Het-WordPress-wachtwoord-resetten",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "WordPress stuurt geen e-mails voor wachtwoordherstel ...",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/oq98r2/wordpress_not_sending_password_recovery_emails/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "WordPress wachtwoord kwijt? Herstel eenvoudig je site",
+        "domain": "wphandleiding.nl",
+        "url": "https://wphandleiding.nl/kennisbank/wordpress-wachtwoord-kwijt/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Admin WordPress wachtwoord vergeten?",
+        "domain": "www.xel.nl",
+        "url": "https://www.xel.nl/academy/admin-wordpress-wachtwoord-vergeten/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "problemen bij inloggen | WordPress.org Nederlands",
+        "domain": "nl.wordpress.org",
+        "url": "https://nl.wordpress.org/support/topic/problemen-bij-inloggen/",
+        "is_target": false
+      }
+    ],
+    "Inloggen wordpress lukt niet": [
+      {
+        "position": 2,
+        "title": "problemen bij inloggen | WordPress.org Nederlands",
+        "domain": "nl.wordpress.org",
+        "url": "https://nl.wordpress.org/support/topic/problemen-bij-inloggen/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "Inloggen in WordPress + 9 tips als het niet meer lukt - Hostnet",
+        "domain": "www.hostnet.nl",
+        "url": "https://www.hostnet.nl/academy/wordpress-inloggen",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Help! Ik kan niet meer inloggen op wp-admin - De WP Dokter",
+        "domain": "dewpdokter.nl",
+        "url": "https://dewpdokter.nl/niet-meer-inloggen-wp-admin/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Wij kunnen niet meer inloggen in de WordPress account",
+        "domain": "wphelpdesk.nl",
+        "url": "https://wphelpdesk.nl/vraag/wij-kunnen-niet-meer-inloggen-in-de-wordpress-account/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "WordPress Inloggen – Hoe log je in en handige tips",
+        "domain": "wphandleiding.nl",
+        "url": "https://wphandleiding.nl/kennisbank/hoe-log-ik-in-op-mijn-wordpress-website/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "WP Admin Werkt Niet in WordPress! Wat Moet Ik Doen?",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/1eet9jc/wp_admin_not_working_in_wordpress_what_should_i_do/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "WordPress - Problemen met inloggen",
+        "domain": "support.hoasted.com",
+        "url": "https://support.hoasted.com/article/987-login-problemen-wordpress",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Inloggen WordPress lukt niet meer",
+        "domain": "lamper-design.nl",
+        "url": "https://lamper-design.nl/uitleg/inloggen-wordpress-lukt-niet-meer/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Kun je niet bij je WordPress Admin dashboard? (Dit is wat ...",
+        "domain": "kinsta.com",
+        "url": "https://kinsta.com/nl/blog/kun-je-niet-bij-je-wordpress-admin-dashboard/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Hoe Inloggen met WordPress - 7 tips als het niet lukt",
+        "domain": "bijdrager.nl",
+        "url": "https://bijdrager.nl/wordpress/hoe-inloggen-met-wordpress/",
+        "is_target": false
+      }
+    ],
+    "WordPress admin pagina laadt niet": [
+      {
+        "position": 2,
+        "title": "WP Admin Werkt Niet in WordPress! Wat Moet Ik Doen?",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/1eet9jc/wp_admin_not_working_in_wordpress_what_should_i_do/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "Help! Ik kan niet meer inloggen op wp-admin - De WP Dokter",
+        "domain": "dewpdokter.nl",
+        "url": "https://dewpdokter.nl/niet-meer-inloggen-wp-admin/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "WordPress problemen - mijn website werkt niet meer!",
+        "domain": "bobdewebbouwer.com",
+        "url": "https://bobdewebbouwer.com/wordpress-problemen-website-werkt-niet/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Kun je niet bij je WordPress Admin dashboard? (Dit is wat ...",
+        "domain": "kinsta.com",
+        "url": "https://kinsta.com/nl/blog/kun-je-niet-bij-je-wordpress-admin-dashboard/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Wordpress admin pagina laadt niet",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/wordpress-admin-pagina-laadt-niet/",
+        "is_target": true
+      },
+      {
+        "position": 8,
+        "title": "WordPress-dashboard laadt niet",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/14d763s/wordpress_dashboard_not_loading/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Inloggen in WordPress + 9 tips als het niet meer lukt - Hostnet",
+        "domain": "www.hostnet.nl",
+        "url": "https://www.hostnet.nl/academy/wordpress-inloggen",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "WordPress admin werkt niet meer, de oplossing!",
+        "domain": "wpbeveiligen.nl",
+        "url": "https://wpbeveiligen.nl/wordpress-admin-werkt-niet-meer-de-oplossing",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Buitengesloten uit WordPress-admin omgeving",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/buitengesloten-wordpress-admin-omgeving/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "problemen bij inloggen | WordPress.org Nederlands",
+        "domain": "nl.wordpress.org",
+        "url": "https://nl.wordpress.org/support/topic/problemen-bij-inloggen/",
+        "is_target": false
+      }
+    ],
+    "WordPress onderhoudsmodus blijft hangen": [
+      {
+        "position": 2,
+        "title": "WordPress onderhoudsmodus uitschakelen op je website",
+        "domain": "webtalis.nl",
+        "url": "https://webtalis.nl/wordpress-onderhoudsmodus-uitschakelen/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "WordPress Maintenance Mode blijft hangen - Uitleg door ...",
+        "domain": "lamper-design.nl",
+        "url": "https://lamper-design.nl/uitleg/wordpress-maintenance-mode-blijft-hangen/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "Oplossing: WordPress blijft hangen in onderhoudsmodus",
+        "domain": "www.bbdesign.nl",
+        "url": "https://www.bbdesign.nl/wordpress-blijft-hangen-in-onderhoudsmodus/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Wordpress onderhoudsmodus blijft hangen",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/wordpress-onderhoudsmodus-blijft-hangen/",
+        "is_target": true
+      },
+      {
+        "position": 7,
+        "title": "mijn website blijft hangen in gepland onderhoud",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/11cl5yn/my_website_is_stuck_in_scheduled_maintenance/?tl=nl",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "WordPress blijft in onderhoud hangen",
+        "domain": "webkeurig.nl",
+        "url": "https://webkeurig.nl/wordpress/wordpress-blijft-in-onderhoud-hangen/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "WordPress onderhoudsmodus - Customizing en ...",
+        "domain": "kinsta.com",
+        "url": "https://kinsta.com/nl/blog/wordpress-onderhoudsmodus/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Debugging website - WordPress onderhoud modus aan/uit ...",
+        "domain": "support.hoasted.com",
+        "url": "https://support.hoasted.com/article/1694-debugging-wordpress-vast-in-maintenance-onderhoud-modus",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Een geautomatiseerde WordPress update is niet voltooid",
+        "domain": "nl.wordpress.org",
+        "url": "https://nl.wordpress.org/support/topic/een-geautomatiseerde-wordpress-update-is-niet-voltooid/",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "WordPress onderhoudsmodus deactiveren",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/wordpress-onderhoudsmodus-deactiveren/",
+        "is_target": false
+      }
+    ],
+    "Database verbinding mislukt wordpress fix": [
+      {
+        "position": 3,
+        "title": "Database verbinding mislukt wordpress fix",
+        "domain": "webaware.nl",
+        "url": "https://webaware.nl/database-verbinding-mislukt-wordpress-fix/",
+        "is_target": true
+      },
+      {
+        "position": 5,
+        "title": "'Error establishing a database connection' oplossen voor ...",
+        "domain": "www.transip.nl",
+        "url": "https://www.transip.nl/knowledgebase/5942-establishing-database-connection-oplossen-wordpress",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Oplossingen voor databaseverbinding fouten in WordPress",
+        "domain": "www.websitenazorg.nl",
+        "url": "https://www.websitenazorg.nl/kb/hoe-je-de-foutmelding-error-establishing-a-database-connection-in-wordpress-kunt-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Error establishing a database connection",
+        "domain": "wordpress.org",
+        "url": "https://wordpress.org/support/topic/error-establishing-a-database-connection-1082/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Hoe u de foutmelding 'Updaten mislukt/Publiceren ...",
+        "domain": "www.youstable.com",
+        "url": "https://www.youstable.com/nl/blog/WordPress-updaten-mislukt/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Zo los je problemen met je WordPress-database op",
+        "domain": "kinsta.com",
+        "url": "https://kinsta.com/nl/blog/wordpress-database-problemen-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Wordpress fout bij het maken van de databaseconnectie ...",
+        "domain": "webkeurig.nl",
+        "url": "https://webkeurig.nl/wordpress/wordpress-fout-bij-het-maken-van-de-databaseconnectie/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "Database connection error WordPress — oplossen - WPTS",
+        "domain": "wpts.nl",
+        "url": "https://wpts.nl/kennisbank/database-connection-error-wordpress-oplossen",
+        "is_target": false
+      },
+      {
+        "position": 12,
+        "title": "WordPress: 'Error establishing a database connection'",
+        "domain": "www.strato.nl",
+        "url": "https://www.strato.nl/blog/typische-wordpress-fouten-verhelpen-error-establishing-a-database-connection/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "WordPress Error establishing a database connection",
+        "domain": "www.wplounge.nl",
+        "url": "https://www.wplounge.nl/wordpress-error-establishing-database-connection/",
+        "is_target": false
+      }
+    ],
+    "White screen of death wordpress herstellen": [
+      {
+        "position": 2,
+        "title": "Wit scherm in WordPress oplossen (White Screen of Death)",
+        "domain": "webtalis.nl",
+        "url": "https://webtalis.nl/wit-scherm-wordpress/",
+        "is_target": false
+      },
+      {
+        "position": 3,
+        "title": "Hoe los je een white screen of death op in Wordpress?",
+        "domain": "www.vimexx.nl",
+        "url": "https://www.vimexx.nl/help/hoe-los-je-een-white-screen-of-death-op-in-wordpress",
+        "is_target": false
+      },
+      {
+        "position": 4,
+        "title": "9 bewezen manieren om het WordPress White Screen of ...",
+        "domain": "kinsta.com",
+        "url": "https://kinsta.com/nl/blog/wordpress-white-screen-of-death/",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "White Screen of Death / Fatal Error? Hoe fixt u WordPress?",
+        "domain": "www.klarned.is",
+        "url": "https://www.klarned.is/nl/hoe-fix-je-wordpress-white-screen-of-death-fatal-error/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "Wat is de white screen of death (WSOD)? - Basmartens.com",
+        "domain": "basmartens.com",
+        "url": "https://basmartens.com/wordpress/kennisbank/wat-is-white-screen-of-death/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "WordPress White Screen of Death: 7 Proven Solutions to ...",
+        "domain": "www.79mplus.com",
+        "url": "https://www.79mplus.com/wordpress-white-screen-of-death/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Het white screen of death voor WordPress oplossen",
+        "domain": "wpjournalist.nl",
+        "url": "https://wpjournalist.nl/het-white-screen-of-death-voor-wordpress-oplossen/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Fix WordPress white screen of death - 7 solutions",
+        "domain": "raidboxes.io",
+        "url": "https://raidboxes.io/en/blog/hosting-performance/wordpress-white-screen/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "WordPress White Screen of Death Causes and Quick Fixes ...",
+        "domain": "www.codeable.io",
+        "url": "https://www.codeable.io/blog/wordpress-white-screen-of-death/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "WordPress error: Ik heb een wit scherm verhelpen",
+        "domain": "www.wpsupporters.nl",
+        "url": "https://www.wpsupporters.nl/wit-scherm/",
+        "is_target": false
+      }
+    ],
+    "Heeft een premium SEO plugin voor WordPress zin?": [
+      {
+        "position": 4,
+        "title": "SEO Wordpress verbeteren - vele SEO tips",
+        "domain": "connectyourworld.nl",
+        "url": "https://connectyourworld.nl/seo-verbeteren-wordpress/",
+        "is_target": false
+      },
+      {
+        "position": 5,
+        "title": "De 10 Beste WordPress Plugins voor SEO in 2026 - Searchlab",
+        "domain": "searchlab.nl",
+        "url": "https://searchlab.nl/vergelijken/beste-wordpress-plugins-seo",
+        "is_target": false
+      },
+      {
+        "position": 6,
+        "title": "Yoast SEO – Advanced SEO with real-time guidance and ...",
+        "domain": "nl.wordpress.org",
+        "url": "https://nl.wordpress.org/plugins/wordpress-seo/",
+        "is_target": false
+      },
+      {
+        "position": 7,
+        "title": "WordPress SEO plugins: Yoast vs. The SEO Framework vs. ...",
+        "domain": "www.savvii.com",
+        "url": "https://www.savvii.com/blog/wordpress-seo-plugins-yoast-vs-the-seo-framework-vs-all-in-one-seo/",
+        "is_target": false
+      },
+      {
+        "position": 8,
+        "title": "Best SEO WordPress plugins?",
+        "domain": "www.reddit.com",
+        "url": "https://www.reddit.com/r/Wordpress/comments/1fabqjb/best_seo_wordpress_plugins/",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "title": "Welke SEO plugin is het beste voor jouw WordPress site?",
+        "domain": "jgwebmarketing.nl",
+        "url": "https://jgwebmarketing.nl/welke-seo-plugin-voor-jouw-wordpress-website/",
+        "is_target": false
+      },
+      {
+        "position": 10,
+        "title": "Top 25 gratis SEO tools en plugins voor WordPress in 2024",
+        "domain": "wphandleiding.nl",
+        "url": "https://wphandleiding.nl/nieuws/top-25-gratis-seo-tools-en-plugins-voor-wordpress-in-2024/",
+        "is_target": false
+      },
+      {
+        "position": 11,
+        "title": "6 voor- en nadelen van Yoast SEO",
+        "domain": "wpbrothers.nl",
+        "url": "https://wpbrothers.nl/blog/6-voor-en-nadelen-van-yoast-seo/",
+        "is_target": false
+      },
+      {
+        "position": 13,
+        "title": "Beste WordPress SEO-plugins (2019)",
+        "domain": "www.burggraaf.nl",
+        "url": "https://www.burggraaf.nl/nieuws/beste-wordpress-seo-plugins-2019/",
+        "is_target": false
+      },
+      {
+        "position": 14,
+        "title": "7x Beste SEO-plugin voor WordPress & WooCommerce (2026)",
+        "domain": "www.woosa.com",
+        "url": "https://www.woosa.com/nl/blog/beste-seo-plugin-voor-wordpress/",
+        "is_target": false
+      }
+    ],
     "Website beheer": []
   }
 }
