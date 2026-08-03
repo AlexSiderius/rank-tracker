@@ -1,0 +1,36 @@
+name: Monthly search volume check (DataForSEO)
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: "0 5 1 * *"   # 1e van de maand, 05:00 UTC = 07:00 NL-tijd
+  workflow_dispatch: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Fetch search volumes
+        env:
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+        run: python fetch_volumes.py
+
+      - name: Commit results
+        run: |
+          git config user.name "rank-bot"
+          git config user.email "bot@example.com"
+          git add volumes.json
+          git commit -m "Volume check $(date -I)" || echo "no changes"
+          git pull --rebase origin main
+          git push

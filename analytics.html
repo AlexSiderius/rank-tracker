@@ -97,9 +97,29 @@
   .note { color: var(--muted); font-size: 0.82rem; margin-top: 18px; line-height: 1.5; }
 
   #empty { color: var(--muted); text-align: center; padding: 60px 20px; font-size: 0.95rem; }
+
+  .auth-overlay { position: fixed; inset: 0; z-index: 9999; background: var(--bg); display: flex; align-items: center; justify-content: center; }
+  .auth-overlay.hidden { display: none; }
+  .auth-box { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 32px; width: 280px; text-align: center; }
+  .auth-box h2 { font-family: 'Space Grotesk', sans-serif; margin: 0 0 8px; }
+  .auth-box p { color: var(--muted); font-size: 0.85rem; margin: 0 0 16px; }
+  .auth-box input { width: 100%; padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 10px; font-family: 'IBM Plex Sans', sans-serif; box-sizing: border-box; }
+  .auth-box button { width: 100%; padding: 9px 12px; border: none; border-radius: 8px; background: var(--accent); color: #fff; font-weight: 600; cursor: pointer; font-family: 'Space Grotesk', sans-serif; }
+  .auth-error { color: var(--down); font-size: 0.8rem; margin-top: 10px; display: none; }
 </style>
 </head>
 <body>
+
+<div class="auth-overlay" id="authOverlay">
+  <div class="auth-box">
+    <h2>Rank<span style="color:var(--accent)">wacht</span></h2>
+    <p>Voer het wachtwoord in om verder te gaan.</p>
+    <input type="password" id="authInput" placeholder="Wachtwoord" autofocus>
+    <button id="authBtn">Ontgrendel</button>
+    <div class="auth-error" id="authError">Onjuist wachtwoord.</div>
+  </div>
+</div>
+
 <div class="wrap">
 
   <header>
@@ -133,18 +153,21 @@
 
     <div class="legend">
       <span><span class="dot" style="background:#3454D1;"></span>Gemiddelde positie per dag</span>
+      <span><span class="dot" style="background:#12151C;"></span>Volume-gewogen gemiddelde</span>
     </div>
   </div>
 
   <div id="empty" style="display:none;">Nog geen rankingdata gevonden. Zodra de eerste dagelijkse check gedraaid heeft, verschijnt hier het overzicht.</div>
 
-  <p class="note">Let op: dit toont het ongewogen gemiddelde over alle gevonden posities per dag. Er is geen zoekvolume per keyword beschikbaar in <code>keywords.txt</code>, dus een volume-gewogen gemiddelde (zoals "Volume Average Position" in sommige tools) kan hier niet worden berekend.</p>
+  <p class="note">De volume-gewogen lijn gebruikt de maandelijkse Nederlandse zoekvolumes uit <code>volumes.json</code> (DataForSEO). Zolang dat bestand nog niet bestaat of leeg is, valt deze lijn samen met "geen data" en zie je alleen de ongewogen gemiddelde positie.</p>
 
 </div>
 
 <script>
 let mainChart = null;
-let dailySeries = []; // [{date, avg, count}]
+let dailySeries = []; // [{date, avg, volAvg, count}]
+let volumesData = {};
+let byKeyword = {};
 
 async function load() {
   const status = document.getElementById('status');
@@ -166,13 +189,34 @@ async function load() {
       return;
     }
 
+    // volumes.json is optioneel en wordt 1x per maand bijgewerkt
+    try {
+      const volResp = await fetch('volumes.json?t=' + Date.now());
+      if (volResp.ok) {
+        const volJson = await volResp.json();
+        volumesData = volJson.volumes || {};
+      }
+    } catch (e) { /* geen volumedata beschikbaar, geen probleem */ }
+
+    byKeyword = {};
+    rows.forEach(r => { (byKeyword[r.keyword] ||= []).push(r); });
+    Object.values(byKeyword).forEach(arr => arr.sort((a, b) => a.date.localeCompare(b.date)));
+
     const byDate = {};
-    rows.forEach(r => { (byDate[r.date] ||= []).push(r.rank); });
+    rows.forEach(r => { (byDate[r.date] ||= []).push(r); });
 
     dailySeries = Object.keys(byDate).sort().map(date => {
-      const ranks = byDate[date].filter(r => r !== null);
+      const entries = byDate[date].filter(r => r.rank !== null);
+      const ranks = entries.map(r => r.rank);
       const avg = ranks.length ? ranks.reduce((a, b) => a + b, 0) / ranks.length : null;
-      return { date, avg, count: ranks.length };
+
+      const weighted = entries.map(r => ({ rank: r.rank, w: volumesData[r.keyword] || 0 }));
+      const totalWeight = weighted.reduce((a, b) => a + b.w, 0);
+      const volAvg = totalWeight > 0
+        ? weighted.reduce((a, b) => a + b.rank * b.w, 0) / totalWeight
+        : null;
+
+      return { date, avg, volAvg, count: ranks.length };
     });
 
     const lastDate = dailySeries[dailySeries.length - 1].date;
@@ -197,23 +241,49 @@ async function load() {
   }
 }
 
+function currentAndDelta(series) {
+  const withRank = series.filter(r => r.rank !== null);
+  const current = withRank.length ? withRank[withRank.length - 1].rank : null;
+  let compareIdx = withRank.length - 8;
+  if (compareIdx < 0) compareIdx = 0;
+  const compare = withRank.length > 1 ? withRank[compareIdx].rank : null;
+  const delta = (current !== null && compare !== null && withRank.length > 1) ? compare - current : null;
+  return { current, delta };
+}
+
 function renderStats() {
   const withAvg = dailySeries.filter(d => d.avg !== null);
   const current = withAvg.length ? withAvg[withAvg.length - 1].avg.toFixed(1) : '–';
   const best = withAvg.length ? Math.min(...withAvg.map(d => d.avg)).toFixed(1) : '–';
   const overall = withAvg.length ? (withAvg.reduce((a, b) => a + b.avg, 0) / withAvg.length).toFixed(1) : '–';
 
+  const keywords = Object.keys(byKeyword);
+  const deltas = keywords.map(kw => ({ kw, ...currentAndDelta(byKeyword[kw]) }))
+    .filter(d => d.delta !== null);
+  const top3Count = keywords.filter(kw => {
+    const c = currentAndDelta(byKeyword[kw]).current;
+    return c !== null && c <= 3;
+  }).length;
+  const biggestGainer = deltas.length ? deltas.reduce((a, b) => (b.delta > a.delta ? b : a)) : null;
+  const biggestDrop = deltas.length ? deltas.reduce((a, b) => (b.delta < a.delta ? b : a)) : null;
+
+  const totalVolume = Object.values(volumesData).reduce((a, b) => a + (b || 0), 0);
+
   const stats = [
     { label: 'Huidig gemiddelde', value: current },
     { label: 'Beste gemiddelde', value: best },
     { label: 'Gemiddeld (periode)', value: overall },
     { label: 'Dagen met data', value: dailySeries.length },
+    { label: 'Keywords in top 3', value: top3Count },
+    { label: 'Grootste stijger (7d)', value: biggestGainer && biggestGainer.delta > 0 ? `${biggestGainer.kw} (+${biggestGainer.delta})` : '–' },
+    { label: 'Grootste daler (7d)', value: biggestDrop && biggestDrop.delta < 0 ? `${biggestDrop.kw} (${biggestDrop.delta})` : '–' },
+    { label: 'Totaal zoekvolume (NL/mnd)', value: totalVolume ? totalVolume.toLocaleString('nl-NL') : '–' },
   ];
 
   document.getElementById('statStrip').innerHTML = stats.map(s => `
     <div class="stat">
       <div class="label">${s.label}</div>
-      <div class="value">${s.value}</div>
+      <div class="value" style="${typeof s.value === 'string' && s.value.length > 14 ? 'font-size:1rem;' : ''}">${s.value}</div>
     </div>
   `).join('');
 }
@@ -239,18 +309,31 @@ function renderChart(range) {
     type: 'line',
     data: {
       labels: series.map(d => d.date),
-      datasets: [{
-        label: 'Gemiddelde positie',
-        data: series.map(d => d.avg),
-        borderColor: '#3454D1',
-        backgroundColor: '#3454D114',
-        fill: true,
-        spanGaps: true,
-        tension: 0.25,
-        pointRadius: series.length > 60 ? 0 : 2.5,
-        pointBackgroundColor: '#3454D1',
-        borderWidth: 1.75,
-      }]
+      datasets: [
+        {
+          label: 'Gemiddelde positie',
+          data: series.map(d => d.avg),
+          borderColor: '#3454D1',
+          backgroundColor: '#3454D114',
+          fill: true,
+          spanGaps: true,
+          tension: 0.25,
+          pointRadius: series.length > 60 ? 0 : 2.5,
+          pointBackgroundColor: '#3454D1',
+          borderWidth: 1.75,
+        },
+        {
+          label: 'Volume-gewogen gemiddelde',
+          data: series.map(d => d.volAvg),
+          borderColor: '#12151C',
+          backgroundColor: 'transparent',
+          fill: false,
+          spanGaps: true,
+          tension: 0.15,
+          pointRadius: 0,
+          borderWidth: 1.5,
+        }
+      ]
     },
     options: {
       responsive: true,
@@ -275,6 +358,27 @@ function renderChart(range) {
     }
   });
 }
+
+const RW_PASSWORD = "Aal3x324822";
+(function initAuth() {
+  const overlay = document.getElementById('authOverlay');
+  if (sessionStorage.getItem('rw_unlocked') === '1') {
+    overlay.classList.add('hidden');
+    return;
+  }
+  const input = document.getElementById('authInput');
+  const errEl = document.getElementById('authError');
+  function tryUnlock() {
+    if (input.value === RW_PASSWORD) {
+      sessionStorage.setItem('rw_unlocked', '1');
+      overlay.classList.add('hidden');
+    } else {
+      errEl.style.display = 'block';
+    }
+  }
+  document.getElementById('authBtn').addEventListener('click', tryUnlock);
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') tryUnlock(); });
+})();
 
 load();
 </script>

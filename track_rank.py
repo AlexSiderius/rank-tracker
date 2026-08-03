@@ -90,11 +90,11 @@ def find_rank(result_json):
     try:
         items = result_json["tasks"][0]["result"][0]["items"]
     except (KeyError, IndexError, TypeError):
-        return None
+        return None, None
     for item in items:
         if item.get("type") == "organic" and TARGET_DOMAIN in item.get("domain", ""):
-            return item.get("rank_absolute")
-    return None
+            return item.get("rank_absolute"), item.get("url")
+    return None, None
 
 
 def get_top10(result_json):
@@ -137,14 +137,14 @@ def main():
     with open(OUTPUT_FILE, "a", newline="") as f:
         writer = csv.writer(f)
         if not file_exists:
-            writer.writerow(["date", "keyword", "rank"])
+            writer.writerow(["date", "keyword", "rank", "url"])
 
         for kw in keywords:
             task_id = next((tid for tid, k in task_map.items() if k == kw), None)
 
             if task_id is None:
                 # kon niet eens worden ingediend (bv. saldo op)
-                writer.writerow([today, kw, "error_submit"])
+                writer.writerow([today, kw, "error_submit", ""])
                 top10_data[kw] = []
                 error_count += 1
                 continue
@@ -154,7 +154,7 @@ def main():
                 # kwam niet op tijd terug -> GEEN "not_found" schrijven, dat zou een valse
                 # ranking-daling suggereren. Apart gemarkeerd zodat je het herkent.
                 print(f"TIMEOUT: '{kw}' kreeg geen resultaat binnen de wachttijd.")
-                writer.writerow([today, kw, "error_timeout"])
+                writer.writerow([today, kw, "error_timeout", ""])
                 top10_data[kw] = []
                 error_count += 1
                 continue
@@ -162,13 +162,13 @@ def main():
             task_result = (result_json.get("tasks") or [{}])[0]
             if task_result.get("status_code") != 20000:
                 print(f"FOUT bij ophalen van '{kw}': {task_result.get('status_message')}")
-                writer.writerow([today, kw, "error"])
+                writer.writerow([today, kw, "error", ""])
                 top10_data[kw] = []
                 error_count += 1
                 continue
 
-            rank = find_rank(result_json)
-            writer.writerow([today, kw, rank or "not_found"])
+            rank, url = find_rank(result_json)
+            writer.writerow([today, kw, rank or "not_found", url or ""])
             print(f"{kw}: {rank or 'niet gevonden'}")
             top10_data[kw] = get_top10(result_json)
 

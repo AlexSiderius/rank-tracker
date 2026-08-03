@@ -137,9 +137,32 @@
   }
   nav.topnav a:hover { background: var(--accent-soft); color: var(--ink); }
   nav.topnav a.active { background: var(--accent); color: #fff; }
+
+  .kw-url { color: var(--accent); text-decoration: none; font-size: 0.82rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline-block; max-width: 220px; vertical-align: middle; }
+  .kw-url:hover { text-decoration: underline; }
+
+  .auth-overlay { position: fixed; inset: 0; z-index: 9999; background: var(--bg); display: flex; align-items: center; justify-content: center; }
+  .auth-overlay.hidden { display: none; }
+  .auth-box { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 32px; width: 280px; text-align: center; }
+  .auth-box h2 { font-family: 'Space Grotesk', sans-serif; margin: 0 0 8px; }
+  .auth-box p { color: var(--muted); font-size: 0.85rem; margin: 0 0 16px; }
+  .auth-box input { width: 100%; padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 10px; font-family: 'IBM Plex Sans', sans-serif; box-sizing: border-box; }
+  .auth-box button { width: 100%; padding: 9px 12px; border: none; border-radius: 8px; background: var(--accent); color: #fff; font-weight: 600; cursor: pointer; font-family: 'Space Grotesk', sans-serif; }
+  .auth-error { color: var(--down); font-size: 0.8rem; margin-top: 10px; display: none; }
 </style>
 </head>
 <body>
+
+<div class="auth-overlay" id="authOverlay">
+  <div class="auth-box">
+    <h2>Rank<span style="color:var(--accent)">wacht</span></h2>
+    <p>Voer het wachtwoord in om verder te gaan.</p>
+    <input type="password" id="authInput" placeholder="Wachtwoord" autofocus>
+    <button id="authBtn">Ontgrendel</button>
+    <div class="auth-error" id="authError">Onjuist wachtwoord.</div>
+  </div>
+</div>
+
 <div class="wrap">
 
   <header>
@@ -163,7 +186,9 @@
       <tr>
         <th class="sortable" data-sort="kw">Zoekwoord<span class="sort-arrow">↕</span></th>
         <th class="sortable" data-sort="rank">Positie<span class="sort-arrow">↕</span></th>
+        <th class="sortable" data-sort="volume">Zoekvolume<span class="sort-arrow">↕</span></th>
         <th class="sortable" data-sort="delta">t.o.v. 7 dagen<span class="sort-arrow">↕</span></th>
+        <th>URL</th>
         <th>Verloop (14d)</th>
       </tr>
     </thead>
@@ -184,6 +209,7 @@ let expandCharts = {};
 let allByKeyword = {};
 let allKeywords = [];
 let top10Data = {};
+let volumesData = {};
 let searchQuery = '';
 let sortState = { col: null, dir: 1 };
 let openKeyword = null;
@@ -197,9 +223,13 @@ async function load() {
     if (!text) throw new Error('leeg bestand');
 
     const rows = text.split('\n').slice(1).filter(Boolean).map(line => {
-      const [date, keyword, rankRaw] = line.replace(/\r$/, '').split(',');
+      const [date, keyword, rankRaw, urlRaw] = line.replace(/\r$/, '').split(',');
       const clean = (rankRaw || '').trim();
-      return { date, keyword, rank: (clean === 'not_found' || clean.startsWith('error')) ? null : parseInt(clean, 10) };
+      return {
+        date, keyword,
+        rank: (clean === 'not_found' || clean.startsWith('error')) ? null : parseInt(clean, 10),
+        url: (urlRaw || '').trim(),
+      };
     });
 
     if (rows.length === 0) {
@@ -225,6 +255,15 @@ async function load() {
         top10Data = t10json.results || {};
       }
     } catch (e) { /* geen top10 data beschikbaar, geen probleem */ }
+
+    // volumes.json is optioneel en wordt 1x per maand bijgewerkt
+    try {
+      const volResp = await fetch('volumes.json?t=' + Date.now());
+      if (volResp.ok) {
+        const volJson = await volResp.json();
+        volumesData = volJson.volumes || {};
+      }
+    } catch (e) { /* geen volumedata beschikbaar, geen probleem */ }
 
     renderStats(allByKeyword, allKeywords, lastDate);
     applyFiltersAndRender();
@@ -265,6 +304,7 @@ function applyFiltersAndRender() {
       let va, vb;
       if (sortState.col === 'kw') { va = a.toLowerCase(); vb = b.toLowerCase(); }
       if (sortState.col === 'rank') { va = da.current ?? 9999; vb = db.current ?? 9999; }
+      if (sortState.col === 'volume') { va = volumesData[a] ?? -1; vb = volumesData[b] ?? -1; }
       if (sortState.col === 'delta') { va = da.delta ?? -9999; vb = db.delta ?? -9999; }
       if (va < vb) return -1 * sortState.dir;
       if (va > vb) return 1 * sortState.dir;
@@ -335,15 +375,27 @@ function renderTable(byKeyword, keywords) {
       deltaHtml = '<span class="delta flat">– 0</span>';
     }
 
+    const volume = volumesData[kw];
+    const volumeHtml = (volume !== undefined && volume !== null)
+      ? volume.toLocaleString('nl-NL')
+      : '<span class="rank-na">–</span>';
+
+    const url = lastUrl(series);
+    const urlHtml = url
+      ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener" class="kw-url" title="${escapeHtml(url)}">${escapeHtml(shortenUrl(url))}</a>`
+      : '<span class="rank-na">–</span>';
+
     return `
       <tr class="kw-row" tabindex="0" data-kw="${i}">
         <td class="kw"><span class="kw-arrow">▶</span>${kw}</td>
         <td class="rank-cell">${rankHtml}</td>
+        <td>${volumeHtml}</td>
         <td>${deltaHtml}</td>
+        <td>${urlHtml}</td>
         <td><canvas class="spark" id="spark-${i}"></canvas></td>
       </tr>
       <tr class="expand-row" data-kw="${i}">
-        <td colspan="4">
+        <td colspan="6">
           <div class="expand-inner" id="expand-${i}"></div>
         </td>
       </tr>
@@ -503,6 +555,44 @@ function escapeHtml(str) {
   div.textContent = str || '';
   return div.innerHTML;
 }
+
+function lastUrl(series) {
+  for (let i = series.length - 1; i >= 0; i--) {
+    if (series[i].url) return series[i].url;
+  }
+  return null;
+}
+
+function shortenUrl(url) {
+  try {
+    const u = new URL(url);
+    const path = u.pathname + u.search;
+    return path === '' ? '/' : path;
+  } catch (e) {
+    return url;
+  }
+}
+
+const RW_PASSWORD = "Aal3x324822";
+(function initAuth() {
+  const overlay = document.getElementById('authOverlay');
+  if (sessionStorage.getItem('rw_unlocked') === '1') {
+    overlay.classList.add('hidden');
+    return;
+  }
+  const input = document.getElementById('authInput');
+  const errEl = document.getElementById('authError');
+  function tryUnlock() {
+    if (input.value === RW_PASSWORD) {
+      sessionStorage.setItem('rw_unlocked', '1');
+      overlay.classList.add('hidden');
+    } else {
+      errEl.style.display = 'block';
+    }
+  }
+  document.getElementById('authBtn').addEventListener('click', tryUnlock);
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') tryUnlock(); });
+})();
 
 load();
 </script>
