@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analytics — Rankwacht</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F7F8FA;
+    --surface: #FFFFFF;
+    --ink: #12151C;
+    --muted: #6B7280;
+    --line: #E5E7EB;
+    --accent: #3454D1;
+    --accent-soft: #3454D114;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 48px 24px 96px; }
+
+  header { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 8px; }
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  h1 span { color: var(--accent); }
+  #status { color: var(--muted); font-size: 0.85rem; font-family: 'IBM Plex Mono', monospace; }
+
+  nav.topnav { display: flex; gap: 4px; margin-bottom: 20px; }
+  nav.topnav a {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--muted);
+    padding: 8px 14px;
+    border-radius: 8px;
+  }
+  nav.topnav a:hover { background: var(--accent-soft); color: var(--ink); }
+  nav.topnav a.active { background: var(--accent); color: #fff; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 28px 0 28px; }
+  .stat {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .stat .label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .stat .value { font-family: 'Space Grotesk', sans-serif; font-size: 1.6rem; font-weight: 600; margin-top: 4px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px 24px 8px;
+  }
+  .card-title { text-align: center; margin-bottom: 4px; }
+  .card-title h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; font-weight: 600; margin: 0; }
+  .card-sub { text-align: center; color: var(--muted); font-size: 0.85rem; margin-bottom: 18px; }
+
+  .zoom-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+  .zoom-btns { display: flex; align-items: center; gap: 6px; }
+  .zoom-btns span.lbl { font-size: 0.8rem; color: var(--muted); margin-right: 6px; }
+  .zoom-btns button {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.82rem;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--muted);
+    padding: 6px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  .zoom-btns button:hover { color: var(--ink); }
+  .zoom-btns button.active { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); font-weight: 600; }
+  .range-lbl { font-size: 0.8rem; color: var(--muted); }
+
+  .chart-holder { height: 420px; }
+
+  .legend { display: flex; justify-content: center; gap: 24px; margin-top: 12px; padding-bottom: 18px; font-size: 0.82rem; color: var(--muted); }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend .dot { width: 20px; height: 2px; display: inline-block; }
+
+  .note { color: var(--muted); font-size: 0.82rem; margin-top: 18px; line-height: 1.5; }
+
+  #empty { color: var(--muted); text-align: center; padding: 60px 20px; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Rank<span>wacht</span></h1>
+    <div id="status">laden...</div>
+  </header>
+
+  <nav class="topnav">
+    <a href="index.html">Zoekwoorden</a>
+    <a href="analytics.html" class="active">Analytics</a>
+  </nav>
+
+  <div class="stats" id="statStrip"></div>
+
+  <div class="card" id="chartCard" style="display:none;">
+    <div class="card-title"><h2>Project Summary Graph</h2></div>
+    <div class="card-sub">(gemiddelde positie per dag, over alle zoekwoorden)</div>
+
+    <div class="zoom-row">
+      <div class="zoom-btns" id="zoomBtns">
+        <span class="lbl">Zoom</span>
+        <button data-range="7">1w</button>
+        <button data-range="30">1m</button>
+        <button data-range="365">1y</button>
+        <button data-range="all" class="active">All</button>
+      </div>
+      <div class="range-lbl" id="rangeLbl"></div>
+    </div>
+
+    <div class="chart-holder"><canvas id="mainChart"></canvas></div>
+
+    <div class="legend">
+      <span><span class="dot" style="background:#3454D1;"></span>Gemiddelde positie per dag</span>
+    </div>
+  </div>
+
+  <div id="empty" style="display:none;">Nog geen rankingdata gevonden. Zodra de eerste dagelijkse check gedraaid heeft, verschijnt hier het overzicht.</div>
+
+  <p class="note">Let op: dit toont het ongewogen gemiddelde over alle gevonden posities per dag. Er is geen zoekvolume per keyword beschikbaar in <code>keywords.txt</code>, dus een volume-gewogen gemiddelde (zoals "Volume Average Position" in sommige tools) kan hier niet worden berekend.</p>
+
+</div>
+
+<script>
+let mainChart = null;
+let dailySeries = []; // [{date, avg, count}]
+
+async function load() {
+  const status = document.getElementById('status');
+  try {
+    const resp = await fetch('rankings.csv?t=' + Date.now());
+    if (!resp.ok) throw new Error('rankings.csv niet gevonden');
+    const text = (await resp.text()).trim();
+    if (!text) throw new Error('leeg bestand');
+
+    const rows = text.split('\n').slice(1).filter(Boolean).map(line => {
+      const [date, keyword, rankRaw] = line.replace(/\r$/, '').split(',');
+      const clean = (rankRaw || '').trim();
+      return { date, keyword, rank: (clean === 'not_found' || clean.startsWith('error')) ? null : parseInt(clean, 10) };
+    });
+
+    if (rows.length === 0) {
+      document.getElementById('empty').style.display = 'block';
+      status.textContent = '';
+      return;
+    }
+
+    const byDate = {};
+    rows.forEach(r => { (byDate[r.date] ||= []).push(r.rank); });
+
+    dailySeries = Object.keys(byDate).sort().map(date => {
+      const ranks = byDate[date].filter(r => r !== null);
+      const avg = ranks.length ? ranks.reduce((a, b) => a + b, 0) / ranks.length : null;
+      return { date, avg, count: ranks.length };
+    });
+
+    const lastDate = dailySeries[dailySeries.length - 1].date;
+    status.textContent = `laatst bijgewerkt: ${lastDate}`;
+
+    renderStats();
+    document.getElementById('chartCard').style.display = 'block';
+    renderChart('all');
+
+    document.querySelectorAll('#zoomBtns button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#zoomBtns button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderChart(btn.dataset.range);
+      });
+    });
+
+  } catch (e) {
+    status.textContent = '';
+    document.getElementById('empty').style.display = 'block';
+    document.getElementById('empty').textContent = 'Kon rankingdata niet laden: ' + e.message;
+  }
+}
+
+function renderStats() {
+  const withAvg = dailySeries.filter(d => d.avg !== null);
+  const current = withAvg.length ? withAvg[withAvg.length - 1].avg.toFixed(1) : '–';
+  const best = withAvg.length ? Math.min(...withAvg.map(d => d.avg)).toFixed(1) : '–';
+  const overall = withAvg.length ? (withAvg.reduce((a, b) => a + b.avg, 0) / withAvg.length).toFixed(1) : '–';
+
+  const stats = [
+    { label: 'Huidig gemiddelde', value: current },
+    { label: 'Beste gemiddelde', value: best },
+    { label: 'Gemiddeld (periode)', value: overall },
+    { label: 'Dagen met data', value: dailySeries.length },
+  ];
+
+  document.getElementById('statStrip').innerHTML = stats.map(s => `
+    <div class="stat">
+      <div class="label">${s.label}</div>
+      <div class="value">${s.value}</div>
+    </div>
+  `).join('');
+}
+
+function renderChart(range) {
+  let series = dailySeries;
+  if (range !== 'all') {
+    const n = parseInt(range, 10);
+    series = dailySeries.slice(-n);
+  }
+
+  const rangeLbl = document.getElementById('rangeLbl');
+  if (series.length) {
+    rangeLbl.textContent = `Van ${series[0].date} tot ${series[series.length - 1].date}`;
+  } else {
+    rangeLbl.textContent = '';
+  }
+
+  const ctx = document.getElementById('mainChart');
+  if (mainChart) mainChart.destroy();
+
+  mainChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: series.map(d => d.date),
+      datasets: [{
+        label: 'Gemiddelde positie',
+        data: series.map(d => d.avg),
+        borderColor: '#3454D1',
+        backgroundColor: '#3454D114',
+        fill: true,
+        spanGaps: true,
+        tension: 0.25,
+        pointRadius: series.length > 60 ? 0 : 2.5,
+        pointBackgroundColor: '#3454D1',
+        borderWidth: 1.75,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        y: {
+          reverse: true,
+          title: { display: true, text: 'Positie in Google', color: '#6B7280' },
+          ticks: { stepSize: 5, precision: 0 },
+          grid: { color: '#E5E7EB' },
+        },
+        x: { grid: { display: false } }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => `Gem. positie: ${ctx.parsed.y.toFixed(1)}`
+          }
+        }
+      }
+    }
+  });
+}
+
+load();
+</script>
+</body>
+</html>

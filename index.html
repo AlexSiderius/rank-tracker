@@ -124,6 +124,19 @@
 
   #noResults { display: none; text-align: center; padding: 40px 20px; color: var(--muted); font-size: 0.9rem; }
   #empty { color: var(--muted); text-align: center; padding: 60px 20px; font-size: 0.95rem; }
+
+  nav.topnav { display: flex; gap: 4px; margin-bottom: 20px; }
+  nav.topnav a {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--muted);
+    padding: 8px 14px;
+    border-radius: 8px;
+  }
+  nav.topnav a:hover { background: var(--accent-soft); color: var(--ink); }
+  nav.topnav a.active { background: var(--accent); color: #fff; }
 </style>
 </head>
 <body>
@@ -133,6 +146,11 @@
     <h1>Rank<span>wacht</span></h1>
     <div id="status">laden...</div>
   </header>
+
+  <nav class="topnav">
+    <a href="index.html" class="active">Zoekwoorden</a>
+    <a href="analytics.html">Analytics</a>
+  </nav>
 
   <div class="stats" id="statStrip"></div>
 
