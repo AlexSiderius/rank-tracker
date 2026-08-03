@@ -10,7 +10,9 @@ TOP10_FILE = "top10.json"   # actuele top 10 per keyword (wordt elke dag oversch
 
 LOCATION_CODE = 2528   # Netherlands (heel land)
 LANGUAGE_CODE = "nl"
-DEPTH = 30             # top 30 resultaten
+SE_DOMAIN = "google.nl"  # expliciet google.nl i.p.v. de default google.com
+DEVICE = "desktop"
+DEPTH = 100            # top 100 resultaten i.p.v. 30, anders mis je posities 31-100
 
 BASE_URL = "https://api.dataforseo.com/v3/serp/google/organic"
 
@@ -22,6 +24,8 @@ def submit_tasks(keywords):
             "keyword": kw,
             "location_code": LOCATION_CODE,
             "language_code": LANGUAGE_CODE,
+            "se_domain": SE_DOMAIN,
+            "device": DEVICE,
             "depth": DEPTH,
         }
         for kw in keywords
