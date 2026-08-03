@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keywords beheren — Rankwacht</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F7F8FA;
+    --surface: #FFFFFF;
+    --ink: #12151C;
+    --muted: #6B7280;
+    --line: #E5E7EB;
+    --accent: #3454D1;
+    --accent-soft: #3454D114;
+    --down: #C0392B;
+    --up: #1E8E5A;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { width: 80%; margin: 0 auto; padding: 48px 40px 96px; }
+
+  header { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 8px; }
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  h1 span { color: var(--accent); }
+  #status { color: var(--muted); font-size: 0.85rem; font-family: 'IBM Plex Mono', monospace; }
+
+  nav.topnav { display: flex; gap: 4px; margin-bottom: 20px; }
+  nav.topnav a {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--muted);
+    padding: 8px 14px;
+    border-radius: 8px;
+  }
+  nav.topnav a:hover { background: var(--accent-soft); color: var(--ink); }
+  nav.topnav a.active { background: var(--accent); color: #fff; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  .card h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; margin: 0 0 6px; }
+  .card p.sub { color: var(--muted); font-size: 0.85rem; margin: 0 0 16px; }
+
+  label { display: block; font-size: 0.82rem; color: var(--muted); margin-bottom: 6px; }
+  input[type="text"], input[type="password"] {
+    width: 100%; padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px;
+    font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; margin-bottom: 14px;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 480px;
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    resize: vertical;
+    background: var(--surface);
+    color: var(--ink);
+  }
+
+  .row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
+  .kw-count { font-size: 0.82rem; color: var(--muted); }
+
+  .checkbox-row { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--muted); margin-bottom: 14px; }
+  .checkbox-row input { margin: 0; }
+
+  button {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  button.primary { background: var(--accent); color: #fff; }
+  button.primary:disabled { background: var(--line); color: var(--muted); cursor: not-allowed; }
+  button.secondary { background: transparent; color: var(--muted); border: 1px solid var(--line); }
+
+  .msg { font-size: 0.85rem; margin-top: 14px; padding: 10px 14px; border-radius: 8px; display: none; }
+  .msg.ok { display: block; background: #1E8E5A14; color: var(--up); }
+  .msg.err { display: block; background: #C0392B14; color: var(--down); }
+  .msg.info { display: block; background: var(--accent-soft); color: var(--accent); }
+
+  .auth-overlay { position: fixed; inset: 0; z-index: 9999; background: var(--bg); display: flex; align-items: center; justify-content: center; }
+  .auth-overlay.hidden { display: none; }
+  .auth-box { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 32px; width: 280px; text-align: center; }
+  .auth-box h2 { font-family: 'Space Grotesk', sans-serif; margin: 0 0 8px; }
+  .auth-box p { color: var(--muted); font-size: 0.85rem; margin: 0 0 16px; }
+  .auth-box input { width: 100%; padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 10px; font-family: 'IBM Plex Sans', sans-serif; box-sizing: border-box; }
+  .auth-box button { width: 100%; padding: 9px 12px; }
+  .auth-error { color: var(--down); font-size: 0.8rem; margin-top: 10px; display: none; }
+</style>
+</head>
+<body>
+
+<div class="auth-overlay" id="authOverlay">
+  <div class="auth-box">
+    <h2>Rank<span style="color:var(--accent)">wacht</span></h2>
+    <p>Voer het wachtwoord in om verder te gaan.</p>
+    <input type="password" id="authInput" placeholder="Wachtwoord" autofocus>
+    <button class="primary" id="authBtn">Ontgrendel</button>
+    <div class="auth-error" id="authError">Onjuist wachtwoord.</div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <header>
+    <h1>Rank<span>wacht</span></h1>
+    <div id="status"></div>
+  </header>
+
+  <nav class="topnav">
+    <a href="index.html">Zoekwoorden</a>
+    <a href="analytics.html">Analytics</a>
+    <a href="keywords-beheer.html" class="active">Keywords beheren</a>
+  </nav>
+
+  <div class="card" id="tokenCard">
+    <h2>GitHub-token</h2>
+    <p class="sub">Nodig om wijzigingen direct naar de repo te committen. Fine-grained token, alleen scoped op deze repo, met rechten: <b>Contents: Read/write</b> en <b>Actions: Read/write</b>.</p>
+    <label for="tokenInput">Personal Access Token</label>
+    <input type="password" id="tokenInput" placeholder="github_pat_...">
+    <div class="checkbox-row">
+      <input type="checkbox" id="rememberToken">
+      <label for="rememberToken" style="margin:0;">Onthouden op dit apparaat (localStorage — minder veilig, wel handiger)</label>
+    </div>
+    <button class="primary" id="tokenSaveBtn">Token gebruiken</button>
+    <div class="msg" id="tokenMsg"></div>
+  </div>
+
+  <div class="card" id="editorCard" style="display:none;">
+    <h2>Zoekwoorden (1 per regel, exact match)</h2>
+    <p class="sub">Dit vervangt het handmatig bewerken van <code>keywords.txt</code>. Lege regels en dubbele spaties worden automatisch opgeschoond bij opslaan.</p>
+    <textarea id="kwTextarea" placeholder="laden..." spellcheck="false"></textarea>
+    <div class="row">
+      <span class="kw-count" id="kwCount"></span>
+      <div class="checkbox-row" style="margin:0;">
+        <input type="checkbox" id="triggerCheck" checked>
+        <label for="triggerCheck" style="margin:0;">Direct een rank-check starten na opslaan</label>
+      </div>
+    </div>
+    <div class="row">
+      <button class="secondary" id="reloadBtn">Opnieuw laden vanaf GitHub</button>
+      <button class="primary" id="saveBtn">Opslaan naar keywords.txt</button>
+    </div>
+    <div class="msg" id="editorMsg"></div>
+  </div>
+
+</div>
+
+<script>
+const REPO = "AlexSiderius/rank-tracker";
+const API = `https://api.github.com/repos/${REPO}`;
+let currentSha = null;
+let token = null;
+
+function showMsg(el, text, type) {
+  el.className = `msg ${type}`;
+  el.textContent = text;
+}
+
+function ghHeaders() {
+  return {
+    "Authorization": `Bearer ${token}`,
+    "Accept": "application/vnd.github+json",
+  };
+}
+
+async function loadKeywords() {
+  const ta = document.getElementById('kwTextarea');
+  const msg = document.getElementById('editorMsg');
+  ta.value = 'laden...';
+  try {
+    const resp = await fetch(`${API}/contents/keywords.txt`, { headers: ghHeaders() });
+    if (!resp.ok) throw new Error(`GitHub gaf status ${resp.status} terug (klopt het token en de rechten?)`);
+    const data = await resp.json();
+    currentSha = data.sha;
+    const content = decodeURIComponent(escape(atob(data.content.replace(/\n/g, ''))));
+    ta.value = content.trim();
+    updateCount();
+    msg.className = 'msg';
+  } catch (e) {
+    ta.value = '';
+    showMsg(msg, 'Kon keywords.txt niet laden: ' + e.message, 'err');
+  }
+}
+
+function updateCount() {
+  const ta = document.getElementById('kwTextarea');
+  const lines = ta.value.split('\n').map(l => l.trim()).filter(Boolean);
+  document.getElementById('kwCount').textContent = `${lines.length} zoekwoorden`;
+}
+
+function b64EncodeUnicode(str) {
+  return btoa(unescape(encodeURIComponent(str)));
+}
+
+async function saveKeywords() {
+  const ta = document.getElementById('kwTextarea');
+  const msg = document.getElementById('editorMsg');
+  const saveBtn = document.getElementById('saveBtn');
+
+  const lines = ta.value.split('\n').map(l => l.trim()).filter(Boolean);
+  const uniqueLines = [...new Set(lines)];
+  const newContent = uniqueLines.join('\n') + '\n';
+
+  saveBtn.disabled = true;
+  showMsg(msg, 'Bezig met opslaan...', 'info');
+
+  try {
+    const putResp = await fetch(`${API}/contents/keywords.txt`, {
+      method: 'PUT',
+      headers: { ...ghHeaders(), 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: `Keywords bijgewerkt via keywords-beheer.html (${uniqueLines.length} keywords)`,
+        content: b64EncodeUnicode(newContent),
+        sha: currentSha,
+        branch: 'main',
+      }),
+    });
+    if (!putResp.ok) {
+      const errBody = await putResp.json().catch(() => ({}));
+      throw new Error(errBody.message || `GitHub gaf status ${putResp.status} terug`);
+    }
+    const putData = await putResp.json();
+    currentSha = putData.content.sha;
+    ta.value = uniqueLines.join('\n');
+    updateCount();
+    showMsg(msg, `Opgeslagen (${uniqueLines.length} keywords).`, 'ok');
+
+    if (document.getElementById('triggerCheck').checked) {
+      await triggerRankCheck(msg);
+    }
+  } catch (e) {
+    showMsg(msg, 'Opslaan mislukt: ' + e.message, 'err');
+  } finally {
+    saveBtn.disabled = false;
+  }
+}
+
+async function triggerRankCheck(msg) {
+  try {
+    const resp = await fetch(`${API}/actions/workflows/daily-rank-check.yml/dispatches`, {
+      method: 'POST',
+      headers: { ...ghHeaders(), 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ref: 'main' }),
+    });
+    if (!resp.ok) throw new Error(`status ${resp.status}`);
+    showMsg(msg, 'Opgeslagen en rank-check gestart. Check over een paar minuten de Zoekwoorden-pagina.', 'ok');
+  } catch (e) {
+    showMsg(msg, 'Opgeslagen, maar de rank-check kon niet automatisch gestart worden (' + e.message + '). Start hem evt. handmatig via Actions.', 'err');
+  }
+}
+
+function initTokenUI() {
+  const stored = localStorage.getItem('rw_gh_token') || sessionStorage.getItem('rw_gh_token');
+  if (stored) {
+    token = stored;
+    document.getElementById('tokenCard').style.display = 'none';
+    document.getElementById('editorCard').style.display = 'block';
+    loadKeywords();
+    return;
+  }
+
+  document.getElementById('tokenSaveBtn').addEventListener('click', () => {
+    const val = document.getElementById('tokenInput').value.trim();
+    const remember = document.getElementById('rememberToken').checked;
+    const msg = document.getElementById('tokenMsg');
+    if (!val) {
+      showMsg(msg, 'Vul een token in.', 'err');
+      return;
+    }
+    token = val;
+    if (remember) {
+      localStorage.setItem('rw_gh_token', val);
+    } else {
+      sessionStorage.setItem('rw_gh_token', val);
+    }
+    document.getElementById('tokenCard').style.display = 'none';
+    document.getElementById('editorCard').style.display = 'block';
+    loadKeywords();
+  });
+}
+
+document.getElementById('kwTextarea').addEventListener('input', updateCount);
+document.getElementById('reloadBtn').addEventListener('click', loadKeywords);
+document.getElementById('saveBtn').addEventListener('click', saveKeywords);
+
+const RW_PASSWORD = "Aal3x324822";
+(function initAuth() {
+  const overlay = document.getElementById('authOverlay');
+  if (sessionStorage.getItem('rw_unlocked') === '1') {
+    overlay.classList.add('hidden');
+  } else {
+    const input = document.getElementById('authInput');
+    const errEl = document.getElementById('authError');
+    function tryUnlock() {
+      if (input.value === RW_PASSWORD) {
+        sessionStorage.setItem('rw_unlocked', '1');
+        overlay.classList.add('hidden');
+      } else {
+        errEl.style.display = 'block';
+      }
+    }
+    document.getElementById('authBtn').addEventListener('click', tryUnlock);
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') tryUnlock(); });
+  }
+})();
+
+initTokenUI();
+</script>
+</body>
+</html>
